@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+    <link rel="stylesheet" href="/modules/cocktails/virtual-simulator/css/index.css">
+
+    <main>
+        <section class="topic-section">
+            <div class="container">
+                <div class="topic-section__wrapper">
+                    <span class="topic-text">Тема:</span>
+                    <h1 class="topic-title">Технология приготовления коктейлей</h1>
+                    <p class="topic-subtitle">#Технология приготовления
+                </div>
+                <!-- /topic-section__wrapper -->
+            </div>
+            <!-- /container -->
+        </section>
+        <!-- /topic-section -->
+
+        <section class="virtual-simulator-section">
+            <div class="container virtual-simulator__container">
+                <div class="card-navigation-line"></div>
+                <h4 class="virtual-simulator__title">Виртуальный тренажер</h4>
+
+                <div class="virtual-simulator__wrapper ">
+                    <div class="virtual-simulator__header">
+                        <div class="task-text-wrap">Задание: <br>
+                            <span class="task-text accent-color-text">Выберите один правильный ответ</span>
+                        </div>
+                        <div class="virtual-simulator__header-rigth-side">
+                            <div class="delimeter"></div>
+                            <div class="number"><span class="num-now">1</span><span class="all-num">8</span></div>
+                            <div class="timer-wrap"><p class="timer">10:00</p></div>
+                        </div>
+                    </div>
+                    <!-- серая разделительная черта, нужна тк там округление и через бордер его не получить, либо я чего то не знаю -->
+                    <div class="horizontal-delimeter"></div>
+
+                    <div class="practice-part-wrap practice-part-wrap--active" id="task-1">
+                        <h4 class="quation-text">Какие напитки, приготавливаемые в относительно больших количествах, содержащие много льда (например, дайкири, джоггер, джулеп, коблер) относят к типу?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-1" name="task-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Долгие (длинные, long drink)</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Короткие</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio"class="radio" name="task-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Тянущиеся</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-2">
+                        <h4 class="quation-text">Какие коктейли относятся к группе дижестивов?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Безалкогольные, а также сладкие и горькие алкогольные напитки с умеренным содержанием алкоголя, которые подаются перед едой, возбуждают аппетит</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-2" name="task-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Очень крепкие либо содержащие много сока, калорийных фруктов коктейли</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Крепкие коктейли, часто содержащие кофейный ликер, а также крепкие спиртные напитки, обычно употребляемые после еды</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-3">
+                        <h4 class="quation-text">Коктейль из белого рома, содовой, сока лайма, сахара и веточек мяты называется?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Манхэттен</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>В 52</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-3" name="task-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Мохито</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-4">
+                        <h4 class="quation-text">Как называется метод приготовления напитка непосредственно в питьевом бокале?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>БЛЕНД</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>ШЕЙК</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-4" name="task-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>БИЛД</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-5">
+                        <h4 class="quation-text">Какое основное правило приготовления слоистых коктейлей?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-5" name="task-5">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Первым вливают алкогольный напиток большей плотности</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-5">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Первым вливают алкогольный напиток меньшей плотности</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-5">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Первым вливают алкогольный напиток наибольшего объема независимо от плотности</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-6">
+                        <h4 class="quation-text">Какой соевый соус, применяемый как вкусовая добавка в процессе приготовления коктейля, называется?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-6" name="task-6">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Вотчестер</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-6">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Табаско</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-6">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Апельсиновая горечь</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-7">
+                        <h4 class="quation-text">Как называется подогретое вино со специями?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-7">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Пунш</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-7" name="task-7">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Глинтвейн</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio"  class="radio" name="task-7">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Грог</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-8">
+                        <h4 class="quation-text">Какие из ингредиентов относятся к «смягчающим» добавкам для приготовления коктейля?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-8" name="task-8">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Французские и итальянские вермуты</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-8">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Сахар, сливки, яйца</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-8">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Апельсиновый, лимонный соки</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="result-block">
+                        <p class="result-text">
+                            Вы набрали 0 баллов
+                        </p>
+                        <a onclick="router.loadRoute('cocktails')" class="back-link">Вернуться на главную страницу</a>
+                    </div>
+
+                    <div class="virtual-simulator__footer">
+                        <div class="right-side">
+                            <div class="right-side_btn-wrap">
+                                <button class="back-btn">Назад</button>
+                                <button class="next-btn">Далее</button>
+                            </div>
+                            <div class="right-side__circles">
+                                <div class="circle circle_active" data-button="task-1"></div>
+                                <div class="circle" data-button="task-2"></div>
+                                <div class="circle" data-button="task-3"></div>
+                                <div class="circle" data-button="task-4"></div>
+                                <div class="circle" data-button="task-5"></div>
+                                <div class="circle" data-button="task-6"></div>
+                                <div class="circle" data-button="task-7"></div>
+                                <div class="circle" data-button="task-8"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__left-side">
+                <h4 class="footer-title">
+                    ФГОС СПО 43.02.15
+                </h4>
+                <p class="footer-subtitle">
+                     Поварское и кондитерское дело
+                </p>
+            </div>
+            <div class="footer__right-side">
+                <h4 class="footer-title">
+                    МДК.04.02 
+                </h4>
+                <p class="footer-subtitle">
+                    Процессы приготовления и подготовки к реализации холодных и горячих десертов, напитков сложного ассортимента
+                </p>
+            </div>
+        </div>
+        <!-- /footer__wrapper -->
+    </footer>
+
+    
+    <script src="/modules/cocktails/virtual-simulator/script/timer.js"></script>
+    <script src="/modules/cocktails/virtual-simulator/script/canvas.js"></script>
+    <script src="/modules/cocktails/virtual-simulator/script/canvas2.js"></script>
+    
+    <script src="script/script.js"></script>
+    <script src="/modules/cocktails/virtual-simulator/script/task-switcher.js"></script>

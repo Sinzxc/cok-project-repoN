@@ -1,0 +1,500 @@
+.virtual-simulator-section {
+    position: relative;
+    margin-top: 41px;
+    margin-bottom: 40px;
+}
+
+.virtual-simulator__title {
+    font-family: 'Dela Gothic One';
+    font-size: 15px;
+    color: #45414180;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center; 
+    margin-bottom: 14px;
+}
+
+.virtual-simulator__wrapper {
+    max-width: 825px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 30px 12px 25px;
+    border: 2px solid #3CBA94;
+    border-radius: 30px;
+}
+
+.virtual-simulator__header {
+    display: flex;
+    align-items: center;
+    padding: 0 8px 0 23px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.task-text-wrap {
+    width: 55%;
+    min-height: 87px;
+    color: var(--text-color);
+    font-family: 'Dela Gothic One';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.accent-color-text {
+    color: var(--accent-color);
+}
+
+.virtual-simulator__header-rigth-side {
+    display: flex;
+    align-items: center;
+}
+
+.delimeter {
+    margin-left: auto;
+    height: 60px;
+    width: 3px;
+    background-color: var(--accent-color);
+    border-radius: 3px;
+    margin-right: 47px; 
+}
+
+.question {
+    margin-right: 32px;
+}
+
+.number {
+    width: 90px;
+    margin-right: 30px;
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    display: flex;
+    padding: 0 16px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.number::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 2px;
+    background: var(--border-color);
+    position: absolute;
+    left: calc(50% - 1px);
+}
+
+.number span {
+    font-family: 'Dela Gothic One';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    
+}
+
+.timer-wrap {
+    font-family: 'Dela Gothic One';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    width: 80px;
+}
+
+.card-navigation-line {
+    height: 6px;
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 109px);
+    width: 218px;
+    background-color: #D9D9D9;
+    border-radius: 3px;
+}
+
+.horizontal-delimeter {
+    width: 100%;
+    background-color: #D9D9D9;
+    height: 6px;
+    border-radius: 5px;
+}
+
+.practice-part-wrap {
+    margin-top: 30px;
+    gap: 20px;
+    min-height: 300px;
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.text-block{
+    overflow-y: scroll;
+    overflow-x:auto;
+    max-width:420px ;
+    height: 300px;
+    font-family: 'Dela Gothic One';
+    font-size: 14px;
+    margin-top: 38px;
+    border: #000 solid 1px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.answers_wrap{
+    display: flex;
+    gap: 70px;
+    font-family: 'Dela Gothic One';
+    font-size: 20px;
+    margin: 60px 0;
+    margin-left: 30px;
+}
+.answers_wrap input{
+    border: 1px solid #000;
+    max-width: 170px;
+    height: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+.answer1::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+}
+.answers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.answers-titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.practice-part-wrap--active {
+    display: flex;
+}
+
+.canvas-wrapper {
+    position: relative;
+}
+
+.canvas-container {
+    height: 280px;
+}
+
+.circle-img {
+    height: 30px;
+    width: 30px;    
+}
+
+.circle-img_z-ind {
+    z-index: -1;
+}
+
+.img1 {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.img2 {
+    top: 0px;
+    right: 0;
+    position: absolute;
+}
+
+.img3 {
+    top: 126px;
+    left: 0px;
+    position: absolute;
+}
+
+.img4 {
+    
+    position: absolute;
+    top: 126px;
+    right: 0;
+}
+
+.img5 {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.img6 {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.task-wrapper {
+    height: 280px;
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: space-between;
+}
+.quation-block {
+    
+    padding: 10px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 30px;
+}
+
+.ansver-wrapper {
+   
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ansver-block {
+    width: 220px;
+    padding: 10px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 30px;
+}
+
+.virtual-simulator__footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.clear-btn {
+    font-family: 'Dela Gothic One';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--background);
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    padding: 3px 10px;
+}
+
+.right-side_btn-wrap {
+    display: flex;
+    gap: 40px;
+}
+
+.right-side_btn-wrap button {
+    font-family: 'Dela Gothic One';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    color: var(--background);
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    padding: 3px 10px;
+}
+
+.quation-block { text-align: right;
+    font-weight: 700;
+    position: relative;
+    width: 230px !important; 
+    font-size: 14px;
+}
+
+.back-btn,
+.next-btn, .circle {
+    cursor: pointer;
+}
+
+@media (max-width: 735px) {
+    .virtual-simulator__header {
+        display: block;
+        padding: 0;
+    }
+
+    .task-text-wrap {
+        width:100%;
+    }
+
+    .virtual-simulator__header-rigth-side {
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+    .question {
+        order: 1;
+        margin-right: 0;
+    }
+
+    .timer-wrap {
+        order: 2;
+    }
+
+    .number {
+        margin-right: 0;
+    }
+
+    .delimeter {
+        display: none;
+    }
+}
+
+form {
+    width: 100%;
+    padding: 0px 10px;
+}
+
+@media (max-width: 480px) {
+    .virtual-simulator__footer {
+        flex-direction: column;
+    }
+
+    .right-side {
+        order: -2;
+    }
+
+    .clear-canvas {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .variant-checkbox {
+        gap: 10px;
+    }
+    .task-text-wrap {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .timer {
+        font-size: 16px;
+    }
+
+    .number  {
+        width: 70px;
+        padding: 0 12px;
+    }
+    .number span {
+        font-size: 16px;
+    }
+}
+
+#task-6 form{
+    display: flex;
+    position: relative;
+}
+.varian-radio  + .varian-radio  {
+    margin-top: 20px;   
+}
+
+.text-block{
+    overflow-y: scroll;
+    overflow-x:auto;
+    max-width:420px ;
+    height: 300px;
+    font-family: 'Dela Gothic One';
+    font-size: 14px;
+    margin-top: 38px;
+    border: #000 solid 1px;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+}
+
+.text-block::-webkit-scrollbar {
+    width: 4px;
+}
+
+.text-block::-webkit-scrollbar-track {
+    background-color: #D9D9D9;
+}
+
+.text-block::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);    /* цвет бегунка */
+    border-radius: 20px;       /* округлось бегунка */  /* отступ вокруг бегунка */
+}
+.answers_wrap {
+    display: flex;
+    gap: 20px;
+    font-family: 'Dela Gothic One';
+    font-size: 20px;
+    margin: 60px 0;
+    margin-left: 30px;
+}
+.answers_wrap input{
+    border: 1px solid #000;
+    width: 170px;
+    height: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+.answer1::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+}
+.answers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.answers-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.connect__answer-block {
+    padding: 10px 15px;
+}
+
+.canvas-wrapper {
+    height: 280px;
+}
+
+.result-block {
+    display: none;
+}
+
+.result-block--active {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    padding-top: 40px;
+    position: relative;
+    text-align: center;
+}
+.result-text {
+    font-size: 28px;
+    line-height: 1.2;
+    color: var(--text-color)
+}
+
+.back-link {
+    margin-top: auto;
+    font-size: 18px;
+    color: var(--text-color);
+    transition: 0.2s;
+    text-decoration: underline !important;
+}
+
+.back-link:hover {
+    color: var(--accent-color)
+}
+
+.canvas-wrapper img {
+    cursor: pointer;
+}
+
+.desc-task {
+    position:absolute;
+    top: 0;
+    font-weight: 700;
+    background-color: #eeeeee;
+}
+
+.answers input {
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}

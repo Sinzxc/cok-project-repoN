@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <!-- Стили -->
+    <link rel="stylesheet" href="/modules/tourism/video-lesson/css/index.css">
+    
+    <main>
+        <section class="topic-section">
+            <div class="container">
+                <div class="topic-section__wrapper">
+                    <span class="topic-text">Тема:</span>
+                    <h1 class="topic-title">Технология изготовления песочного полуфабриката</h1>
+                    <p class="topic-subtitle">#Технология изготовления песочного полуфабриката</p>
+                </div>
+                <!-- /topic-section__wrapper -->
+            </div>
+            <!-- /container -->
+        </section>
+        <!-- /topic-section -->
+
+        <section class="videoplayer-section">
+            <div class="container">
+                <div class="videoplayer__wrapper">
+                    <h4 class="videoplayer__title">Видеолекция</h4>
+                    <div class="videoplayer__wrap">
+                        <video width="100%" height="auto" id="video-player" poster="/modules/tourism/video-lesson/img/poster.png">
+                            <source src="/modules/tourism/video-lesson/video/vid.mp4"> 
+
+                        </video>
+                
+                        <div class="controls-line">
+                            <div><button id="play"></button></div>
+                            <div><button id="volume"></button></div>
+                            <div class="range-wrap"><input type="range" id="progress" value="0"></div>
+                            <div class="time"><span class="controls-line__time">00:00</span>|<span class="full-time">15:00</span></div>
+                            <div><button id="full"></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__left-side">
+                <h4 class="footer-title">
+                    ФГОС СПО 43.01.09 
+                </h4>
+                <p class="footer-subtitle">
+                    Повар, кондитер
+                </p>
+            </div>
+            <div class="footer__right-side">
+                <h4 class="footer-title">
+                    МДК.05.02 
+                </h4>
+                <p class="footer-subtitle">
+                    Процессы приготовления, подготовки к реализации хлебобулочных, мучных кондитерских изделий
+                </p>
+            </div>
+        </div>
+        <!-- /footer__wrapper -->
+    </footer>
+
+
+    <script src="/script/script.js"></script>
+    <script src="/modules/tourism/video-lesson/script/videoplayer.js"></script>
+

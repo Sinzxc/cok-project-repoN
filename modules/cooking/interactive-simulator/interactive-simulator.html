@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+    <link rel="stylesheet" href="/modules/cooking/interactive-simulator/css/index.css">
+  
+    <main>
+        <section class="topic-section">
+            <div class="container">
+                <div class="topic-section__wrapper">
+                    <span class="topic-text">Тема:</span>
+                    <h1 class="topic-title">Технология изготовления песочного полуфабриката</h1>
+                    <p class="topic-subtitle">#Технология изготовления песочного полуфабриката</p>
+                </div>
+                <!-- /topic-section__wrapper -->
+            </div>
+            <!-- /container -->
+        </section>
+        <!-- /topic-section -->
+
+        <section class="virtual-simulator-section">
+            <div class="container virtual-simulator__container">
+                <div class="card-navigation-line"></div>
+                <h4 class="virtual-simulator__title">Интерактивный тренажёр</h4>
+
+                <div class="virtual-simulator__wrapper">
+                    <div class="virtual-simulator__header">
+                        <div class="virtual-simulator__header">
+                            <div class="task-text-wrap">Задание: <br>
+                                <span class="task-text accent-color-text">Выберите правильный ответ:</span>
+                            </div>
+                            <div class="virtual-simulator__header-rigth-side">
+                                <div class="delimeter"></div>
+                                <div class="number"><span class="num-now">1</span><span class="all-num">8</span></div>
+                                <div class="timer-wrap"><p class="timer">10:00</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- серая разделительная черта, нужна тк там округление и через бордер его не получить, либо я чего то не знаю -->
+                    <div class="horizontal-delimeter"></div>
+
+                    <div class="practice-part-wrap practice-part-wrap--active" id="task-1">
+                        <h4 class="quation-text">Основа песочного теста</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>масло с мукой</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-1" name="task-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>масло с сахаром</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio"class="radio" name="task-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>масло с меланжем.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-2">
+                        <h4 class="quation-text">Какой продукт используют в процессе приготовления песочного теста для разрыхления?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>дрожжи</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>ванилин</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-2" name="task-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>аммоний</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-3">
+                        <h4 class="quation-text">Какую насадку на миксер необходимо использовать при работе с песочным тестом?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>венчик</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>крюк</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-3" name="task-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>лопатка</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-4">
+                        <h4 class="quation-text">Почему песочное тесто получается твердым?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-4" name="task-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>много муки</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>много яиц</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>много сметаны</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-5">
+                        <h4 class="quation-text">Оптимальная температура в помещении для приготовления песочного теста</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-5" name="task-5">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>16 — 20ºС</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-5">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>12 — 16ºС</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-5">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>20 — 24ºС</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-6">
+                        <h4 class="quation-text">Песочное тесто выпекают при температуре</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-6">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>220 – 240ºС</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-6" name="task-6">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>220 – 250ºС</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-6">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>260 – 280ºС</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-7">
+                        <h4 class="quation-text">С какими показателями клейковины следует использовать муку для замеса песочного теста</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-7">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>сильной</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-7">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>вязкой</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio"  class="radio true-answer-7" name="task-7">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>слабой</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-8">
+                        <h4 class="quation-text">Если в песочного тесто добавить много сахара, оно будет</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-8" name="task-8">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>рассыпаться</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-8">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>затянутым</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-8">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>жидким</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="result-block">
+                        <p class="result-text">
+                            Вы набрали 0 баллов
+                        </p>
+                        <a onclick="router.loadRoute('cooking')" class="back-link">Вернуться на главную страницу</a>
+                    </div>
+
+                    <div class="virtual-simulator__footer">
+                        <div class="right-side">
+                            <div class="right-side_btn-wrap">
+                                <button class="back-btn">Назад</button>
+                                <button class="next-btn">Далее</button>
+                            </div>
+                            <div class="right-side__circles">
+                                <div class="circle circle_active" data-button="task-1"></div>
+                                <div class="circle circle-2" data-button="task-2"></div>
+                                <div class="circle circle-3" data-button="task-3"></div>
+                                <div class="circle circle-4" data-button="task-4"></div>
+                                <div class="circle circle-5" data-button="task-5"></div>
+                                <div class="circle circle-6" data-button="task-6"></div>
+                                <div class="circle circle-7" data-button="task-7"></div>
+                                <div class="circle circle-7" data-button="task-8"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__left-side">
+                <h4 class="footer-title">
+                    ФГОС СПО 43.01.09 
+                </h4>
+                <p class="footer-subtitle">
+                    Повар, кондитер
+                </p>
+            </div>
+            <div class="footer__right-side">
+                <h4 class="footer-title">
+                    МДК.05.02 
+                </h4>
+                <p class="footer-subtitle">
+                    Процессы приготовления, подготовки к реализации хлебобулочных, мучных кондитерских изделий
+                </p>
+            </div>
+        </div>
+        <!-- /footer__wrapper -->
+    </footer>
+
+    <script src="/modules/cooking/interactive-simulator/script/timer.js"></script>
+    <script src="/modules/cooking/interactive-simulator/script/task-switcher.js"></script>
+    <script src="/modules/cooking/interactive-simulator/script/canvas.js"></script>
+</body>

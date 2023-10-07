@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+    <link rel="stylesheet" href="/modules/tourism/interactive-simulator/css/index.css">
+  
+    <main>
+        <section class="topic-section">
+            <div class="container">
+                <div class="topic-section__wrapper">
+                    <span class="topic-text">Тема:</span>
+                    <h1 class="topic-title">Гостеприимство – это кубок, наполненный добротой</h1>
+                    <p class="topic-subtitle">#Гостеприимство</p>
+                </div>
+                <!-- /topic-section__wrapper -->
+            </div>
+            <!-- /container -->
+        </section>
+        <!-- /topic-section -->
+
+        <section class="virtual-simulator-section">
+            <div class="container virtual-simulator__container">
+                <div class="card-navigation-line"></div>
+                <h4 class="virtual-simulator__title">Интерактивный тренажёр</h4>
+
+                <div class="virtual-simulator__wrapper">
+                    <div class="virtual-simulator__header">
+                        <div class="task-text-wrap">Задание: <br>
+                            <span class="task-text accent-color-text">Рассмотрите иллюстрацию гостеприимства в отеле и ответьте на вопрос: Какие аспекты гостеприимства можно наблюдать на этой картинке?</span>
+                        </div>
+                        <div class="virtual-simulator__header-rigth-side">
+                            <div class="delimeter"></div>
+                            <div class="question"><img src="/modules/tourism/interactive-simulator/img/question.svg" alt="?">
+                                <div class="block-answer">
+                                    Ваша задача состоит в том, чтобы соединить вопрос с ответом круглишками слева направо
+                                </div>
+                            </div>
+                            <div class="number"><span class="num-now">1</span><span class="all-num">7</span></div>
+                            <div class="timer-wrap"><p class="timer">10:00</p></div>
+                        </div>
+                    </div>
+                    <!-- серая разделительная черта, нужна тк там округление и через бордер его не получить, либо я чего то не знаю -->
+                    <div class="horizontal-delimeter"></div>
+
+                    <div class="practice-part-wrap practice-part-wrap--active" id="task-1">
+                       <div class="task-img">
+                            <img src="/modules/tourism/interactive-simulator/img/image 15.png" alt="">
+                       </div>
+                       <form action="" class="task-form-1">
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" class="not-true-answer-1">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Официант хочет познакомиться с гостем</p>
+                            </div>
+                        </div>
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" class="true-answer-1">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Улыбающийся сотрудник отеля, предлагающий гостю бесплатный приветственный напиток</p>
+                            </div>
+                        </div>
+                       </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-2">
+                        <div class="task-two-img">
+                            <div class="img-block">
+                                <img src="/modules/tourism/interactive-simulator/img/image 10.png" alt="">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-2">
+                                    <i class="check"></i>
+                                </div>
+                            </div>
+                            <div class="img-block">
+                                <img src="/modules/tourism/interactive-simulator/img/image 11.png" alt="">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="not-true-answer-2">
+                                    <i class="check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="practice-part-wrap" id="task-3">
+                        <div class="task-img">
+                            <img src="/modules/tourism/interactive-simulator/img/img16.png" alt="">
+                       </div>
+                       <form action="" class="task-form-1">
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" class="true-answer-3">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Проявляет гостеприимство и доброту, говорит о готовности организации заботиться о клиентах</p>
+                            </div>
+                        </div>
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" class="not-true-answer-3">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Администратор защищается и не открыт для нового общения</p>
+                            </div>
+                        </div>
+                       </form>
+                    </div>
+                    <div class="practice-part-wrap" id="task-4">
+                        <div class="canvas-task">
+                            <div class="connect-task__wrapper">
+                                <div class="connet__quation-block connet__quation-block--small-text">Доброта</div>
+                                <div class="connet__quation-block connet__quation-block--small-text">Гостеприимство</div>
+                                <div class="connet__quation-block connet__quation-block--small-text">Кубок</div>
+                            </div>
+    
+                            <div class="canvas-wrapper">
+                                <div class="canvas-container">
+                                    <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
+                                </div>
+                                <img src="/modules/tourism/interactive-simulator/img/circle-not-active.png" alt="" class="circle-img img1">
+                                <img src="/modules/tourism/interactive-simulator/img/circle-not-active.png" alt="" class="circle-img img2">
+                                <img src="/modules/tourism/interactive-simulator/img/circle-not-active.png" alt="" class="circle-img img3">
+                                <img src="/modules/tourism/interactive-simulator/img/circle-not-active.png" alt="" class="circle-img img4">
+                                <img src="/modules/tourism/interactive-simulator/img/circle-not-active.png" alt="" class="circle-img img5">
+                                <img src="/modules/tourism/interactive-simulator/img/circle-not-active.png" alt="" class="circle-img img6">
+                            </div>
+    
+                            <div class="connect-task__answer-wrapper">
+                                <div class="connect__answer-block">Символ награды и признания за гостеприимство и доброту.</div>
+                                <div class="connect__answer-block">Вежливое и щедрое отношение к гостям или посетителям.</div>
+                                <div class="connect__answer-block">Благожелательность и забота о благополучии других людей.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="practice-part-wrap" id="task-5">
+                        <div class="task-img">
+                            <img src="/modules/tourism/interactive-simulator/img/img18.png" alt="">
+                       </div>
+                       <form action="" class="task-form-1">
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" class="true-answer-5-1">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Помощь и забота</p>
+                            </div>
+                        </div>
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" class="true-answer-5-2">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Внимание и дружелюбие</p>
+                            </div>
+                        </div>
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" class="true-answer-5-3">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Доступность и доступность</p>
+                            </div>
+                        </div>
+                       </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-6">
+                        <div class="task-img">
+                            <img src="/modules/tourism/interactive-simulator/img/img17.png" alt="">
+                       </div>
+                       <form action="" class="task-form-1">
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" class="true-answer-6-1">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Улыбка официантки и дружелюбное обслуживание помогают создать теплую и комфортную атмосферу для клиента.</p>
+                            </div>
+                        </div>
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" class="true-answer-6-2">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Подчеркивает заботу и внимание к его потребностям, что влияет на его общее впечатление об организации и способствует положительному опыту.</p>
+                            </div>
+                        </div>
+                       </form>
+                    </div>
+                    <div class="practice-part-wrap" id="task-7">
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-7-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>дружелюбие</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="not-true-answer-7-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>удивление</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-7-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>внимание</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-7-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>заботу</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-7-5">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>вежливость</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-7-6">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>открытость</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="result-block">
+                        <p class="result-text">
+                            Вы набрали 0 баллов
+                        </p>
+                        <a onclick="router.loadRoute('hotel')" class="back-link">Вернуться на главную страницу</a>
+                    </div>
+
+                    <div class="virtual-simulator__footer">
+                        <div class="clear-canvas">
+                            <button class="clear-btn" style="display: none;">Очистить ответ</button>
+                        </div>
+                        <div class="right-side">
+                            <div class="right-side_btn-wrap">
+                                <button class="back-btn">Назад</button>
+                                <button class="next-btn">Далее</button>
+                            </div>
+                            <div class="right-side__circles">
+                                <div class="circle circle_active" data-button="task-1"></div>
+                                <div class="circle circle-2" data-button="task-2"></div>
+                                <div class="circle circle-3" data-button="task-3"></div>
+                                <div class="circle circle-4" data-button="task-4"></div>
+                                <div class="circle circle-5" data-button="task-5"></div>
+                                <div class="circle circle-6" data-button="task-6"></div>
+                                <div class="circle circle-7" data-button="task-7"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__left-side">
+                <h4 class="footer-title">
+                    ФГОС СПО 29.02.10 
+                </h4>
+                <p class="footer-subtitle">
+                    Конструирование, моделирование и технология изготовления изделий легкой промышленности 
+                </p>
+            </div>
+            <div class="footer__right-side">
+                <h4 class="footer-title">
+                    МДК.02.01 
+                </h4>
+                <p class="footer-subtitle">
+                    Основы конструирования и моделирования швейных изделий
+                </p>
+            </div>
+        </div>
+        <!-- /footer__wrapper -->
+    </footer>
+
+    <script src="/modules/tourism/interactive-simulator/script/timer.js"></script>
+    <script src="/modules/tourism/interactive-simulator/script/task-switcher.js"></script>
+    <script src="/modules/tourism/interactive-simulator/script/canvas.js"></script>
+</body>

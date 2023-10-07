@@ -1,0 +1,96 @@
+input{
+    width: 14px;
+    background-color: #ffffff;
+    position: relative;
+}
+input[type="checkbox"]{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 0;
+    z-index: 100;
+    opacity: 0;
+    cursor: pointer;
+}
+i{
+    top: -54px;
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    position: relative;
+    border: #D9D9D9 2px solid; 
+    border-radius: 23px;
+}
+i::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-repeat: no-repeat;
+    border: #3CBA94 2px solid;
+    border-radius: 5px;
+    top: 15%;
+    right: 17%;
+
+}
+i::before{
+    content: "";
+    position: absolute;
+    background-image: url("../Vector.svg");
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    transform: scale(0);
+    top: 30%;
+    left:25%;
+}
+input[type="checkbox"]:checked+i::before{
+   transform: scale(1);
+}
+
+.variant-checkbox {
+    display: flex;
+    justify-content:space-between;
+    gap: 20px;
+}
+
+.checkbox-wrap {
+    height: 50px;
+    width: 50px;
+}
+
+.variant-checkbox + .variant-checkbox {
+    margin-top: 20px;
+}
+
+.quation-text {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.text-otvet {
+    font-weight: 700;
+    flex-grow: 1;
+    border-radius: 20px;
+    border: 1px solid #3CBA94;
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+}
+
+@media (max-width: 525px) {
+    .text-otvet {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 525px) {
+    .text-otvet {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+}
