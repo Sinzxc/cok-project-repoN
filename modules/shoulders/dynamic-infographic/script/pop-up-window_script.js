@@ -6,6 +6,7 @@ const popUp5 = document.querySelector('.pop-up-container-card-5');
 const popUp6 = document.querySelector('.pop-up-container-card-6');
 const popUp7 = document.querySelector('.pop-up-container-card-7');
 const popUp8 = document.querySelector('.pop-up-container-card-8');
+const popUp9 = document.querySelector('.pop-up-container-card-9');
 
 const cardBtns = document.getElementsByClassName('infographilc__card');
 
@@ -17,6 +18,7 @@ const btnClose5 = document.querySelector('.close-btn5');
 const btnClose6 = document.querySelector('.close-btn6');
 const btnClose7 = document.querySelector('.close-btn7');
 const btnClose8 = document.querySelector('.close-btn8');
+const btnClose9 = document.querySelector('.close-btn9');
 
 const checkMark = document.getElementsByClassName('check-mark-block');
 
@@ -61,6 +63,11 @@ cardBtns[6].addEventListener('click', ()=> {
 });
 cardBtns[7].addEventListener('click', ()=> {
     popUp8.classList.add('show-pop-up');
+    shadow.classList.add('shadow-active');
+    overflowHiden();
+});
+cardBtns[8].addEventListener('click', ()=> {
+    popUp9.classList.add('show-pop-up');
     shadow.classList.add('shadow-active');
     overflowHiden();
 });
@@ -112,5 +119,11 @@ btnClose8.addEventListener('click', ()=> {
     popUp8.classList.remove('show-pop-up');
     shadow.classList.remove('shadow-active');
     checkMark[7].classList.add('check-mark-block_show');
+    overflowHiden();
+});
+btnClose9.addEventListener('click', ()=> {
+    popUp9.classList.remove('show-pop-up');
+    shadow.classList.remove('shadow-active');
+    checkMark[8].classList.add('check-mark-block_show');
     overflowHiden();
 });

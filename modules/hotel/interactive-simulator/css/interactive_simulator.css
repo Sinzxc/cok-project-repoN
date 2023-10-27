@@ -7,6 +7,8 @@
 .virtual-simulator__container {
 }
 
+
+
 .virtual-simulator__title {
     font-family: 'Dela Gothic One';
     font-size: 15px;
@@ -17,11 +19,6 @@
     margin-bottom: 14px;
 }
 
-.practice-part-wrap--active {
-    display: flex;
-}
-
-
 .virtual-simulator__wrapper {
     max-width: 825px;
     margin: 0 auto;
@@ -31,125 +28,31 @@
     border-radius: 30px;
 }
 
-.virtual-simulator__header {
-    display: flex;
-    align-items: center;
-    padding: 0 8px 0 23px;
-    margin-bottom: 20px;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.task-text-wrap {
-    width: 55%;
-    min-height: 87px;
-    color: var(--text-color);
-    font-family: 'Dela Gothic One';
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.2;
-}
-
-.task-text {
-    font-size: 14px;
-    line-height: 12px;
-}
-
-.accent-color-text {
-    color: var(--accent-color);
-}
-
-input{
-    width: 14px;
-    background-color: #ffffff;
-    position: relative;
-}
-input[type="checkbox"]{
-    width: 50px;
-    height: 50px;
-    position: relative;
-    border: 0;
-    z-index: 100;
-    opacity: 0;
-    cursor: pointer;
-}
-i{
-    top: -54px;
-    cursor: pointer;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: #ffffff;
-    position: relative;
-    border: #D9D9D9 2px solid; 
-    border-radius: 23px;
-}
-i::after{
-    content: "";
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    background-repeat: no-repeat;
-    border: #3CBA94 2px solid;
-    border-radius: 5px;
-    top: 15%;
-    right: 17%;
-
-}
-i::before{
-    content: "";
-    position: absolute;
-    background-image: url("../Vector.svg");
-    background-repeat: no-repeat;
-    width: 23px;
-    height: 23px;
-    transform: scale(0);
-    top: 30%;
-    left:25%;
-}
-input[type="checkbox"]:checked+i::before{
-   transform: scale(1);
-}
-
-.variant-checkbox {
-    display: flex;
-    justify-content:space-between;
-    gap: 20px;
-}
-
-.checkbox-wrap {
-    height: 50px;
-    width: 50px;
-}
-
-.variant-checkbox + .variant-checkbox {
-    margin-top: 20px;
-}
-
-
-
-.text-otvet {
-    font-weight: 700;
-    flex-grow: 1;
-    border-radius: 20px;
-    border: 1px solid #3CBA94;
-    display: flex;
-    padding: 5px 20px;
+.varian-with-img.varian-with-img-imgs .variant-checkbox{
     align-items: center;
 }
-
-@media (max-width: 525px) {
-    .text-otvet {
-        font-size: 14px;
-        padding: 5px 15px;
-    }
+.varian-with-img.varian-with-img-imgs img {
+    width: 100px;
 }
 
-@media (max-width: 525px) {
-    .text-otvet {
-        font-size: 11px;
-        padding: 5px 10px;
-    }
+.back-btn,
+.next-btn, .circle {
+    cursor: pointer;
+}
+
+.back-btn,
+.next-btn {
+    width: 150px;
+    text-align: center;
+}
+
+.right-side__circles {
+    justify-content: center !important;
+}
+
+.virtual-simulator__header-rigth-side {
+    display: flex;
+    align-items: center;
 }
 
 .accent-color-text {
@@ -224,6 +127,26 @@ input[type="checkbox"]:checked+i::before{
     border-radius: 5px;
 }
 
+.virtual-simulator__header {
+    display: flex;
+    align-items: center;
+    padding: 0 8px 0 23px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.task-text-wrap {
+    width: 55%;
+    min-height: 87px;
+    color: var(--text-color);
+    font-family: 'Dela Gothic One';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
 .practice-part-wrap {
     position: relative;
     max-width: 620px;
@@ -233,7 +156,7 @@ input[type="checkbox"]:checked+i::before{
 }
 
 .practice-part-wrap--active {
-    display:block;
+    display: block;
 }
 
 .answer-block {
@@ -284,18 +207,12 @@ input[type="checkbox"]:checked+i::before{
     
 }
 
-.virtual-simulator__header-rigth-side {
-    display: flex;
-    align-items: center;
-}
-
 .virtual-simulator__footer {
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
 }
-
 
 .right-side_btn-wrap {
     display: flex;
@@ -313,108 +230,40 @@ input[type="checkbox"]:checked+i::before{
     padding: 3px 10px;
 }
 
-@media (max-width: 735px) {
-    .virtual-simulator__header {
-        display: block;
-        padding: 0;
-    }
 
-    .task-text-wrap {
-        width:100%;
-    }
 
-    .virtual-simulator__header-rigth-side {
-        margin-top: 20px;
-        justify-content: space-between;
-    }
-
-    .question {
-        order: 1;
-        margin-right: 0;
-    }
-
-    .timer-wrap {
-        order: 2;
-    }
-
-    .number {
-        margin-right: 0;
-    }
-
-    .delimeter {
-        display: none;
-    }
+.varian-with-img {
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
 
-form {
-    width: 100%;
-    padding: 0px 10px;
+.varian-with-img img {
+    width: 150px;
+}
+.varian-with-img.varian-with-img-imgs {
+    justify-content: center;
+    gap: 70px;
 }
 
-@media (max-width: 480px) {
-    .virtual-simulator__footer {
-        flex-direction: column;
-    }
-
-    .right-side {
-        order: -2;
-    }
-
-    .clear-canvas {
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 425px) {
-
-    .variant-checkbox {
-        gap: 10px;
-    }
-    .task-text-wrap {
-        font-size: 18px;
-        line-height: 22px;
-    }
-
-    .timer {
-        font-size: 16px;
-    }
-
-    .number  {
-        width: 70px;
-        padding: 0 12px;
-    }
-    .number span {
-        font-size: 16px;
-    }
-}
-
-.back-btn,
-.next-btn, .circle {
-    cursor: pointer;
-}
-
-.circle_active {
-    background-color: var(--accent-color);
-}
-.task-img img {
-    display: inline;
-    margin-bottom: 30px;
-}
-.task-img {
+.vibrat-img-wrap {
     text-align: center;
 }
 
-.task-two-img {
+.vibrat-img-wrap img {
+    display: inline;
+}
+.vibrat-img__form {
+    
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+    justify-content: center;
 }
 
-.img-block img {
-    margin-bottom: 30px;
-}
-
-.img-block .checkbox-wrap {
-    margin: 0 auto;
+.vibrat-img__form-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .result-block {
@@ -447,42 +296,45 @@ form {
     color: var(--accent-color)
 }
 
-.connet__quation-block--small-text {
-    font-size: 12px;
-    position: relative;
-    text-align: right;
+.sopostavit-task {
+    display: flex;
+    justify-content: space-between;
 }
-
-.connet__quation-block--small-text::before {
-    content: '';
-    position: absolute;
-    height: 100px;
-    width: 80px;
-    top: calc(50% - 50px);
-    left: -70px;
-    background: url(../img/image8.jpg);
+.sopostavit-task__text {
+    width: 350px;
+    height: 350px;
+    border-radius:20px 0 0 20px ;
+    border: 1px solid var(--border-color);
+    overflow-y: auto;
+    padding: 10px 15px;font-size: 15px;
+    font-weight: 600;
 }
-
-.connet__quation-block--small-text:nth-child(2)::before {
-    background: url(../img/image7.jpg);
+.sopostavit-task__form {
+    width: 200px;
+    height: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
-
-.connet__quation-block--small-text:nth-child(3)::before {
-    background: url(../img/image9.jpg);
+.sopostavit-task__block {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    align-items: center;
 }
-
-
-.clear-btn {
-    font-family: 'Dela Gothic One';
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    color: var(--background);
-    background-color: var(--accent-color);
+.sopostavit-task__form input {
+    flex-grow: 1;
+    padding: 5px 10px;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
-    padding: 3px 10px;
-    cursor: pointer;
+    position: relative;
 }
-.canvas-wrapper img {
-    cursor: pointer;
+
+.dss {
+    flex-grow: 1;
+    padding: 5px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    position: relative;
 }

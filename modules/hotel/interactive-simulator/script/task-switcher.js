@@ -8,7 +8,7 @@ for(i = 0; i < circles.length; i++) {
     circles[i].addEventListener('click', (evt)=> {
         const tabTarget = evt.currentTarget;
         const button = tabTarget.dataset.button;
-        document.querySelector('.clear-btn').style.cssText = "display: none"
+
         let i;
         for(i = 0; i < taskWraps.length; i++) {
             circles[i].classList.remove('circle_active');
@@ -16,39 +16,23 @@ for(i = 0; i < circles.length; i++) {
         }
         numNum.innerHTML = button[5]
         numtaskNow = button[5] //номер задания
-        if(numtaskNow == 1) {
-            document.querySelector('.task-text').innerHTML = "Рассмотрите иллюстрацию гостеприимства в отеле и ответьте на вопрос: Какие аспекты гостеприимства можно наблюдать на этой картинке?"
-        }
-        else if(numtaskNow == 2) {
-            document.querySelector('.task-text').innerHTML = "Рассмотрите иллюстрацию двух ресторанов. Определите, в каком ресторане присутствует большее проявление гостеприимства?"
-        }
-        else if(numtaskNow == 3) {
-            document.querySelector('.task-text').innerHTML =  "Рассмотрите иллюстрацию выберите правильный ответ"
-        }
-        else if(numtaskNow == 4) {
-            document.querySelector('.task-text').innerHTML = "Сопоставьте следующие ключевые слова с их определениями"
-            document.querySelector('.clear-btn').style.cssText = "display: block"
-        }
-        else if(numtaskNow == 5) {
-            document.querySelector('.task-text').innerHTML = "Рассмотрите иллюстрацию, изображающую группу туристов, которым помогают с чемоданами на вокзале. Назовите аспекты гостеприимства, которые проявлены на этой картинке"
-        }
-        else if(numtaskNow == 6) {
-            document.querySelector('.task-text').innerHTML = "Рассмотрите иллюстрацию ресторана, где официантка дружелюбно улыбается, принося гостю заказ, как проявление гостеприимства. Выберите, правильные ответы"
-        }
-        else if(numtaskNow == 7) {
-            document.querySelector('.task-text').innerHTML = "Разберите понятие «кубок, наполненный добротой» на составляющие элементы и отметьте их значимость в рамках гостеприимства"
-        }
-        if(numtaskNow == circles.length) {
-            nextBtn.innerHTML = "Закончить"
-        }
-        else {
-            nextBtn.innerHTML = "Далее"
-        }
-
         console.log(button)
 
         document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
-        tabTarget.classList.add('circle_active');      
+        tabTarget.classList.add('circle_active');     
+        if(numtaskNow == 1 || numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Выберите правильный ответ:"
+        else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Восстановите правильный порядок обслуживания гостей в отел"
+        else if(numtaskNow == 4) document.querySelector('.task-text').innerHTML = "Отметьте верные утверждения"
+        else if(numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Выберите правильные ответы"
+        else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Сопоставьте обязанности сотрудников СПиР с их описанием"
+        else if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Реорганизуйте последовательность этапов процесса обслуживания гостей в отеле"
+        else if(numtaskNow == 8) document.querySelector('.task-text').innerHTML = "Из перечисленных функций выделите функции службы бронирования"
+        if(numtaskNow == circles.length) {
+            nextBtn.innerHTML = "Завершить"
+        }
+        else {
+            nextBtn.innerHTML = "Далее"
+        } 
     })
 }
 
@@ -65,32 +49,15 @@ backBtn.addEventListener('click',()=> {
         document.querySelector(`#task-${numtaskNow}`).classList.add('practice-part-wrap--active');
         numNum.innerHTML = numtaskNow
         circles[numtaskNow - 1].classList.add('circle_active');
-        document.querySelector('.clear-btn').style.cssText = "display: none"
-
-        if(numtaskNow == 1) {
-            document.querySelector('.task-text').innerHTML = "Рассмотрите иллюстрацию гостеприимства в отеле и ответьте на вопрос: Какие аспекты гостеприимства можно наблюдать на этой картинке?"
-        }
-        else if(numtaskNow == 2) {
-            document.querySelector('.task-text').innerHTML = "Рассмотрите иллюстрацию двух ресторанов. Определите, в каком ресторане присутствует большее проявление гостеприимства?"
-        }
-        else if(numtaskNow == 3) {
-            document.querySelector('.task-text').innerHTML =  "Рассмотрите иллюстрацию выберите правильный ответ"
-        }
-        else if(numtaskNow == 4) {
-            document.querySelector('.task-text').innerHTML = "Сопоставьте следующие ключевые слова с их определениями"
-            document.querySelector('.clear-btn').style.cssText = "display: block"
-        }
-        else if(numtaskNow == 5) {
-            document.querySelector('.task-text').innerHTML = "Рассмотрите иллюстрацию, изображающую группу туристов, которым помогают с чемоданами на вокзале. Назовите аспекты гостеприимства, которые проявлены на этой картинке"
-        }
-        else if(numtaskNow == 6) {
-            document.querySelector('.task-text').innerHTML = "Рассмотрите иллюстрацию ресторана, где официантка дружелюбно улыбается, принося гостю заказ, как проявление гостеприимства. Выберите, правильные ответы"
-        }
-        else if(numtaskNow == 7) {
-            document.querySelector('.task-text').innerHTML = "Разберите понятие «кубок, наполненный добротой» на составляющие элементы и отметьте их значимость в рамках гостеприимства"
-        }
+        if(numtaskNow == 1 || numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Выберите правильный ответ:"
+        else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Восстановите правильный порядок обслуживания гостей в отел"
+        else if(numtaskNow == 4) document.querySelector('.task-text').innerHTML = "Отметьте верные утверждения"
+        else if(numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Выберите правильные ответы"
+        else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Отметьте верные утверждения"
+        else if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Сопоставьте обязанности сотрудников СПиР с их описанием"
+        else if(numtaskNow == 8) document.querySelector('.task-text').innerHTML = "Реорганизуйте последовательность этапов процесса обслуживания гостей в отеле"
         if(numtaskNow == circles.length) {
-            nextBtn.innerHTML = "Закончить"
+            nextBtn.innerHTML = "Завершить"
         }
         else {
             nextBtn.innerHTML = "Далее"
@@ -101,7 +68,7 @@ backBtn.addEventListener('click',()=> {
 const nextBtn = document.querySelector('.next-btn')
 
 nextBtn.addEventListener('click',()=> {
-    if(nextBtn.innerHTML == "Закончить") {
+    if(nextBtn.innerHTML == "Завершить") {
         document.querySelector(`#task-${numtaskNow}`).classList.remove('practice-part-wrap--active');
         const resultBlock = document.querySelector('.result-block');
         resultBlock.classList.add('result-block--active')
@@ -109,7 +76,8 @@ nextBtn.addEventListener('click',()=> {
         clearInterval(intervalId);
         RaschitatiBalli()
     }
-    if(numtaskNow < 7) {
+    console.log(numtaskNow)
+    if(numtaskNow < 8) {
         for(i = 0; i < circles.length; i++) {
             circles[i].classList.remove('circle_active');taskWraps[i].classList.remove('practice-part-wrap--active')
         }
@@ -117,33 +85,16 @@ nextBtn.addEventListener('click',()=> {
         numtaskNow++;
         document.querySelector(`#task-${numtaskNow}`).classList.add('practice-part-wrap--active');
         numNum.innerHTML = numtaskNow
-        document.querySelector('.clear-btn').style.cssText = "display: none"
         circles[numtaskNow - 1].classList.add('circle_active');
-
-        if(numtaskNow == 1) {
-            document.querySelector('.task-text').innerHTML = "Рассмотрите иллюстрацию гостеприимства в отеле и ответьте на вопрос: Какие аспекты гостеприимства можно наблюдать на этой картинке?"
-        }
-        else if(numtaskNow == 2) {
-            document.querySelector('.task-text').innerHTML = "Рассмотрите иллюстрацию двух ресторанов. Определите, в каком ресторане присутствует большее проявление гостеприимства?"
-        }
-        else if(numtaskNow == 3) {
-            document.querySelector('.task-text').innerHTML = "Рассмотрите иллюстрацию выберите правильный ответ"
-        }
-        else if(numtaskNow == 4) {
-            document.querySelector('.task-text').innerHTML = "Сопоставьте следующие ключевые слова с их определениями"
-            document.querySelector('.clear-btn').style.cssText = "display: block"
-        }
-        else if(numtaskNow == 5) {
-            document.querySelector('.task-text').innerHTML = "Рассмотрите иллюстрацию, изображающую группу туристов, которым помогают с чемоданами на вокзале. Назовите аспекты гостеприимства, которые проявлены на этой картинке"
-        }
-        else if(numtaskNow == 6) {
-            document.querySelector('.task-text').innerHTML = "Рассмотрите иллюстрацию ресторана, где официантка дружелюбно улыбается, принося гостю заказ, как проявление гостеприимства. Выберите, правильные ответы"
-        }
-        else if(numtaskNow == 7) {
-            document.querySelector('.task-text').innerHTML = "Разберите понятие «кубок, наполненный добротой» на составляющие элементы и отметьте их значимость в рамках гостеприимства"
-        }
+        if(numtaskNow == 1 || numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Выберите правильный ответ:"
+        else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Восстановите правильный порядок обслуживания гостей в отел"
+        else if(numtaskNow == 4) document.querySelector('.task-text').innerHTML = "Отметьте верные утверждения"
+        else if(numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Выберите правильные ответы"
+        else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Отметьте верные утверждения"
+        else if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Сопоставьте обязанности сотрудников СПиР с их описанием"
+        else if(numtaskNow == 8) document.querySelector('.task-text').innerHTML = "Реорганизуйте последовательность этапов процесса обслуживания гостей в отеле"
         if(numtaskNow == circles.length) {
-            nextBtn.innerHTML = "Закончить"
+            nextBtn.innerHTML = "Завершить"
         }
         else {
             nextBtn.innerHTML = "Далее"
@@ -151,18 +102,18 @@ nextBtn.addEventListener('click',()=> {
     }
 })
 
+
 function RaschitatiBalli() {
     let ball = 0;
-    if(document.querySelector('.true-answer-1').checked && !(document.querySelector('.not-true-answer-1').checked))  ball++
-    if(document.querySelector('.true-answer-2').checked && !(document.querySelector('.not-true-answer-2').checked))  ball++
-    if(document.querySelector('.true-answer-3').checked && !(document.querySelector('.not-true-answer-3').checked))  ball++
-    if(isCor1 && isCor2 && isCor3) ball++
-    if(document.querySelector('.true-answer-5-1').checked && document.querySelector('.true-answer-5-2').checked &&
-    document.querySelector('.true-answer-5-3').checked)  ball++
-    if(document.querySelector('.true-answer-6-1').checked && document.querySelector('.true-answer-6-2').checked)  ball++
-    if(document.querySelector('.true-answer-7-1').checked && !(document.querySelector('.not-true-answer-7-2').checked)
-    && document.querySelector('.true-answer-7-3') && document.querySelector('.true-answer-7-4') && document.querySelector('.true-answer-7-5') && document.querySelector('.true-answer-7-6'))  ball++
-
+    if(document.querySelector('.true-answer-1').checked) ball++
+    if(document.querySelector('.true-answer-2').checked) ball++
+    if(proverka()) ball++
+    if(!(document.querySelector('.not-true-answer-4-1').checked) && !(document.querySelector('.not-true-answer-4-4').checked) && !(document.querySelector('.not-true-answer-4-5').checked) && document.querySelector('.true-answer-4-2').checked && document.querySelector('.true-answer-4-3').checked) ball++
+    if(!(document.querySelector('.not-true-answer-5-2').checked) && !(document.querySelector('.not-true-answer-5-3').checked) && document.querySelector('.true-answer-5-1').checked && document.querySelector('.true-answer-5-4').checked) ball++
+    if(document.querySelector('.answer-6-1').value == 5 && document.querySelector('.answer-6-2').value == 4 &&
+    document.querySelector('.answer-6-3').value == 2 && document.querySelector('.answer-6-4').value == 1 && document.querySelector('.answer-6-5').value == 3) ball++
+    if(document.querySelector('.answer-7').value == "бгвдае" || document.querySelector('.answer-7').value == "БГВДАЕ") ball++
+    if(!(document.querySelector('.not-true-answer-8-2').checked) && !(document.querySelector('.not-true-answer-8-5').checked) &&!(document.querySelector('.not-true-answer-8-7').checked) && document.querySelector('.true-answer-8-1').checked && document.querySelector('.true-answer-8-3').checked && document.querySelector('.true-answer-8-4').checked &&document.querySelector('.true-answer-8-6').checked) ball++
 
     document.querySelector('.result-text').innerHTML = "Количество баллов: "+ball
 }

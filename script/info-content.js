@@ -6,6 +6,7 @@ content5 = document.getElementById('inf5');
 content6 = document.getElementById('inf6');
 content7 = document.getElementById('inf7');
 content8 = document.getElementById('inf8');
+content9 = document.getElementById('inf9');
 function read() {
     const url = new URL(window.location.href);
     const doc = url.searchParams.get('docs');
@@ -19,6 +20,10 @@ function read() {
             file3 = 'script/markdown/infographics/belts/3.md';
             file4 = 'script/markdown/infographics/belts/4.md';
             file5 = 'script/markdown/infographics/belts/5.md';
+            file6 = 'script/markdown/infographics/belts/6.md';
+            file7 = 'script/markdown/infographics/belts/7.md';
+            file8 = 'script/markdown/infographics/belts/8.md';
+            file9 = 'script/markdown/infographics/belts/9.md';
             break;
         case '/clothes-shoulders-dynamic-infographic':
             file1 = 'script/markdown/infographics/shoulders/1.md';
@@ -29,6 +34,7 @@ function read() {
             file6 = 'script/markdown/infographics/shoulders/6.md';
             file7 = 'script/markdown/infographics/shoulders/7.md';
             file8 = 'script/markdown/infographics/shoulders/8.md';
+            file9 = 'script/markdown/infographics/shoulders/9.md';
             break;
         default:
             file1 = '';
@@ -110,6 +116,15 @@ function read() {
             })
             .then(response => {
                 content8.innerHTML = window.marked.marked(response);
+            })
+    }
+    if (file9 !== '') {
+        fetch(file9)
+            .then(response => {
+                return response.text();
+            })
+            .then(response => {
+                content9.innerHTML = window.marked.marked(response);
             })
     }
 }

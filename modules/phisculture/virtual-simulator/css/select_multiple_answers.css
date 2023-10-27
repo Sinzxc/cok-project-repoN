@@ -3,7 +3,7 @@ input{
     background-color: #ffffff;
     position: relative;
 }
-input[type="checkbox"]{
+.radio{
     width: 50px;
     height: 50px;
     position: relative;
@@ -46,7 +46,7 @@ i::before{
     top: 30%;
     left:25%;
 }
-input[type="checkbox"]:checked+i::before{
+.radio:checked+i::before{
     background-image: url("../Vector.svg");
     background-repeat: no-repeat;
 }
@@ -66,7 +66,7 @@ input[type="checkbox"]:checked+i::before{
 }
 
 .quation-text {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-size: 20px;
     font-weight: 700;
 }

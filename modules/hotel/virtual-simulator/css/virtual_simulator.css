@@ -37,7 +37,7 @@
     min-height: 87px;
     color: var(--text-color);
     font-family: 'Dela Gothic One';
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 29px;
 }
@@ -119,13 +119,15 @@
 }
 
 .practice-part-wrap {
-    margin-top: 30px;
-    gap: 20px;
-    min-height: 300px;
-    display: none;
     position: relative;
-    align-items: center;
-    justify-content: space-around;
+    max-width: 620px;
+    min-height: 350px;
+    display: none;
+    margin: 30px auto 0;
+}
+
+.practice-part-wrap--active {
+    display: block;
 }
 
 
@@ -162,7 +164,7 @@
     height: 100px;
     background-color: #000;
 }
-.answers {
+.answers{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -171,10 +173,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.practice-part-wrap--active {
-    display: flex;
 }
 
 .canvas-wrapper {
@@ -262,7 +260,7 @@
 .virtual-simulator__footer {
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
 }
 .clear-btn {
@@ -302,6 +300,17 @@
 .back-btn,
 .next-btn, .circle {
     cursor: pointer;
+}
+
+
+.back-btn,
+.next-btn {
+    width: 150px;
+    text-align: center;
+}
+
+.right-side__circles {
+    justify-content: center !important;
 }
 
 @media (max-width: 735px) {
@@ -379,10 +388,6 @@ form {
     }
 }
 
-#task-6 form{
-    display: flex;
-    position: relative;
-}
 .varian-radio  + .varian-radio  {
     margin-top: 20px;   
 }
@@ -433,23 +438,35 @@ form {
     height: 100px;
     background-color: #000;
 }
-.answers {
+.answers{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.answers-titles {
+.answers-titles{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.connect__answer-block {
-    padding: 10px 15px;
+.vibrat-img-wrap {
+    text-align: center;
 }
 
-.canvas-wrapper {
-    height: 280px;
+.vibrat-img-wrap img {
+    display: inline;
+}
+.vibrat-img__form {
+    
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.vibrat-img__form-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .result-block {
@@ -482,19 +499,21 @@ form {
     color: var(--accent-color)
 }
 
-.canvas-wrapper img {
-    cursor: pointer;
+.text-and-input {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: space-between;
+    font-size: 18px;
 }
-
-.desc-task {
-    position:absolute;
-    top: 0;
+.text-and-input label {
     font-weight: 700;
-    background-color: #eeeeee;
 }
-
-.answers input {
-    padding-left: 10px;
+.text-and-input input {
     font-weight: 500;
-    font-size: 16px;
+    width: 250px;font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    position: relative;
 }

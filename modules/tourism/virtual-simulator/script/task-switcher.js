@@ -46,7 +46,7 @@ for(i = 0; i < circles.length; i++) {
         }
         console.log(button)
         if(numtaskNow == circles.length) {
-            nextBtn.innerHTML = "Закончить"
+            nextBtn.innerHTML = "Завершить"
         }
         else {
             nextBtn.innerHTML = "Далее"
@@ -96,7 +96,7 @@ backBtn.addEventListener('click',()=> {
             document.querySelector('.task-text').innerHTML = "Сопоставьте виды номеров гостиницы с их описанием"
         }
         if(numtaskNow == circles.length) {
-            nextBtn.innerHTML = "Закончить"
+            nextBtn.innerHTML = "Завершить"
         }
         else {
             nextBtn.innerHTML = "Далее"
@@ -107,7 +107,7 @@ backBtn.addEventListener('click',()=> {
 const nextBtn = document.querySelector('.next-btn')
 
 nextBtn.addEventListener('click',()=> {
-    if(nextBtn.innerHTML == "Закончить") {
+    if(nextBtn.innerHTML == "Завершить") {
         document.querySelector(`#task-${numtaskNow}`).classList.remove('practice-part-wrap--active');
         const resultBlock = document.querySelector('.result-block');
         resultBlock.classList.add('result-block--active')
@@ -150,7 +150,7 @@ nextBtn.addEventListener('click',()=> {
             document.querySelector('.task-text').innerHTML = "Сопоставьте виды номеров гостиницы с их описанием"
         }
         if(numtaskNow == circles.length) {
-            nextBtn.innerHTML = "Закончить"
+            nextBtn.innerHTML = "Завершить"
         }
         else {
             nextBtn.innerHTML = "Далее"

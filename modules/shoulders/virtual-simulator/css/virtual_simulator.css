@@ -33,7 +33,7 @@
 }
 
 .task-text-wrap {
-    width: 55%;
+    width: 65%;
     min-height: 87px;
     color: var(--text-color);
     font-family: 'Dela Gothic One';
@@ -184,6 +184,10 @@
     height: 280px;
 }
 
+.right-side__circles {
+    justify-content: center !important;
+}
+
 .circle-img {
     height: 30px;
     width: 30px;    
@@ -261,7 +265,7 @@
 .virtual-simulator__footer {
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 .clear-btn {
@@ -274,6 +278,7 @@
     border-radius: 10px;
     padding: 3px 10px;
 }
+
 
 .right-side_btn-wrap {
     display: flex;
@@ -303,6 +308,11 @@
     cursor: pointer;
 }
 
+.back-btn,
+.next-btn {
+    width: 150px;
+    text-align: center;
+}
 @media (max-width: 735px) {
     .virtual-simulator__header {
         display: block;

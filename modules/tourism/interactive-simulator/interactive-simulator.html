@@ -28,12 +28,7 @@
                         </div>
                         <div class="virtual-simulator__header-rigth-side">
                             <div class="delimeter"></div>
-                            <div class="question"><img src="/modules/tourism/interactive-simulator/img/question.svg" alt="?">
-                                <div class="block-answer">
-                                    Ваша задача состоит в том, чтобы соединить вопрос с ответом круглишками слева направо
-                                </div>
-                            </div>
-                            <div class="number"><span class="num-now">1</span><span class="all-num">7</span></div>
+                            <div class="number"><span class="num-now">1</span><span class="all-num">8</span></div>
                             <div class="timer-wrap"><p class="timer">10:00</p></div>
                         </div>
                     </div>
@@ -47,7 +42,7 @@
                        <form action="" class="task-form-1">
                         <div class="variant-checkbox">
                             <div class="checkbox-wrap">
-                                <input type="checkbox" class="not-true-answer-1">
+                                <input type="radio" name="q1" class="not-true-answer-1">
                                 <i class="check"></i>
                             </div>
                             <div class="text-otvet">
@@ -56,7 +51,7 @@
                         </div>
                         <div class="variant-checkbox">
                             <div class="checkbox-wrap">
-                                <input type="checkbox" class="true-answer-1">
+                                <input type="radio" name="q1" class="true-answer-1">
                                 <i class="check"></i>
                             </div>
                             <div class="text-otvet">
@@ -71,14 +66,14 @@
                             <div class="img-block">
                                 <img src="/modules/tourism/interactive-simulator/img/image 10.png" alt="">
                                 <div class="checkbox-wrap">
-                                    <input type="checkbox" class="true-answer-2">
+                                    <input type="radio" name="q2" class="true-answer-2">
                                     <i class="check"></i>
                                 </div>
                             </div>
                             <div class="img-block">
                                 <img src="/modules/tourism/interactive-simulator/img/image 11.png" alt="">
                                 <div class="checkbox-wrap">
-                                    <input type="checkbox" class="not-true-answer-2">
+                                    <input type="radio" name="q2" class="not-true-answer-2">
                                     <i class="check"></i>
                                 </div>
                             </div>
@@ -91,7 +86,7 @@
                        <form action="" class="task-form-1">
                         <div class="variant-checkbox">
                             <div class="checkbox-wrap">
-                                <input type="checkbox" class="true-answer-3">
+                                <input type="radio" name="q3" class="true-answer-3">
                                 <i class="check"></i>
                             </div>
                             <div class="text-otvet">
@@ -100,7 +95,7 @@
                         </div>
                         <div class="variant-checkbox">
                             <div class="checkbox-wrap">
-                                <input type="checkbox" class="not-true-answer-3">
+                                <input type="radio" name="q3" class="not-true-answer-3">
                                 <i class="check"></i>
                             </div>
                             <div class="text-otvet">
@@ -255,11 +250,54 @@
                         </form>
                     </div>
 
+                    <div class="practice-part-wrap" id="task-8">
+                        <form action="">
+                            <div class="true-false__task">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="not-true-answer-8-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="true-false__text-otvet">
+                                    <p>Гостеприимство включает только доброту</p>
+                                </div>
+                            </div>
+                            <div class="true-false__task">
+                                <div class="checkbox-wrap">
+                                    <!-- не верно -->
+                                    <input type="checkbox" class="true-answer-8-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="true-false__text-otvet">
+                                    <p>Кубок наполнен добротой и гостеприимством</p>
+                                </div>
+                            </div>
+                            <div class="true-false__task">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="not-true-answer-8-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="true-false__text-otvet">
+                                    <p>Доброта и гостеприимство не связаны друг с другом</p>
+                                </div>
+                            </div>
+                            <div class="true-false__task">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-8-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="true-false__text-otvet">
+                                    <p>Гостеприимство может проявляться через разные действия, не только доброту</p>
+                                </div>
+                            </div>
+                    </div>
+                  
+                    </form>
+
                     <div class="result-block">
                         <p class="result-text">
                             Вы набрали 0 баллов
                         </p>
-                        <a href="../index.html" class="back-link">Вернуться на главную страницу</a>
+                        <a onclick="router.loadRoute('tourism')" class="back-link">Вернуться на главную страницу</a>
                     </div>
 
                     <div class="virtual-simulator__footer">
@@ -279,10 +317,11 @@
                                 <div class="circle circle-5" data-button="task-5"></div>
                                 <div class="circle circle-6" data-button="task-6"></div>
                                 <div class="circle circle-7" data-button="task-7"></div>
+                                <div class="circle circle-7" data-button="task-8"></div>
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>   
             </div>
         </section>
     </main>
@@ -312,4 +351,5 @@
     <script src="/modules/tourism/interactive-simulator/script/timer.js"></script>
     <script src="/modules/tourism/interactive-simulator/script/task-switcher.js"></script>
     <script src="/modules/tourism/interactive-simulator/script/canvas.js"></script>
+    <script src="/script/end.js"></script>
 </body>

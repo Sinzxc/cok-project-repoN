@@ -3,7 +3,7 @@ input{
     background-color: #ffffff;
     position: relative;
 }
-input[type="checkbox"]{
+.radio{
     width: 50px;
     height: 50px;
     position: relative;
@@ -13,7 +13,7 @@ input[type="checkbox"]{
     cursor: pointer;
 }
 i{
-    top: -54px;
+    position: absolute;
     cursor: pointer;
     display: inline-block;
     width: 50px;
@@ -22,6 +22,7 @@ i{
     position: relative;
     border: #D9D9D9 2px solid; 
     border-radius: 23px;
+    top: -54px;
 }
 i::after{
     content: "";
@@ -38,18 +39,17 @@ i::after{
 i::before{
     content: "";
     position: absolute;
-    background-image: url("../Vector.svg");
-    background-repeat: no-repeat;
+    
+    
     width: 23px;
     height: 23px;
-    transform: scale(0);
     top: 30%;
     left:25%;
 }
-input[type="checkbox"]:checked+i::before{
-   transform: scale(1);
+.radio:checked+i::before{
+    background-image: url("../Vector.svg");
+    background-repeat: no-repeat;
 }
-
 .variant-checkbox {
     display: flex;
     justify-content:space-between;
@@ -63,6 +63,12 @@ input[type="checkbox"]:checked+i::before{
 
 .variant-checkbox + .variant-checkbox {
     margin-top: 20px;
+}
+
+.quation-text {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .text-otvet {

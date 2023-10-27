@@ -1,11 +1,11 @@
-@import url('/css/reset.css');
-@import url('/css/fonts.css');
-@import url('/css/default.css');
-@import url('/css/header.css');
-@import url('/css/topic_section.css');
+@import url('../../css/reset.css');
+@import url('../../css/fonts.css');
+@import url('../../css/default.css');
+@import url('../../css/header.css');
+@import url('../../css/topic_section.css');
 @import url('select_multiple_answers.css');
 @import url('задание_соединить_линии.css');
 @import url('true_false.css');
 @import url('один_варик.css');
 @import url('virtual_simulator.css');
-@import url('/css/footer.css');
+@import url('../../css/footer.css');

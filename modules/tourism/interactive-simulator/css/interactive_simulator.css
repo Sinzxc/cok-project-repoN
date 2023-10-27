@@ -31,6 +31,16 @@
     border-radius: 30px;
 }
 
+.back-btn,
+.next-btn {
+    width: 150px;
+    text-align: center;
+}
+
+.right-side__circles {
+    justify-content: center !important;
+}
+
 .virtual-simulator__header {
     display: flex;
     align-items: center;
@@ -99,7 +109,7 @@ i::after{
 i::before{
     content: "";
     position: absolute;
-    background-image: url("../Vector.svg");
+    background-image: url("/modules/tourism/interactive-simulator/img/Vector.svg");
     background-repeat: no-repeat;
     width: 23px;
     height: 23px;
@@ -460,15 +470,15 @@ form {
     width: 80px;
     top: calc(50% - 50px);
     left: -70px;
-    background: url(../img/image8.jpg);
+    background: url(/modules/tourism/interactive-simulator/img/image8.jpg);
 }
 
 .connet__quation-block--small-text:nth-child(2)::before {
-    background: url(../img/image7.jpg);
+    background: url(/modules/tourism/interactive-simulator/img/image7.jpg);
 }
 
 .connet__quation-block--small-text:nth-child(3)::before {
-    background: url(../img/image9.jpg);
+    background: url(/modules/tourism/interactive-simulator/img/image9.jpg);
 }
 
 

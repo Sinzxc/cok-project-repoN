@@ -9,6 +9,16 @@ function updateCOuntdown() {
     sec = sec<10?"0"+sec:sec;
     min = min<10?'0'+min:min;
     timerText.innerHTML = min+':'+sec;
-    if(time === 0) clearInterval(intervalId);
+    if(time === 0) {
+        clearInterval(intervalId);
+        document.querySelector(`#task-${numtaskNow}`).classList.remove('practice-part-wrap--active');
+        const resultBlock = document.querySelector('.result-block');
+        resultBlock.classList.add('result-block--active')
+        document.querySelector('.virtual-simulator__footer').style.cssText = "display: none;"
+        clearInterval(intervalId);
+        document.querySelector('.virtual-simulator__header-rigth-side').classList.add('hide')
+        document.querySelector('.task-text-wrap').innerHTML = "Результаты"
+        RaschitatiBalli()
+    }
     time--;
 }

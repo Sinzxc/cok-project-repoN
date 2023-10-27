@@ -14,46 +14,25 @@ for(i = 0; i < circles.length; i++) {
             circles[i].classList.remove('circle_active');
             taskWraps[i].classList.remove('practice-part-wrap--active')
         }
-        document.querySelector('.clear-btn').style.cssText = "display: none"
-        document.querySelector('.clear-btn-2').style.cssText = "display: none"
-        document.querySelector('.clear-btn-3').style.cssText = "display: none"
-        
         numNum.innerHTML = button[5]
         numtaskNow = button[5] //номер задания
-        if(numtaskNow == 1) {
-            document.querySelector('.task-text').innerHTML = "Установите соответствия"
-            document.querySelector('.clear-btn').style.cssText = "display: block"
-        }
-        else if(numtaskNow == 2) {
-            document.querySelector('.task-text').innerHTML = "Какие качества должны быть у хорошего хозяина / хозяйки?"
-        }
-        else if(numtaskNow == 3) {
-            document.querySelector('.task-text').innerHTML = "Задание «верно-неверно»"
-        }
-        else if(numtaskNow == 4) {
-            document.querySelector('.task-text').innerHTML = "Установите соответствия"
-            document.querySelector('.clear-btn-2').style.cssText = "display: block"
-        }
-        else if(numtaskNow == 5) {
-            document.querySelector('.task-text').innerHTML = "Найди правильные ответы"
-        }
-        else if(numtaskNow == 6) {
-            document.querySelector('.task-text').innerHTML = "Обучающимся предложен список предложений различных гостиниц, ресторанов и туристических агентств. Задание сопоставить каждое предложение с соответствующей организацией."
-        }
-        else if(numtaskNow == 7) {
-            document.querySelector('.task-text').innerHTML = "Сопоставьте виды номеров гостиницы с их описанием"
-            document.querySelector('.clear-btn-3').style.cssText = "display: block"
-        }
-        console.log(button)
+
+        document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
+        tabTarget.classList.add('circle_active');
+        if(numtaskNow == 1) document.querySelector('.task-text').innerHTML = "Дайте ответ в соответствии с действующими «Правилами предоставления гостиничных услуг в РФ» в данной ситуации"
+        else if(numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Звезда» госпоже Натальи  на полученную от нее заявку на бронирование. "
+        else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Белые ночи» г-ну Быкову Василию Викторовичу на полученную от него заявку на бронирование."
+        else if(numtaskNow == 4 || numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Рассчитать размер оплаты за проживание по брони в гостинице"
+
+        else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Биба» г-ну Нехай Руслану Аслановичу на полученную от него заявку на бронирование."
+        else if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Рассчитайте коэффициент двойной загрузки номеров за 10 дней в гостинице."
+        else if(numtaskNow == 8) document.querySelector('.task-text').innerHTML = "О каком типе бронирования идет речь в данной ситуации."
         if(numtaskNow == circles.length) {
-            nextBtn.innerHTML = "Закончить"
+            nextBtn.innerHTML = "Завершить"
         }
         else {
             nextBtn.innerHTML = "Далее"
         }
-
-        document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
-        tabTarget.classList.add('circle_active');      
     })
 }
 
@@ -70,33 +49,16 @@ backBtn.addEventListener('click',()=> {
         document.querySelector(`#task-${numtaskNow}`).classList.add('practice-part-wrap--active');
         numNum.innerHTML = numtaskNow
         circles[numtaskNow - 1].classList.add('circle_active');
-        document.querySelector('.clear-btn').style.cssText = "display: none"
-        document.querySelector('.clear-btn-2').style.cssText = "display: none"
-        if(numtaskNow == 1) {
-            document.querySelector('.task-text').innerHTML = "Установите соответствия"
-            document.querySelector('.clear-btn').style.cssText = "display: block"
-        }
-        else if(numtaskNow == 2) {
-            document.querySelector('.task-text').innerHTML = "Какие качества должны быть у хорошего хозяина / хозяйки?"
-        }
-        else if(numtaskNow == 3) {
-            document.querySelector('.task-text').innerHTML = "Задание «верно-неверно»"
-        }
-        else if(numtaskNow == 4) {
-            document.querySelector('.task-text').innerHTML = "Установите соответствия"
-            document.querySelector('.clear-btn-2').style.cssText = "display: block"
-        }
-        else if(numtaskNow == 5) {
-            document.querySelector('.task-text').innerHTML = "Найди правильные ответы"
-        }
-        else if(numtaskNow == 6) {
-            document.querySelector('.task-text').innerHTML = "Обучающимся предложен список предложений различных гостиниц, ресторанов и туристических агентств. Задание сопоставить каждое предложение с соответствующей организацией."
-        }
-        else if(numtaskNow == 7) {
-            document.querySelector('.task-text').innerHTML = "Сопоставьте виды номеров гостиницы с их описанием"
-        }
+        if(numtaskNow == 1) document.querySelector('.task-text').innerHTML = "Дайте ответ в соответствии с действующими «Правилами предоставления гостиничных услуг в РФ» в данной ситуации"
+        else if(numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Звезда» госпоже Натальи  на полученную от нее заявку на бронирование. "
+        else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Белые ночи» г-ну Быкову Василию Викторовичу на полученную от него заявку на бронирование."
+        else if(numtaskNow == 4 || numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Рассчитать размер оплаты за проживание по брони в гостинице"
+
+        else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Биба» г-ну Нехай Руслану Аслановичу на полученную от него заявку на бронирование."
+        else if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Рассчитайте коэффициент двойной загрузки номеров за 10 дней в гостинице."
+        else if(numtaskNow == 8) document.querySelector('.task-text').innerHTML = "О каком типе бронирования идет речь в данной ситуации."
         if(numtaskNow == circles.length) {
-            nextBtn.innerHTML = "Закончить"
+            nextBtn.innerHTML = "Завершить"
         }
         else {
             nextBtn.innerHTML = "Далее"
@@ -107,7 +69,7 @@ backBtn.addEventListener('click',()=> {
 const nextBtn = document.querySelector('.next-btn')
 
 nextBtn.addEventListener('click',()=> {
-    if(nextBtn.innerHTML == "Закончить") {
+    if(nextBtn.innerHTML == "Завершить") {
         document.querySelector(`#task-${numtaskNow}`).classList.remove('practice-part-wrap--active');
         const resultBlock = document.querySelector('.result-block');
         resultBlock.classList.add('result-block--active')
@@ -115,8 +77,8 @@ nextBtn.addEventListener('click',()=> {
         clearInterval(intervalId);
         RaschitatiBalli()
     }
-    console.log(numtaskNow)
-    if(numtaskNow < circles.length) {
+
+    if(numtaskNow < 8) {
         for(i = 0; i < circles.length; i++) {
             circles[i].classList.remove('circle_active');taskWraps[i].classList.remove('practice-part-wrap--active')
         }
@@ -125,70 +87,35 @@ nextBtn.addEventListener('click',()=> {
         document.querySelector(`#task-${numtaskNow}`).classList.add('practice-part-wrap--active');
         numNum.innerHTML = numtaskNow
         circles[numtaskNow - 1].classList.add('circle_active');
-        document.querySelector('.clear-btn').style.cssText = "display: none"
-        if(numtaskNow == 1) {
-            document.querySelector('.task-text').innerHTML = "Установите соответствия"
-            document.querySelector('.clear-btn').style.cssText = "display: block"
-        }
-        else if(numtaskNow == 2) {
-            document.querySelector('.task-text').innerHTML = "Какие качества должны быть у хорошего хозяина / хозяйки?"
-        }
-        else if(numtaskNow == 3) {
-            document.querySelector('.task-text').innerHTML = "Задание «верно-неверно»"
-        }
-        else if(numtaskNow == 4) {
-            document.querySelector('.task-text').innerHTML = "Установите соответствия"
-            document.querySelector('.clear-btn-2').style.cssText = "display: block"
-        }
-        else if(numtaskNow == 5) {
-            document.querySelector('.task-text').innerHTML = "Найди правильные ответы"
-        }
-        else if(numtaskNow == 6) {
-            document.querySelector('.task-text').innerHTML = "Обучающимся предложен список предложений различных гостиниц, ресторанов и туристических агентств. Задание сопоставить каждое предложение с соответствующей организацией."
-        }
-        else if(numtaskNow == 7) {
-            document.querySelector('.task-text').innerHTML = "Сопоставьте виды номеров гостиницы с их описанием"
-        }
+        if(numtaskNow == 1) document.querySelector('.task-text').innerHTML = "Дайте ответ в соответствии с действующими «Правилами предоставления гостиничных услуг в РФ» в данной ситуации"
+        else if(numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Звезда» госпоже Натальи  на полученную от нее заявку на бронирование. "
+        else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Белые ночи» г-ну Быкову Василию Викторовичу на полученную от него заявку на бронирование."
+        else if(numtaskNow == 4 || numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Рассчитать размер оплаты за проживание по брони в гостинице"
+
+        else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Биба» г-ну Нехай Руслану Аслановичу на полученную от него заявку на бронирование."
+        else if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Рассчитайте коэффициент двойной загрузки номеров за 10 дней в гостинице."
+        else if(numtaskNow == 8) document.querySelector('.task-text').innerHTML = "О каком типе бронирования идет речь в данной ситуации."
         if(numtaskNow == circles.length) {
-            nextBtn.innerHTML = "Закончить"
+            nextBtn.innerHTML = "Завершить"
         }
         else {
             nextBtn.innerHTML = "Далее"
         }
-    }
+    }   
 })
 
 
 function RaschitatiBalli() {
     let ball = 0;
-    if(document.querySelector('.true-answer-1').checked) ball++
-    if(document.querySelector('.true-answer-2').checked) ball++
-    if(document.querySelector('.true-answer-3').checked) ball++
-    if(document.querySelector('.true-answer-4').checked) ball++
-    if(document.querySelector('.true-answer-5').checked) ball++
-    if(document.querySelector('.true-answer-6').checked) ball++
-    if(document.querySelector('.true-answer-7').checked) ball++
-    if(document.querySelector('.true-answer-8').checked) ball++
+    if(document.querySelector('.answer-1').value == "нет" || document.querySelector('.answer-1').value == "Нет") ball++
+    if(document.querySelector('.answer-2').value == "письмо-подтверждение" || document.querySelector('.answer-2').value == "Письмо-подтверждение" || document.querySelector('.answer-2').value == "письмо подтверждение" || document.querySelector('.answer-2').value == "Письмо подтверждение") ball++
+    if(document.querySelector('.answer-3').value == "88400" || document.querySelector('.answer-3').value == "88400 руб" || document.querySelector('.answer-3').value == "88400 руб." || document.querySelector('.answer-3').value == "88400 рубля") ball++
+    if(document.querySelector('.answer-4').value == "7200" || document.querySelector('.answer-4').value == "7200 руб" || document.querySelector('.answer-4').value == "7200 руб." || document.querySelector('.answer-4').value == "7200 рубля") ball++
+    if(document.querySelector('.answer-5').value == "письмо-предложение" || document.querySelector('.answer-5').value == "Письмо-предложение" || document.querySelector('.answer-5').value == "письмо предложение" || document.querySelector('.answer-5').value == "Письмо предложение") ball++
+    if(document.querySelector('.answer-6').value == "75%" || document.querySelector('.answer-6').value == "75 %") ball++
+    if(document.querySelector('.answer-7').value == "письмо-отказ" || document.querySelector('.answer-7').value == "Письмо-отказ" || document.querySelector('.answer-7').value == "письмо отказ" || document.querySelector('.answer-7').value == "Письмо отказ") ball++
+    if(document.querySelector('.answer-8').value == "двойное бронирование (овербукинг)" || document.querySelector('.answer-8').value == "двойное бронирование" || document.querySelector('.answer-8').value == "Двойное бронирование" || document.querySelector('.answer-8').value == "овербукинг" || document.querySelector('.answer-8').value == "Овербукинг") ball++
 
-    document.querySelector('.result-text').innerHTML = "Количество баллов: "+ball
-}
-
-function RaschitatiBalli() {
-    let ball = 0;
-    if(iscor1 && isCor2 && isCor3) ball++
-    if(document.querySelector('.true-answer-2-1').checked && 
-        !(document.querySelector('.true-answer-2-2').checked) &&
-        document.querySelector('.true-answer-2-3').checked && 
-        document.querySelector('.true-answer-2-4').checked) ball++
-    if(document.querySelector('.true-answer-3-1').checked && 
-        !(document.querySelector('.true-answer-3-2').checked) &&
-        document.querySelector('.true-answer-3-3').checked) ball++
-    if(isCor12 && isCor22 && isCor32) ball++
-    if( document.querySelector('.true-answer-5-1').checked && 
-    document.querySelector('.true-answer-5-2').checked) ball++
-    if(isCor13 && isCor23 && isCor33) ball++
-    if(document.querySelector('.answer1-hostel').value == 147810 && document.querySelector('.answer2-rest').value == 25 &&
-    document.querySelector('.answer3-tour-agent').value == 369) ball++
 
     document.querySelector('.result-text').innerHTML = "Количество баллов: "+ball
 }

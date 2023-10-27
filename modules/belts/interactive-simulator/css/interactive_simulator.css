@@ -40,6 +40,12 @@
     cursor: pointer;
 }
 
+.back-btn,
+.next-btn {
+    width: 150px;
+    text-align: center;
+}
+
 .virtual-simulator__header-rigth-side {
     display: flex;
     align-items: center;

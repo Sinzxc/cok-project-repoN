@@ -36,7 +36,7 @@ for(i = 0; i < circles.length; i++) {
         document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
         tabTarget.classList.add('circle_active');
         if(numtaskNow == circles.length) {
-            nextBtn.innerHTML = "Закончить"
+            nextBtn.innerHTML = "Завершить"
         }
         else {
             nextBtn.innerHTML = "Далее"
@@ -73,7 +73,7 @@ backBtn.addEventListener('click',()=> {
             document.querySelector('.task-text').innerHTML = "Выбрать модель одежды, где вытачка перенесена в кокетку"
         }
         if(numtaskNow == circles.length) {
-            nextBtn.innerHTML = "Закончить"
+            nextBtn.innerHTML = "Завершить"
         }
         else {
             nextBtn.innerHTML = "Далее"
@@ -84,7 +84,7 @@ backBtn.addEventListener('click',()=> {
 const nextBtn = document.querySelector('.next-btn')
 
 nextBtn.addEventListener('click',()=> {
-    if(nextBtn.innerHTML == "Закончить") {
+    if(nextBtn.innerHTML == "Завершить") {
         document.querySelector(`#task-${numtaskNow}`).classList.remove('practice-part-wrap--active');
         const resultBlock = document.querySelector('.result-block');
         resultBlock.classList.add('result-block--active')
@@ -120,7 +120,7 @@ nextBtn.addEventListener('click',()=> {
             document.querySelector('.task-text').innerHTML = "Выбрать модель одежды, где вытачка перенесена в кокетку"
         }
         if(numtaskNow == circles.length) {
-            nextBtn.innerHTML = "Закончить"
+            nextBtn.innerHTML = "Завершить"
         }
         else {
             nextBtn.innerHTML = "Далее"

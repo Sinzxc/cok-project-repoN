@@ -33,7 +33,7 @@
 }
 
 .task-text-wrap {
-    width: 55%;
+    width: 70%;
     min-height: 87px;
     color: var(--text-color);
     font-family: 'Dela Gothic One';
@@ -302,6 +302,16 @@
 .back-btn,
 .next-btn, .circle {
     cursor: pointer;
+}
+
+.back-btn,
+.next-btn {
+    width: 150px;
+    text-align: center;
+}
+
+.right-side__circles {
+    justify-content: center !important;
 }
 
 @media (max-width: 735px) {
