@@ -21,7 +21,7 @@ for(i = 0; i < circles.length; i++) {
         document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
         tabTarget.classList.add('circle_active');
         if(numtaskNow == circles.length) {
-            nextBtn.innerHTML = "Завешрить"
+            nextBtn.innerHTML = "Завершить"
         }
         else {
             nextBtn.innerHTML = "Далее"

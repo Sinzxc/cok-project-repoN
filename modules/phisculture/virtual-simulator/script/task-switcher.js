@@ -75,7 +75,7 @@ nextBtn.addEventListener('click',()=> {
         RaschitatiBalli()
     }
 
-    if(numtaskNow < 6) {
+    if(numtaskNow < circles.length) {
         for(i = 0; i < circles.length; i++) {
             circles[i].classList.remove('circle_active');taskWraps[i].classList.remove('practice-part-wrap--active')
         }

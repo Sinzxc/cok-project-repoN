@@ -1,4 +1,5 @@
-let canvas2 = document.querySelector('.canvas-2');
+let canvas2 = document.querySelector('#canvas-2')
+console.log(canvas2)
 let ctx2 = canvas2.getContext('2d');
 ctx2.strokeStyle = '#3CBA94';
 ctx2.lineWidth = '4';
@@ -57,10 +58,10 @@ imgs2[0].img.addEventListener('click', ()=> {
     // Убирает активную картинку на всех, кроме той где кликнлуи
     for(let i = 0; i < imgs2.length; i++) {
         imgs2[i].isClick = false;
-        if(!imgs2[i].isReady) imgs2[i].img.src = "img/circle-not-active.png";
+        if(!imgs2[i].isReady) imgs2[i].img.src = "/modules/tourism/interactive-simulator/img/circle-not-active.png";
     }
     imgs2[0].isClick = true;
-    imgs2[0].img.src = "img/circle-active.png";
+    imgs2[0].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
     
 });
 
@@ -68,20 +69,20 @@ imgs2[2].img.addEventListener('click', ()=> {
     // Убирает активную картинку на всех, кроме той где кликнлуи
     for(let i = 0; i < imgs2.length; i++) {
         imgs2[i].isClick = false;
-        if(!imgs2[i].isReady) imgs2[i].img.src = "img/circle-not-active.png";
+        if(!imgs2[i].isReady) imgs2[i].img.src = "/modules/tourism/interactive-simulator/img/circle-not-active.png";
     }
     imgs2[2].isClick = true;
-    imgs2[2].img.src = "img/circle-active.png";
+    imgs2[2].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
 });
 
 imgs2[4].img.addEventListener('click', ()=> {
     // Убирает активную картинку на всех, кроме той где кликнлуи
     for(let i = 0; i < imgs2.length; i++) {
         imgs2[i].isClick = false;
-        if(!imgs2[i].isReady) imgs2[i].img.src = "img/circle-not-active.png";
+        if(!imgs2[i].isReady) imgs2[i].img.src = "/modules/tourism/interactive-simulator/img/circle-not-active.png";
     }
     imgs2[4].isClick = true;
-    imgs2[4].img.src = "img/circle-active.png";
+    imgs2[4].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
 });
 
 img22.img.addEventListener('click', (e) => {
@@ -95,7 +96,7 @@ img22.img.addEventListener('click', (e) => {
         ctx2.moveTo(15,15);
         ctx2.lineTo(285,15);
         ctx2.stroke();
-        imgs2[1].img.src = "img/circle-active.png";
+        imgs2[1].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs2[0].img.classList.add('circle-img_z-ind');
         imgs2[1].img.classList.add('circle-img_z-ind');
     }
@@ -108,7 +109,7 @@ img22.img.addEventListener('click', (e) => {
         ctx2.moveTo(15,141);
         ctx2.lineTo(285,15);
         ctx2.stroke();
-        imgs2[1].img.src = "img/circle-active.png";
+        imgs2[1].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs2[2].img.classList.add('circle-img_z-ind');
         imgs2[1].img.classList.add('circle-img_z-ind');
         isCor12 = true;
@@ -122,7 +123,7 @@ img22.img.addEventListener('click', (e) => {
         ctx2.moveTo(15,265);
         ctx2.lineTo(285,15);
         ctx2.stroke();
-        imgs2[1].img.src = "img/circle-active.png";
+        imgs2[1].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs2[4].img.classList.add('circle-img_z-ind');
         imgs2[1].img.classList.add('circle-img_z-ind');
     } 
@@ -139,7 +140,7 @@ img42.img.addEventListener('click', (e) => {
         ctx2.moveTo(15,15);
         ctx2.lineTo(285,141);
         ctx2.stroke();
-        imgs2[3].img.src = "img/circle-active.png";
+        imgs2[3].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs2[0].img.classList.add('circle-img_z-ind');
         imgs2[3].img.classList.add('circle-img_z-ind');
         isCor22 = true;
@@ -153,7 +154,7 @@ img42.img.addEventListener('click', (e) => {
         ctx2.moveTo(15,141);
         ctx2.lineTo(285,141);
         ctx2.stroke();
-        imgs2[3].img.src = "img/circle-active.png";
+        imgs2[3].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs2[2].img.classList.add('circle-img_z-ind');
         imgs2[3].img.classList.add('circle-img_z-ind');
     }
@@ -166,7 +167,7 @@ img42.img.addEventListener('click', (e) => {
         ctx2.moveTo(15,265);
         ctx2.lineTo(285,141);
         ctx2.stroke();
-        imgs2[3].img.src = "img/circle-active.png";
+        imgs2[3].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs2[3].img.classList.add('circle-img_z-ind');
         imgs2[4].img.classList.add('circle-img_z-ind');
     }
@@ -184,7 +185,7 @@ img62.img.addEventListener('click', (e) => {
         ctx2.moveTo(15,15);
         ctx2.lineTo(285,265);
         ctx2.stroke();
-        imgs2[5].img.src = "img/circle-active.png";
+        imgs2[5].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs2[0].img.classList.add('circle-img_z-ind');
         imgs2[5].img.classList.add('circle-img_z-ind');
     }
@@ -197,7 +198,7 @@ img62.img.addEventListener('click', (e) => {
         ctx2.moveTo(15,141);
         ctx2.lineTo(285,265);
         ctx2.stroke();
-        imgs2[5].img.src = "img/circle-active.png";
+        imgs2[5].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs2[2].img.classList.add('circle-img_z-ind');
         imgs2[5].img.classList.add('circle-img_z-ind');
     }
@@ -210,7 +211,7 @@ img62.img.addEventListener('click', (e) => {
         ctx2.moveTo(15,265);
         ctx2.lineTo(285,265);
         ctx2.stroke();
-        imgs2[5].img.src = "img/circle-active.png";
+        imgs2[5].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         isCor32 = true;
         imgs2[4].img.classList.add('circle-img_z-ind');
         imgs2[5].img.classList.add('circle-img_z-ind');
@@ -230,7 +231,7 @@ document.querySelector('.clear-btn-2').addEventListener('click', ()=> {
     for(let i = 0; i < imgs2.length; i++) {
         imgs2[i].isBusy = false;
         imgs2[i].isReady = false;
-        imgs2[i].img.src = "img/circle-not-active.png";
+        imgs2[i].img.src = "/modules/tourism/interactive-simulator/img/circle-not-active.png";
         imgs2[i].img.classList.remove('circle-img_z-ind');
     }
     iscor12 = false;

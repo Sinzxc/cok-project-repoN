@@ -57,10 +57,10 @@ imgs3[0].img.addEventListener('click', ()=> {
     // Убирает активную картинку на всех, кроме той где кликнлуи
     for(let i = 0; i < imgs3.length; i++) {
         imgs3[i].isClick = false;
-        if(!imgs3[i].isReady) imgs3[i].img.src = "img/circle-not-active.png";
+        if(!imgs3[i].isReady) imgs3[i].img.src = "/modules/tourism/interactive-simulator/img/circle-not-active.png";
     }
     imgs3[0].isClick = true;
-    imgs3[0].img.src = "img/circle-active.png";
+    imgs3[0].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
     
 });
 
@@ -68,20 +68,20 @@ imgs3[2].img.addEventListener('click', ()=> {
     // Убирает активную картинку на всех, кроме той где кликнлуи
     for(let i = 0; i < imgs3.length; i++) {
         imgs3[i].isClick = false;
-        if(!imgs3[i].isReady) imgs3[i].img.src = "img/circle-not-active.png";
+        if(!imgs3[i].isReady) imgs3[i].img.src = "/modules/tourism/interactive-simulator/img/circle-not-active.png";
     }
     imgs3[2].isClick = true;
-    imgs3[2].img.src = "img/circle-active.png";
+    imgs3[2].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
 });
 
 imgs3[4].img.addEventListener('click', ()=> {
     // Убирает активную картинку на всех, кроме той где кликнлуи
     for(let i = 0; i < imgs3.length; i++) {
         imgs3[i].isClick = false;
-        if(!imgs3[i].isReady) imgs3[i].img.src = "img/circle-not-active.png";
+        if(!imgs3[i].isReady) imgs3[i].img.src = "/modules/tourism/interactive-simulator/img/circle-not-active.png";
     }
     imgs3[4].isClick = true;
-    imgs3[4].img.src = "img/circle-active.png";
+    imgs3[4].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
 });
 
 img23.img.addEventListener('click', (e) => {
@@ -95,7 +95,7 @@ img23.img.addEventListener('click', (e) => {
         ctx3.moveTo(15,15);
         ctx3.lineTo(285,15);
         ctx3.stroke();
-        imgs3[1].img.src = "img/circle-active.png"; 
+        imgs3[1].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png"; 
         imgs3[0].img.classList.add('circle-img_z-ind');
         imgs3[1].img.classList.add('circle-img_z-ind');
     }
@@ -108,7 +108,7 @@ img23.img.addEventListener('click', (e) => {
         ctx3.moveTo(15,141);
         ctx3.lineTo(285,15);
         ctx3.stroke();
-        imgs3[1].img.src = "img/circle-active.png";
+        imgs3[1].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs3[2].img.classList.add('circle-img_z-ind');
         imgs3[1].img.classList.add('circle-img_z-ind');
     }
@@ -121,7 +121,7 @@ img23.img.addEventListener('click', (e) => {
         ctx3.moveTo(15,265);
         ctx3.lineTo(285,15);
         ctx3.stroke();
-        imgs3[1].img.src = "img/circle-active.png";
+        imgs3[1].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs3[4].img.classList.add('circle-img_z-ind');
         imgs3[1].img.classList.add('circle-img_z-ind');
         isCor13 = true;
@@ -139,7 +139,7 @@ img43.img.addEventListener('click', (e) => {
         ctx3.moveTo(15,15); 
         ctx3.lineTo(285,141);
         ctx3.stroke();
-        imgs3[3].img.src = "img/circle-active.png";
+        imgs3[3].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs3[0].img.classList.add('circle-img_z-ind');
         imgs3[3].img.classList.add('circle-img_z-ind');
         isCor23 = true;
@@ -153,7 +153,7 @@ img43.img.addEventListener('click', (e) => {
         ctx3.moveTo(15,141);
         ctx3.lineTo(285,141);
         ctx3.stroke();
-        imgs3[3].img.src = "img/circle-active.png";
+        imgs3[3].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs3[2].img.classList.add('circle-img_z-ind');
         imgs3[3].img.classList.add('circle-img_z-ind');
     }
@@ -166,7 +166,7 @@ img43.img.addEventListener('click', (e) => {
         ctx3.moveTo(15,265);
         ctx3.lineTo(285,141);
         ctx3.stroke();
-        imgs3[3].img.src = "img/circle-active.png";
+        imgs3[3].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs3[3].img.classList.add('circle-img_z-ind');
         imgs3[4].img.classList.add('circle-img_z-ind');
     }
@@ -183,7 +183,7 @@ img63.img.addEventListener('click', (e) => {
         ctx3.moveTo(15,15);
         ctx3.lineTo(285,265);
         ctx3.stroke();
-        imgs3[5].img.src = "img/circle-active.png";
+        imgs3[5].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs3[0].img.classList.add('circle-img_z-ind');
         imgs3[5].img.classList.add('circle-img_z-ind');
     }
@@ -196,7 +196,7 @@ img63.img.addEventListener('click', (e) => {
         ctx3.moveTo(15,141);
         ctx3.lineTo(285,265);
         ctx3.stroke();
-        imgs3[5].img.src = "img/circle-active.png";
+        imgs3[5].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs3[2].img.classList.add('circle-img_z-ind');
         imgs3[5].img.classList.add('circle-img_z-ind');
         isCor33 = true;
@@ -210,7 +210,7 @@ img63.img.addEventListener('click', (e) => {
         ctx3.moveTo(15,265);
         ctx3.lineTo(285,265);
         ctx3.stroke();
-        imgs3[5].img.src = "img/circle-active.png";
+        imgs3[5].img.src = "/modules/tourism/interactive-simulator/img/circle-active.png";
         imgs3[4].img.classList.add('circle-img_z-ind');
         imgs3[5].img.classList.add('circle-img_z-ind');
     }
@@ -228,7 +228,7 @@ document.querySelector('.clear-btn-3').addEventListener('click', ()=> {
     for(let i = 0; i < imgs3.length; i++) {
         imgs3[i].isBusy = false;
         imgs3[i].isReady = false;
-        imgs3[i].img.src = "img/circle-not-active.png";
+        imgs3[i].img.src = "/modules/tourism/interactive-simulator/img/circle-not-active.png";
         imgs3[i].img.classList.remove('circle-img_z-ind');
     }
     isCor13 = false;

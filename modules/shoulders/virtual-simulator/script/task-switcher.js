@@ -94,7 +94,7 @@ nextBtn.addEventListener('click',()=> {
 
     }
     console.log(numtaskNow)
-    if(numtaskNow < 8) {
+    if(numtaskNow < circles.length) {
         for(i = 0; i < circles.length; i++) {
             circles[i].classList.remove('circle_active');taskWraps[i].classList.remove('practice-part-wrap--active')
         }
