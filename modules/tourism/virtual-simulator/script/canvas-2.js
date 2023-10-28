@@ -1,5 +1,4 @@
 let canvas2 = document.querySelector('#canvas-2')
-console.log(canvas2)
 let ctx2 = canvas2.getContext('2d');
 ctx2.strokeStyle = '#3CBA94';
 ctx2.lineWidth = '4';
