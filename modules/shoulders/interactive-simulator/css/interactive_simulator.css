@@ -4,11 +4,6 @@
     margin-bottom: 40px;
 }
 
-.virtual-simulator__container {
-}
-
-
-
 .virtual-simulator__title {
     font-family: 'Dela Gothic One';
     font-size: 15px;
@@ -126,13 +121,22 @@
     border-radius: 5px;
 }
 
-.virtual-simulator__header {
+.virtual-simulator__active-part {
     display: flex;
     align-items: center;
     padding: 0 8px 0 23px;
     margin-bottom: 20px;
     justify-content: space-between;
-    gap: 50px;
+    gap: 20px;
+}
+
+.virtual-simulator__result-part {
+    text-align: center;
+    font-size: 28px;
+    padding: 10px 20px 30px;
+    user-select: none;
+    line-height: normal;
+    font-weight: 700;
 }
 
 .task-text-wrap {

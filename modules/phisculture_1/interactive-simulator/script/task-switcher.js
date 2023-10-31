@@ -16,8 +16,10 @@ for(i = 0; i < circles.length; i++) {
         }
         numNum.innerHTML = button[5]
         numtaskNow = button[5] //номер задания
-        if(button[6] !== undefined) numNum.innerHTML += '0';
-
+        if(button[6] !== undefined) {
+            numNum.innerHTML += button[6];
+            numtaskNow = Number(numNum.innerHTML)
+        }
         document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
         tabTarget.classList.add('circle_active');
         if(numtaskNow == circles.length) {
@@ -56,6 +58,8 @@ const nextBtn = document.querySelector('.next-btn')
 nextBtn.addEventListener('click',()=> {
     if(nextBtn.innerHTML == "Завершить") {
         document.querySelector(`#task-${numtaskNow}`).classList.remove('practice-part-wrap--active');
+        document.querySelector('.virtual-simulator__active-part').classList.add('hide');
+        document.querySelector('.virtual-simulator__result-part').classList.remove('hide');
         const resultBlock = document.querySelector('.result-block');
         resultBlock.classList.add('result-block--active')
         document.querySelector('.virtual-simulator__footer').style.cssText = "display: none;"

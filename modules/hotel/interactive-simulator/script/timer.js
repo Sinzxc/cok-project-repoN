@@ -13,6 +13,8 @@ function updateCOuntdown() {
         clearInterval(intervalId);
         document.querySelector(`#task-${numtaskNow}`).classList.remove('practice-part-wrap--active');
         const resultBlock = document.querySelector('.result-block');
+        document.querySelector('.virtual-simulator__active-part').classList.add('hide');
+        document.querySelector('.virtual-simulator__result-part').classList.remove('hide');
         resultBlock.classList.add('result-block--active')
         document.querySelector('.virtual-simulator__footer').style.cssText = "display: none;"
         clearInterval(intervalId);

@@ -41,7 +41,7 @@
     justify-content: center !important;
 }
 
-.virtual-simulator__header {
+.virtual-simulator__active-part {
     display: flex;
     align-items: center;
     padding: 0 8px 0 23px;
@@ -50,6 +50,14 @@
     gap: 20px;
 }
 
+.virtual-simulator__result-part {
+    text-align: center;
+    font-size: 28px;
+    padding: 10px 20px 30px;
+    user-select: none;
+    line-height: normal;
+    font-weight: 700;
+}
 .task-text-wrap {
     width: 55%;
     min-height: 87px;

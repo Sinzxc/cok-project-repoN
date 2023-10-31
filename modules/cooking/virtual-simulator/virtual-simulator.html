@@ -23,13 +23,18 @@
 
                 <div class="virtual-simulator__wrapper ">
                     <div class="virtual-simulator__header">
-                        <div class="task-text-wrap">Задание: <br>
-                            <span class="task-text accent-color-text">Расположите технологические этапы приготовления песочного теста в верной последовательности</span>
+                        <div class="virtual-simulator__active-part">
+                            <div class="task-text-wrap">Задание: <br>
+                                <span class="task-text accent-color-text">Расположите технологические этапы приготовления песочного теста в верной последовательности</span>
+                            </div>
+                            <div class="virtual-simulator__header-rigth-side">
+                                <div class="delimeter"></div>
+                                <div class="number"><span class="num-now">1</span><span class="all-num">8</span></div>
+                                <div class="timer-wrap"><p class="timer">10:00</p></div>
+                            </div>
                         </div>
-                        <div class="virtual-simulator__header-rigth-side">
-                            <div class="delimeter"></div>
-                            <div class="number"><span class="num-now">1</span><span class="all-num">8</span></div>
-                            <div class="timer-wrap"><p class="timer">10:00</p></div>
+                        <div class="virtual-simulator__result-part hide">
+                            <p>Результаты</p>
                         </div>
                     </div>
                     <!-- серая разделительная черта, нужна тк там округление и через бордер его не получить, либо я чего то не знаю -->
@@ -227,8 +232,6 @@
 
     
     <script src="/modules/cooking/virtual-simulator/script/timer.js"></script>
-    <script src="/modules/cooking/virtual-simulator/script/canvas.js"></script>
-    <script src="/modules/cooking/virtual-simulator/script/canvas2.js"></script>
     <script src="/script/end.js"></script>
     <script src="script/script.js"></script>
     <script src="/modules/cooking/virtual-simulator/script/task-switcher.js"></script>

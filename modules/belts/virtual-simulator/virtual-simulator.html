@@ -19,15 +19,20 @@
                 <div class="card-navigation-line"></div>
                 <h4 class="virtual-simulator__title">Виртуальный тренажер</h4>
 
-                <div class="virtual-simulator__wrapper ">
+                <div class="virtual-simulator__wrapper">
                     <div class="virtual-simulator__header">
-                        <div class="task-text-wrap">Задание: <br>
-                            <span class="task-text accent-color-text">Выбрать один правильный ответ:</span>
+                        <div class="virtual-simulator__active-part">
+                            <div class="task-text-wrap">Задание: <br>
+                                <span class="task-text accent-color-text">Выбрать один правильный ответ:</span>
+                            </div>
+                            <div class="virtual-simulator__header-rigth-side">
+                                <div class="delimeter"></div>
+                                <div class="number"><span class="num-now">1</span><span class="all-num">8</span></div>
+                                <div class="timer-wrap"><p class="timer">10:00</p></div>
+                            </div>
                         </div>
-                        <div class="virtual-simulator__header-rigth-side">
-                            <div class="delimeter"></div>
-                            <div class="number"><span class="num-now">1</span><span class="all-num">8</span></div>
-                            <div class="timer-wrap"><p class="timer">10:00</p></div>
+                        <div class="virtual-simulator__result-part hide">
+                            <p>Результаты</p>
                         </div>
                     </div>
                     <!-- серая разделительная черта, нужна тк там округление и через бордер его не получить, либо я чего то не знаю -->
@@ -369,7 +374,6 @@
                     Конструирование, моделирование и технология изготовления изделий легкой промышленности 
                 </p>
             </div>
-            <div class="delimiter footer-delimiter"></div> 
             <div class="footer__right-side">
                 <h4 class="footer-title">
                     МДК.02.01 

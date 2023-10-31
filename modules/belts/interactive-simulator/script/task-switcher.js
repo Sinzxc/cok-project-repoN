@@ -16,8 +16,6 @@ for(i = 0; i < circles.length; i++) {
         }
         numNum.innerHTML = button[5]
         numtaskNow = button[5] //номер задания
-        console.log(button)
-
         document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
         tabTarget.classList.add('circle_active');    
         if(numtaskNow == circles.length) {
@@ -56,13 +54,14 @@ const nextBtn = document.querySelector('.next-btn')
 nextBtn.addEventListener('click',()=> {
     if(nextBtn.innerHTML == "Завершить") {
         document.querySelector(`#task-${numtaskNow}`).classList.remove('practice-part-wrap--active');
+        document.querySelector('.virtual-simulator__active-part').classList.add('hide');
+        document.querySelector('.virtual-simulator__result-part').classList.remove('hide');
         const resultBlock = document.querySelector('.result-block');
         resultBlock.classList.add('result-block--active')
         document.querySelector('.virtual-simulator__footer').style.cssText = "display: none;"
         clearInterval(intervalId);
         RaschitatiBalli()
     }
-    console.log(numtaskNow)
     if(numtaskNow < circles.length) {
         for(i = 0; i < circles.length; i++) {
             circles[i].classList.remove('circle_active');taskWraps[i].classList.remove('practice-part-wrap--active')
