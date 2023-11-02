@@ -340,3 +340,11 @@
     border-radius: 10px;
     position: relative;
 }
+
+.desc-task {
+    font-weight: 700;
+    background-color: #eeeeee;
+    text-align: center;
+    margin-bottom: 25px;
+    user-select: none;
+}

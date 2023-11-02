@@ -16,6 +16,11 @@ for(i = 0; i < circles.length; i++) {
         }
         numNum.innerHTML = button[5]
         numtaskNow = button[5] //номер задания
+        if(button[6] !== undefined) {
+            numNum.innerHTML += button[6];
+            numtaskNow = Number(numNum.innerHTML)
+        }
+
         quationSwitcher()
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
@@ -23,8 +28,6 @@ for(i = 0; i < circles.length; i++) {
         else {
             nextBtn.innerHTML = "Далее"
         }
-
-        console.log(button)
 
         document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
         tabTarget.classList.add('circle_active');      
@@ -43,6 +46,7 @@ backBtn.addEventListener('click',()=> {
         numtaskNow--;
         document.querySelector(`#task-${numtaskNow}`).classList.add('practice-part-wrap--active');
         numNum.innerHTML = numtaskNow
+        
         circles[numtaskNow - 1].classList.add('circle_active');
         document.querySelector('.clear-btn').style.cssText = "display: none"
 
@@ -104,6 +108,9 @@ function RaschitatiBalli() {
     if(document.querySelector('.true-answer-8-2').checked && 
     !(document.querySelector('.not-true-answer-8-1').checked) &&
     document.querySelector('.true-answer-8-4').checked && !(document.querySelector('.not-true-answer-8-3').checked)) ball++
+    if(document.querySelector('.answer-9-1').value == 3 && document.querySelector('.answer-9-2').value == 1 &&
+    document.querySelector('.answer-9-3').value == 2) ball++
+    if(document.querySelector('.answer-10-1').value == 1245 && document.querySelector('.answer-10-2').value == 367) ball++
 
     document.querySelector('.result-text').innerHTML = "Количество баллов: "+ball
 }
@@ -133,5 +140,11 @@ function quationSwitcher() {
     }
     else if(numtaskNow == 8) {
         document.querySelector('.task-text').innerHTML = "Отметьте верные утверждения"
+    }
+    else if(numtaskNow == 9) {
+        document.querySelector('.task-text').innerHTML = "Сопоставьте следующие понятия гостеприимства с их определениями:"
+    }
+    else if(numtaskNow == 10) {
+        document.querySelector('.task-text').innerHTML = "Разгруппируйте следующие действия по категориям «встреча» и «прощание»"
     }
 }
