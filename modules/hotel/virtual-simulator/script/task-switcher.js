@@ -19,14 +19,7 @@ for(i = 0; i < circles.length; i++) {
 
         document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
         tabTarget.classList.add('circle_active');
-        if(numtaskNow == 1) document.querySelector('.task-text').innerHTML = "Дайте ответ в соответствии с действующими «Правилами предоставления гостиничных услуг в РФ» в данной ситуации"
-        else if(numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Звезда» госпоже Натальи  на полученную от нее заявку на бронирование. "
-        else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Белые ночи» г-ну Быкову Василию Викторовичу на полученную от него заявку на бронирование."
-        else if(numtaskNow == 4 || numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Рассчитать размер оплаты за проживание по брони в гостинице"
-
-        else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Биба» г-ну Нехай Руслану Аслановичу на полученную от него заявку на бронирование."
-        else if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Рассчитайте коэффициент двойной загрузки номеров за 10 дней в гостинице."
-        else if(numtaskNow == 8) document.querySelector('.task-text').innerHTML = "О каком типе бронирования идет речь в данной ситуации."
+        quationSwitcher()
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
@@ -49,14 +42,7 @@ backBtn.addEventListener('click',()=> {
         document.querySelector(`#task-${numtaskNow}`).classList.add('practice-part-wrap--active');
         numNum.innerHTML = numtaskNow
         circles[numtaskNow - 1].classList.add('circle_active');
-        if(numtaskNow == 1) document.querySelector('.task-text').innerHTML = "Дайте ответ в соответствии с действующими «Правилами предоставления гостиничных услуг в РФ» в данной ситуации"
-        else if(numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Звезда» госпоже Натальи  на полученную от нее заявку на бронирование. "
-        else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Белые ночи» г-ну Быкову Василию Викторовичу на полученную от него заявку на бронирование."
-        else if(numtaskNow == 4 || numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Рассчитать размер оплаты за проживание по брони в гостинице"
-
-        else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Биба» г-ну Нехай Руслану Аслановичу на полученную от него заявку на бронирование."
-        else if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Рассчитайте коэффициент двойной загрузки номеров за 10 дней в гостинице."
-        else if(numtaskNow == 8) document.querySelector('.task-text').innerHTML = "О каком типе бронирования идет речь в данной ситуации."
+        quationSwitcher()
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
@@ -89,14 +75,7 @@ nextBtn.addEventListener('click',()=> {
         document.querySelector(`#task-${numtaskNow}`).classList.add('practice-part-wrap--active');
         numNum.innerHTML = numtaskNow
         circles[numtaskNow - 1].classList.add('circle_active');
-        if(numtaskNow == 1) document.querySelector('.task-text').innerHTML = "Дайте ответ в соответствии с действующими «Правилами предоставления гостиничных услуг в РФ» в данной ситуации"
-        else if(numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Звезда» госпоже Натальи  на полученную от нее заявку на бронирование. "
-        else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Белые ночи» г-ну Быкову Василию Викторовичу на полученную от него заявку на бронирование."
-        else if(numtaskNow == 4 || numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Рассчитать размер оплаты за проживание по брони в гостинице"
-
-        else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Биба» г-ну Нехай Руслану Аслановичу на полученную от него заявку на бронирование."
-        else if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Рассчитайте коэффициент двойной загрузки номеров за 10 дней в гостинице."
-        else if(numtaskNow == 8) document.querySelector('.task-text').innerHTML = "О каком типе бронирования идет речь в данной ситуации."
+        quationSwitcher()
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
@@ -120,4 +99,14 @@ function RaschitatiBalli() {
 
 
     document.querySelector('.result-text').innerHTML = "Количество баллов: "+ball
+}
+
+function quationSwitcher() {
+    if(numtaskNow == 1) document.querySelector('.task-text').innerHTML = "Дайте ответ в соответствии с действующими «Правилами предоставления гостиничных услуг в РФ» в данной ситуации"
+    else if(numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Звезда» госпоже Натальи  на полученную от нее заявку на бронирование. "
+    else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Белые ночи» г-ну Быкову Василию Викторовичу на полученную от него заявку на бронирование."
+    else if(numtaskNow == 4 || numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Рассчитать размер оплаты за проживание по брони в гостинице"
+    else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Определите по содержанию какой ответ и в какой форме дал менеджер по бронированию отеля «Биба» г-ну Нехай Руслану Аслановичу на полученную от него заявку на бронирование."
+    else if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Рассчитайте коэффициент двойной загрузки номеров за 10 дней в гостинице."
+    else if(numtaskNow == 8) document.querySelector('.task-text').innerHTML = "О каком типе бронирования идет речь в данной ситуации."
 }

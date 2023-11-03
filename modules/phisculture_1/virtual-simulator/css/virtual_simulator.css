@@ -543,3 +543,21 @@ form {
     border-radius: 10px;
     position: relative;
 }
+
+.answer-form {
+    margin-top: 150px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.answer-input {
+    width: 80px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.answer-input-ac {
+    font-size: 16px;
+    width: 250px;
+}

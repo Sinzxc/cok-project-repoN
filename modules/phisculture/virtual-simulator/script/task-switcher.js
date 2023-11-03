@@ -20,12 +20,6 @@ for(i = 0; i < circles.length; i++) {
         document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
         tabTarget.classList.add('circle_active');
 
-        if(numtaskNow == 1) document.querySelector('.task-text').innerHTML = "Задание в виде сопоставления"
-        else if(numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Верно – неверно"
-        else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Сопоставьте   группы  методов  с  их разновидностями"
-        else if(numtaskNow == 4) document.querySelector('.task-text').innerHTML = "Сопоставьте   группы средств   с  их разновидностями"
-        else if(numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Сопоставьте методы обучения двигательным действиям, методы частично –регламентированного упражнения с их недостатками и сущностью"
-        else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Сопоставьте  методы физического воспитания с их классификациями"
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
@@ -48,12 +42,7 @@ backBtn.addEventListener('click',()=> {
         document.querySelector(`#task-${numtaskNow}`).classList.add('practice-part-wrap--active');
         numNum.innerHTML = numtaskNow
         circles[numtaskNow - 1].classList.add('circle_active');
-        if(numtaskNow == 1) document.querySelector('.task-text').innerHTML = "Задание в виде сопоставления"
-        else if(numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Верно – неверно"
-        else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Сопоставьте   группы  методов  с  их разновидностями"
-        else if(numtaskNow == 4) document.querySelector('.task-text').innerHTML = "Сопоставьте   группы средств   с  их разновидностями"
-        else if(numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Сопоставьте методы обучения двигательным действиям, методы частично –регламентированного упражнения с их недостатками и сущностью"
-        else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Сопоставьте  методы физического воспитания с их классификациями"
+        
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
@@ -86,12 +75,6 @@ nextBtn.addEventListener('click',()=> {
         document.querySelector(`#task-${numtaskNow}`).classList.add('practice-part-wrap--active');
         numNum.innerHTML = numtaskNow
         circles[numtaskNow - 1].classList.add('circle_active');
-        if(numtaskNow == 1) document.querySelector('.task-text').innerHTML = "Задание в виде сопоставления"
-        else if(numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Верно – неверно"
-        else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Сопоставьте   группы  методов  с  их разновидностями"
-        else if(numtaskNow == 4) document.querySelector('.task-text').innerHTML = "Сопоставьте   группы средств   с  их разновидностями"
-        else if(numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Сопоставьте методы обучения двигательным действиям, методы частично –регламентированного упражнения с их недостатками и сущностью"
-        else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Сопоставьте  методы физического воспитания с их классификациями"
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
