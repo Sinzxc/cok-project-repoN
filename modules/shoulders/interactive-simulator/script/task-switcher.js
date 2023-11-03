@@ -106,8 +106,6 @@ function RaschitatiBalli() {
     document.querySelector('.true-answer-11-2').checked) ball++
     if(document.querySelector('.answer-12').value == "1324" || document.querySelector('.answer-12').value == "1 3 2 4") ball++
     
-    
-    
     document.querySelector('.result-text').innerHTML = "Количество баллов: "+ball
 }
 

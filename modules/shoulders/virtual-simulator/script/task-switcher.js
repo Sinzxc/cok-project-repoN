@@ -31,7 +31,6 @@ for(i = 0; i < circles.length; i++) {
         else if(numtaskNow == 8) {
             document.querySelector('.task-text').innerHTML = "Выбрать модель одежды, где вытачка перенесена в кокетку"
         }
-        console.log(button)
 
         document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
         tabTarget.classList.add('circle_active');
@@ -47,7 +46,6 @@ for(i = 0; i < circles.length; i++) {
 const backBtn = document.querySelector('.back-btn')
 
 backBtn.addEventListener('click',()=> {
-    console.log(numtaskNow)
     if(numtaskNow > 1) {
         for(i = 0; i < circles.length; i++) {
             circles[i].classList.remove('circle_active');taskWraps[i].classList.remove('practice-part-wrap--active')
@@ -95,7 +93,6 @@ nextBtn.addEventListener('click',()=> {
         RaschitatiBalli()
 
     }
-    console.log(numtaskNow)
     if(numtaskNow < circles.length) {
         for(i = 0; i < circles.length; i++) {
             circles[i].classList.remove('circle_active');taskWraps[i].classList.remove('practice-part-wrap--active')

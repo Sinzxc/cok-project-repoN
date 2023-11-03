@@ -171,8 +171,6 @@ function RelaceDown(num) {
             temp = blocks[num];
             blocks[num] = blocks[num + 1];
             blocks[num + 1] = temp; 
-
-            
         }
         else if(blocks[num].order === 4) {
             let temp = numbers[num];
@@ -194,7 +192,6 @@ function RelaceDown(num) {
             blocks[num + 1].btnDown.style.display = "none";
             blocks[num].btnDown.style.display = "block";
         }
-        console.log(blocks)
     }
 }
 

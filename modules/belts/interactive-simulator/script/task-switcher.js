@@ -35,7 +35,6 @@ for(i = 0; i < circles.length; i++) {
 const backBtn = document.querySelector('.back-btn')
 
 backBtn.addEventListener('click',()=> {
-    console.log(numtaskNow)
     if(numtaskNow > 1) {
         for(i = 0; i < circles.length; i++) {
             circles[i].classList.remove('circle_active');taskWraps[i].classList.remove('practice-part-wrap--active')
