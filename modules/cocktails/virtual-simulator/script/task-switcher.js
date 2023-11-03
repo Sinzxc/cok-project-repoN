@@ -16,6 +16,10 @@ for(i = 0; i < circles.length; i++) {
         }
         numNum.innerHTML = button[5]
         numtaskNow = button[5] //номер задания
+        if(button[6] !== undefined) {
+            numNum.innerHTML += button[6];
+            numtaskNow = Number(numNum.innerHTML)
+        }
 
         document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
         tabTarget.classList.add('circle_active');
@@ -64,7 +68,7 @@ nextBtn.addEventListener('click',()=> {
         RaschitatiBalli()
     }
 
-    if(numtaskNow < 8) {
+    if(numtaskNow < circles.length) {
         for(i = 0; i < circles.length; i++) {
             circles[i].classList.remove('circle_active');taskWraps[i].classList.remove('practice-part-wrap--active')
         }
@@ -93,6 +97,8 @@ function RaschitatiBalli() {
     if(document.querySelector('.true-answer-6').checked) ball++
     if(document.querySelector('.true-answer-7').checked) ball++
     if(document.querySelector('.true-answer-8').checked) ball++
+    if(document.querySelector('.true-answer-9').checked) ball++
+    if(document.querySelector('.true-answer-10').checked) ball++
 
     document.querySelector('.result-text').innerHTML = "Количество баллов: "+ball
 }

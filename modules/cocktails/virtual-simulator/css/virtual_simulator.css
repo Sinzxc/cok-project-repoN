@@ -75,12 +75,12 @@
 }
 
 .number {
-    width: 90px;
+    width: 100px;
     margin-right: 30px;
     border: 2px solid var(--border-color);
     border-radius: 20px;
     display: flex;
-    padding: 0 16px;
+    padding: 0 12px;
     justify-content: space-between;
     position: relative;
 }
