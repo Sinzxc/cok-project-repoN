@@ -16,6 +16,11 @@ for(i = 0; i < circles.length; i++) {
         }
         numNum.innerHTML = button[5]
         numtaskNow = button[5] //номер задания
+        if(button[6] !== undefined) {
+            numNum.innerHTML += button[6];
+            numtaskNow = Number(numNum.innerHTML)
+        }
+        quationSwitcher()
         document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
         tabTarget.classList.add('circle_active');    
         if(numtaskNow == circles.length) {
@@ -35,11 +40,11 @@ backBtn.addEventListener('click',()=> {
         for(i = 0; i < circles.length; i++) {
             circles[i].classList.remove('circle_active');taskWraps[i].classList.remove('practice-part-wrap--active')
         }
-
         numtaskNow--;
         document.querySelector(`#task-${numtaskNow}`).classList.add('practice-part-wrap--active');
         numNum.innerHTML = numtaskNow
         circles[numtaskNow - 1].classList.add('circle_active');
+        quationSwitcher()
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
@@ -71,6 +76,8 @@ nextBtn.addEventListener('click',()=> {
         document.querySelector(`#task-${numtaskNow}`).classList.add('practice-part-wrap--active');
         numNum.innerHTML = numtaskNow
         circles[numtaskNow - 1].classList.add('circle_active');
+
+        quationSwitcher()
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
@@ -90,6 +97,26 @@ function RaschitatiBalli() {
     if(document.querySelector('.true-answer-6').checked) ball++
     if(document.querySelector('.true-answer-7').checked) ball++
     if(document.querySelector('.true-answer-8').checked) ball++
+    if(document.querySelector('.answer-9').value == "Моделированием" || document.querySelector('.answer-9').value == "моделированием" || document.querySelector('.answer-9').value == "моделирование" || document.querySelector('.answer-9').value == "Моделирование") ball++
+    if(document.querySelector('.answer-10').value == "Вытачка" || document.querySelector('.answer-10').value == "вытачка") ball++
+    if(document.querySelector('.answer-11').value == "4231") ball++
+    if(document.querySelector('.answer-12').value == "21354") ball++
+
 
     document.querySelector('.result-text').innerHTML = "Количество баллов: "+ball
+}
+
+function quationSwitcher() {
+    if(numtaskNow == 1 || numtaskNow == 2 || numtaskNow == 3 || numtaskNow == 4 || numtaskNow == 5 || numtaskNow == 6 || numtaskNow == 7 || numtaskNow == 8) {
+        document.querySelector('.task-text').innerHTML = "Выбрать один правильный ответ:"
+    }
+    else if(numtaskNow == 9 || numtaskNow == 10) {
+        document.querySelector('.task-text').innerHTML = "Продолжить фразу:"
+    }
+    else if(numtaskNow == 11) {
+        document.querySelector('.task-text').innerHTML = "Установить последовательность основных этапов конструктивного моделирования представленной юбки:"
+    }
+    else if(numtaskNow == 12) {
+        document.querySelector('.task-text').innerHTML = "Установить последовательность основных этапов конструктивного моделирования передней половинки представленных брюк:"
+    }
 }
