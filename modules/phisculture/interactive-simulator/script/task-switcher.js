@@ -21,7 +21,8 @@ for(i = 0; i < circles.length; i++) {
             numtaskNow = Number(numNum.innerHTML)
         }
         document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
-        tabTarget.classList.add('circle_active');    
+        tabTarget.classList.add('circle_active');  
+        quationSwitcher()  
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
@@ -42,7 +43,7 @@ backBtn.addEventListener('click',()=> {
         document.querySelector(`#task-${numtaskNow}`).classList.add('practice-part-wrap--active');
         numNum.innerHTML = numtaskNow
         circles[numtaskNow - 1].classList.add('circle_active');
-
+        quationSwitcher()
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
@@ -74,7 +75,7 @@ nextBtn.addEventListener('click',()=> {
         document.querySelector(`#task-${numtaskNow}`).classList.add('practice-part-wrap--active');
         numNum.innerHTML = numtaskNow
         circles[numtaskNow - 1].classList.add('circle_active');
-
+        quationSwitcher()
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
@@ -114,10 +115,13 @@ function RaschitatiBalli() {
     if(document.querySelector('.true-answer-9-2').checked && !(document.querySelector('.not-true-answer-9-1').checked) &&
     !(document.querySelector('.not-true-answer-9-3').checked) && !(document.querySelector('.not-true-answer-9-5').checked) &&
     document.querySelector('.true-answer-9-4').checked) ball++
-    if(document.querySelector('.true-answer-10-1').checked && !(document.querySelector('.not-true-answer-10-2').checked) &&
-    !(document.querySelector('.not-true-answer-10-4').checked) && !(document.querySelector('.not-true-answer-10-3').checked) &&
-    document.querySelector('.true-answer-10-5').checked) ball++
+    if(document.querySelector('.answer-10').checked) ball++
 
 
     document.querySelector('.result-text').innerHTML = "Количество баллов: "+ball
+}
+
+function quationSwitcher() {
+    if(numtaskNow == 10) document.querySelector('.task-text').innerHTML = "Выбрать один правильный ответ:"
+    else document.querySelector('.task-text').innerHTML = "Выбрать несколько правильных ответов:"
 }
