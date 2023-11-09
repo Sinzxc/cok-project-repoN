@@ -16,16 +16,14 @@ for(i = 0; i < circles.length; i++) {
         }
         numNum.innerHTML = button[5]
         numtaskNow = button[5] //номер задания
+        if(button[6] !== undefined) {
+            numNum.innerHTML += button[6];
+            numtaskNow = Number(numNum.innerHTML)
+        }
 
         document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
         tabTarget.classList.add('circle_active');     
-        if(numtaskNow == 1 || numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Выберите правильный ответ:"
-        else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Восстановите правильный порядок обслуживания гостей в отел"
-        else if(numtaskNow == 4) document.querySelector('.task-text').innerHTML = "Отметьте верные утверждения"
-        else if(numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Выберите правильные ответы"
-        else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Сопоставьте обязанности сотрудников СПиР с их описанием"
-        else if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Реорганизуйте последовательность этапов процесса обслуживания гостей в отеле"
-        else if(numtaskNow == 8) document.querySelector('.task-text').innerHTML = "Из перечисленных функций выделите функции службы бронирования"
+        quationSwitcher()
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
@@ -47,13 +45,7 @@ backBtn.addEventListener('click',()=> {
         document.querySelector(`#task-${numtaskNow}`).classList.add('practice-part-wrap--active');
         numNum.innerHTML = numtaskNow
         circles[numtaskNow - 1].classList.add('circle_active');
-        if(numtaskNow == 1 || numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Выберите правильный ответ:"
-        else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Восстановите правильный порядок обслуживания гостей в отел"
-        else if(numtaskNow == 4) document.querySelector('.task-text').innerHTML = "Отметьте верные утверждения"
-        else if(numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Выберите правильные ответы"
-        else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Отметьте верные утверждения"
-        else if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Сопоставьте обязанности сотрудников СПиР с их описанием"
-        else if(numtaskNow == 8) document.querySelector('.task-text').innerHTML = "Реорганизуйте последовательность этапов процесса обслуживания гостей в отеле"
+        quationSwitcher()
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
@@ -85,13 +77,7 @@ nextBtn.addEventListener('click',()=> {
         document.querySelector(`#task-${numtaskNow}`).classList.add('practice-part-wrap--active');
         numNum.innerHTML = numtaskNow
         circles[numtaskNow - 1].classList.add('circle_active');
-        if(numtaskNow == 1 || numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Выберите правильный ответ:"
-        else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Восстановите правильный порядок обслуживания гостей в отел"
-        else if(numtaskNow == 4) document.querySelector('.task-text').innerHTML = "Отметьте верные утверждения"
-        else if(numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Выберите правильные ответы"
-        else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Отметьте верные утверждения"
-        else if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Сопоставьте обязанности сотрудников СПиР с их описанием"
-        else if(numtaskNow == 8) document.querySelector('.task-text').innerHTML = "Реорганизуйте последовательность этапов процесса обслуживания гостей в отеле"
+        quationSwitcher()
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
@@ -113,6 +99,21 @@ function RaschitatiBalli() {
     document.querySelector('.answer-6-3').value == 2 && document.querySelector('.answer-6-4').value == 1 && document.querySelector('.answer-6-5').value == 3) ball++
     if(document.querySelector('.answer-7').value == "бгвдае" || document.querySelector('.answer-7').value == "БГВДАЕ") ball++
     if(!(document.querySelector('.not-true-answer-8-2').checked) && !(document.querySelector('.not-true-answer-8-5').checked) &&!(document.querySelector('.not-true-answer-8-7').checked) && document.querySelector('.true-answer-8-1').checked && document.querySelector('.true-answer-8-3').checked && document.querySelector('.true-answer-8-4').checked &&document.querySelector('.true-answer-8-6').checked) ball++
+    if(!(document.querySelector('.not-true-answer-9-2').checked) && !(document.querySelector('.not-true-answer-9-4').checked) && document.querySelector('.true-answer-8-1').checked && document.querySelector('.true-answer-8-3').checked && document.querySelector('.true-answer-8-5').checked) ball++
+    if(document.querySelector('.answer-10').value == "вбдаегж" || document.querySelector('.answer-10').value == "ВБДАЕГЖ") ball++
+    if(!(document.querySelector('.not-true-answer-11-1').checked) && !(document.querySelector('.not-true-answer-11-2').checked) && document.querySelector('.true-answer-11-3').checked && document.querySelector('.true-answer-11-5').checked && !(document.querySelector('.not-true-answer-11-4').checked)) ball++
 
     document.querySelector('.result-text').innerHTML = "Количество баллов: "+ball
+}
+
+function quationSwitcher() {
+    if(numtaskNow == 1 || numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Выберите правильный ответ:"
+    else if(numtaskNow == 3) document.querySelector('.task-text').innerHTML = "Восстановите правильный порядок обслуживания гостей в отел:"
+    else if(numtaskNow == 4) document.querySelector('.task-text').innerHTML = "Отметьте верные утверждения:"
+    else if(numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Выберите правильные ответы:"
+    else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Сопоставьте обязанности сотрудников СПиР с их описанием:"
+    else if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Реорганизуйте последовательность этапов процесса обслуживания гостей в отеле:"
+    else if(numtaskNow == 8) document.querySelector('.task-text').innerHTML = "Из перечисленных функций выделите функции службы бронирования:"
+    else if(numtaskNow == 9 || numtaskNow == 11) document.querySelector('.task-text').innerHTML = "Из перечисленных качеств выделите основные, которыми должен обладать менеджер службы бронирования:"
+    else if(numtaskNow == 10) document.querySelector('.task-text').innerHTML = "Реорганизуйте последовательность  бронирования по телефону:"
 }
