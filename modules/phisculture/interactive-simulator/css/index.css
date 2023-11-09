@@ -3,6 +3,6 @@
 @import url('../../css/default.css');
 @import url('../../css/header.css');
 @import url('../../css/topic_section.css');
-@import url('interactive_simulator.css');
 @import url('../../css/footer.css');
+@import url('/modules/phisculture/interactive-simulator/css/interactive_simulator.css');
 @import url('select_multiple_answers.css');

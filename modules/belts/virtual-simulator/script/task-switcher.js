@@ -80,9 +80,6 @@ nextBtn.addEventListener('click',()=> {
             nextBtn.innerHTML = "Далее"
         }
     }
-
-
-   
 })
 
 function RaschitatiBalli() {
