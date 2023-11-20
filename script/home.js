@@ -107,6 +107,19 @@ function home(){
         case '/cocktails-interactive-simulator':
             router.loadRoute('cocktails');
         break;
+
+        case '/milk':
+            router.loadRoute('');
+        break;
+        case '/milk-video-lesson':
+            router.loadRoute('milk');
+        break;
+        case '/milk-virtual-simulator':
+            router.loadRoute('milk');
+        break;
+        case '/milk-interactive-simulator':
+            router.loadRoute('milk');
+        break;
     }
 }
 

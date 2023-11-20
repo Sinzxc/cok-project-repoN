@@ -8,6 +8,10 @@ const routes = [
     getTemplate: (params) => 'modules/tourism/tourism.html'
   },
   {
+    path: '/milk',
+    getTemplate: (params) => 'modules/milk/milk.html'
+  },
+  {
     path: '/clothes-belts',
     getTemplate: (params) => 'modules/belts/belts.html'
   },
@@ -142,5 +146,18 @@ const routes = [
   {
     path: '/cocktails-interactive-simulator',
     getTemplate: (params) => 'modules/cocktails/interactive-simulator/interactive-simulator.html'
+  },
+
+  {
+    path: '/milk-video-lesson',
+    getTemplate: (params) => 'modules/milk/video-lesson/video.html'
+  },
+  {
+    path: '/milk-virtual-simulator',
+    getTemplate: (params) => 'modules/milk/virtual-simulator/virtual-simulator.html'
+  },
+  {
+    path: '/milk-interactive-simulator',
+    getTemplate: (params) => 'modules/milk/interactive-simulator/interactive-simulator.html'
   },
 ];

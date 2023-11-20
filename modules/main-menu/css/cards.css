@@ -45,7 +45,7 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
     transition: 0s all; /* При переходе на темную тему почему то срабатывает transition и только на title, сьросил переход */
 }
 
@@ -57,7 +57,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     padding: 0 10px;
     height: 100px;
 }
