@@ -124,14 +124,14 @@ function quationSwitcher() {
         document.querySelector('.task-text').innerHTML = "Какие качества должны быть у хорошего хозяина / хозяйки?"
     }
     else if(numtaskNow == 3) {
-        document.querySelector('.task-text').innerHTML = "Задание «верно-неверно»"
+        document.querySelector('.task-text').innerHTML = "Выберите верные утверждения"
     }
     else if(numtaskNow == 4) {
         document.querySelector('.task-text').innerHTML = "Установите соответствия"
         document.querySelector('.clear-btn-2').style.cssText = "display: block"
     }
     else if(numtaskNow == 5) {
-        document.querySelector('.task-text').innerHTML = "Найди правильные ответы"
+        document.querySelector('.task-text').innerHTML = "Найдите правильные ответы"
     }
     else if(numtaskNow == 6) {
         document.querySelector('.task-text').innerHTML = "Обучающимся предложен список предложений различных гостиниц, ресторанов и туристических агентств. Задание сопоставить каждое предложение с соответствующей организацией."
