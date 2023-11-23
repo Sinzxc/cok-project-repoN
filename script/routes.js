@@ -12,6 +12,10 @@ const routes = [
     getTemplate: (params) => 'modules/milk/milk.html'
   },
   {
+    path: '/meat',
+    getTemplate: (params) => 'modules/meat/meat.html'
+  },
+  {
     path: '/clothes-belts',
     getTemplate: (params) => 'modules/belts/belts.html'
   },
@@ -159,5 +163,18 @@ const routes = [
   {
     path: '/milk-interactive-simulator',
     getTemplate: (params) => 'modules/milk/interactive-simulator/interactive-simulator.html'
+  },
+
+  {
+    path: '/meat-video-lesson',
+    getTemplate: (params) => 'modules/meat/video-lesson/video.html'
+  },
+  {
+    path: '/meat-virtual-simulator',
+    getTemplate: (params) => 'modules/meat/virtual-simulator/virtual-simulator.html'
+  },
+  {
+    path: '/meat-interactive-simulator',
+    getTemplate: (params) => 'modules/meat/interactive-simulator/interactive-simulator.html'
   },
 ];

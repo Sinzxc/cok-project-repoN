@@ -120,6 +120,19 @@ function home(){
         case '/milk-interactive-simulator':
             router.loadRoute('milk');
         break;
+
+        case '/meat':
+            router.loadRoute('');
+        break;
+        case '/meat-video-lesson':
+            router.loadRoute('meat');
+        break;
+        case '/meat-virtual-simulator':
+            router.loadRoute('meat');
+        break;
+        case '/meat-interactive-simulator':
+            router.loadRoute('meat');
+        break;
     }
 }
 

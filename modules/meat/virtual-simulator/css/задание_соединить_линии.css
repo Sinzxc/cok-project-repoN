@@ -1,0 +1,91 @@
+.canvas-wrapper {
+    position: relative;
+}
+
+.canvas-container {
+    height: 280px;
+}
+
+.circle-img {
+    height: 30px;
+    width: 30px;    
+}
+
+.circle-img_z-ind {
+    z-index: -1;
+}
+
+.img1 {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.img2 {
+    top: 0px;
+    right: 0;
+    position: absolute;
+}
+
+.img3 {
+    top: 126px;
+    left: 0px;
+    position: absolute;
+}
+
+.img4 {
+    
+    position: absolute;
+    top: 126px;
+    right: 0;
+}
+
+.img5 {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.img6 {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.connect-task__wrapper {
+    height: 280px;
+    
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+}
+.connet__quation-block {
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid var(--accent-color);
+}
+
+.connect-task__answer-wrapper {
+    font-weight: 700;
+    height: 300px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.connect__answer-block {
+    width: 220px;
+    padding: 10px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+/* Для картинок */
+.connect-task__wrapper img {
+    height: 90px;
+}

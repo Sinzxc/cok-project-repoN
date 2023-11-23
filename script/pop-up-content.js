@@ -73,6 +73,13 @@ function read() {
             file4 = 'script/markdown/recomended/milk/2.md';
             file5 = 'script/markdown/recomended/milk/3.md';
             break;
+        case '/meat':
+            file1 = 'script/markdown/aboutinfo/meat-info.md';
+            file2 = 'script/markdown/keywords/meat-key.md';
+            file3 = 'script/markdown/recomended/meat/1.md';
+            file4 = 'script/markdown/recomended/meat/2.md';
+            file5 = 'script/markdown/recomended/meat/3.md';
+            break;
         default:
             file1 = 'script/markdown/aboutinfo/tourism-info.md';
             file2 = 'script/markdown/keywords/tourism-key.md';
