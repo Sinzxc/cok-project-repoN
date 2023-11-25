@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <link rel="stylesheet" href="/modules/tourism/virtual-simulator/css/index.css">
+    <link rel="stylesheet" href="/modules/milk/virtual-simulator/css/index.css">
 
     <main>
         <section class="topic-section">
@@ -24,11 +24,11 @@
                     <div class="virtual-simulator__header">
                         <div class="virtual-simulator__active-part">
                             <div class="task-text-wrap">Задание: <br>
-                                <span class="task-text accent-color-text">Установите соответствия</span>
+                                <span class="task-text accent-color-text">Необходимо из предложенных вариантов выбрать два и более правильных ответов</span>
                             </div>
                             <div class="virtual-simulator__header-rigth-side">
                                 <div class="delimeter"></div>
-                                <div class="number"><span class="num-now">1</span><span class="all-num">8</span></div>
+                                <div class="number"><span class="num-now">1</span><span class="all-num">10</span></div>
                                 <div class="timer-wrap"><p class="timer" id="timer">10:00</p></div>
                             </div>
                         </div>
@@ -40,40 +40,57 @@
                     <div class="horizontal-delimeter"></div>
 
                     <div class="practice-part-wrap practice-part-wrap--active" id="task-1">
-                        <div class="connect-task__wrapper">
-                            <img src="/modules/tourism/virtual-simulator/img/картинки_для_задания_соединить/connect-img-1.jpg" alt="">
-                            <img src="/modules/tourism/virtual-simulator/img/картинки_для_задания_соединить/connect-img-2.jpg" alt="">
-                            <img src="/modules/tourism/virtual-simulator/img/картинки_для_задания_соединить/connect-img-3.jpg" alt="">
-                        </div>
-
-                        <div class="canvas-wrapper">
-                            <div class="canvas-container">
-                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
-                            </div>
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img1">
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img2">
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img3">
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img4">
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img5">
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img6">
-                        </div>
-
-                        <div class="connect-task__answer-wrapper">
-                            <div class="connect__answer-block">Гостиница</div>
-                            <div class="connect__answer-block">Ресторан</div>
-                            <div class="connect__answer-block">Туристическое агентство</div>
-                        </div>
-                    </div>
-
-                    <div class="practice-part-wrap" id="task-2">
+                        <h4 class="quation-text">Что из перечисленного является  ингредиентом для приготовления адыгейского сыра?</h4>
                         <form class="variants-checkbox">
                             <div class="variant-checkbox">
                                 <div class="checkbox-wrap">
-                                    <input type="checkbox" class="true-answer-2-1">
+                                    <input type="checkbox" class="true-answer-1-1">
                                     <i class="check"></i>
                                 </div>
                                 <div class="text-otvet">
-                                    <p>Вежливым и внимательным к гостям</p>
+                                    <p>Молоко</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="not-true-answer-1-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Масло</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox"class="true-answer-1-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Соль</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-1-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Сыворотка</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-2">
+                        <h4 class="quation-text">Какие  процессы  являются ключевыми  для производства адыгейского сыра?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="not-true-answer-2-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Чедеризация</p>
                                 </div>
                             </div>
                             <div class="variant-checkbox">
@@ -82,7 +99,7 @@
                                     <i class="check"></i>
                                 </div>
                                 <div class="text-otvet">
-                                    <p>Красивым и добрым</p>
+                                    <p>Пастеризация</p>
                                 </div>
                             </div>
                             <div class="variant-checkbox">
@@ -91,7 +108,7 @@
                                     <i class="check"></i>
                                 </div>
                                 <div class="text-otvet">
-                                    <p>Готовым помочь и ответить на вопросы</p>
+                                    <p>Подкисление</p>
                                 </div>
                             </div>
                             <div class="variant-checkbox">
@@ -100,225 +117,337 @@
                                     <i class="check"></i>
                                 </div>
                                 <div class="text-otvet">
-                                    <p>Обеспечивать комфорт и удобство гостей</p>
+                                    <p>Ферментация</p>
                                 </div>
                             </div>
                         </form>
                     </div>
 
                     <div class="practice-part-wrap" id="task-3">
-                        <form action="">
-                            <div class="true-false__task">
+                        <h4 class="quation-text">Какая упаковка наиболее часто используется для реализации адыгейского сыра?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
                                 <div class="checkbox-wrap">
                                     <input type="checkbox" class="true-answer-3-1">
                                     <i class="check"></i>
                                 </div>
-                                <div class="true-false__text-otvet">
-                                    <p>Гостеприимство включает в себя оказание добрых и гостеприимных услуг, заботу о клиентах и создание комфортной атмосферы. Кубок символизирует щедрость, внимание и доброту, которые проявляются при предоставлении услуг гостеприимства</p>
+                                <div class="text-otvet">
+                                    <p>Вакуумная упаковка</p>
                                 </div>
                             </div>
-                            <div class="true-false__task">
+                            <div class="variant-checkbox">
                                 <div class="checkbox-wrap">
-                                    <!-- не верно -->
-                                    <input type="checkbox" class="true-answer-3-2">
+                                    <input type="checkbox" class="not-true-answer-3-2">
                                     <i class="check"></i>
                                 </div>
-                                <div class="true-false__text-otvet">
-                                    <p>Гостеприимство - это более сложное понятие, чем просто «кубок, наполненный добротой». Оно включает в себя также профессионализм, качество услуг, эффективность и другие факторы, помимо доброты</p>
-                             </div>
+                                <div class="text-otvet">
+                                    <p>Стеклянные банки</p>
+                                </div>
                             </div>
-                            <div class="true-false__task">
+                            <div class="variant-checkbox">
                                 <div class="checkbox-wrap">
-                                    <input type="checkbox" class="true-answer-3-3">
+                                    <input type="checkbox"class="true-answer-3-3">
                                     <i class="check"></i>
                                 </div>
-                                <div class="true-false__text-otvet">
-                                    <p>Значение гостеприимства может различаться в разных культурах, странах и организациях. В одних случаях доброта может быть основным аспектом гостеприимства, в то время как в других случаях другие факторы могут быть более важными и определяющим</p>
+                                <div class="text-otvet">
+                                    <p>Картонные коробки</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="not-true-answer-3-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Металлические банки</p>
                                 </div>
                             </div>
                         </form>
                     </div>
 
                     <div class="practice-part-wrap" id="task-4">
-                        <div class="connect-task__wrapper">
-                            <div class="connet__quation-block">Стандартный номер</div>
-                            <div class="connet__quation-block">Делюкс номер</div>
-                            <div class="connet__quation-block">Сьют</div>
-                        </div>
-
-                        <div class="canvas-wrapper">
-                            <div class="canvas-container canvas-container-2">
-                                <canvas id="canvas-2" width="300px" height="280px">ERROR</canvas>
+                        <h4 class="quation-text">Какие процессы используется для приготовления адыгейского сыра?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="not-true-answer-4-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Обессоливание</p>
+                                </div>
                             </div>
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img1 img12">
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img2 img22">
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img3 img32">
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img4 img42">
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img5 img52">
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img6 img62">
-                        </div>
-
-                        <div class="connect-task__answer-wrapper">
-                            <div class="connect__answer-block">Просторный номер с отдельной гостиной и спальней</div>
-                            <div class="connect__answer-block">Уютный номер с базовыми удобствами</div>
-                            <div class="connect__answer-block">Роскошный номер с дополнительными удобствами и сервисом</div>
-                        </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-4-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Прессование</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox"class="true-answer-4-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Заквашивание</p>
+                                </div>
+                            </div>
+                        </form>
                     </div>
 
                     <div class="practice-part-wrap" id="task-5">
-                        <div class="one-varkik-wrap">
-                            <p class="one-varkik__quatain">Какое значение имеет гостеприимство в развитии туризма?</p>
-                            <div class="true-false__task">
+                        <h4 class="quation-text">Какие действия обычно выполняются перед добавлением закваски в молоко для приготовления адыгейского сыра?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
                                 <div class="checkbox-wrap">
                                     <input type="checkbox" class="true-answer-5-1">
                                     <i class="check"></i>
                                 </div>
-                                <div class="true-false__text-otvet">
-                                    <p>Гостеприимство включает в себя оказание добрых и гостеприимных услуг, заботу о клиентах и создание комфортной атмосферы. Кубок символизирует щедрость, внимание и доброту, которые проявляются при предоставлении услуг гостеприимства</p>
+                                <div class="text-otvet">
+                                    <p>Охлаждение молока</p>
                                 </div>
                             </div>
-                            <div class="true-false__task">
+                            <div class="variant-checkbox">
                                 <div class="checkbox-wrap">
-                                    <input type="checkbox" class="true-answer-5-2">
+                                    <input type="checkbox" class="not-true-answer-5-2">
                                     <i class="check"></i>
                                 </div>
-                                <div class="true-false__text-otvet">
-                                    <p>Гостеприимство включает в себя оказание добрых и гостеприимных услуг, заботу о клиентах и создание комфортной атмосферы. Кубок символизирует щедрость, внимание и доброту, которые проявляются при предоставлении услуг гостеприимства</p>
+                                <div class="text-otvet">
+                                    <p>Ферментация молока</p>
                                 </div>
                             </div>
-                        </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox"class="true-answer-5-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Разогрев молока</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-5-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Фильтрация молока</p>
+                                </div>
+                            </div>
+                        </form>
                     </div>
 
                     <div class="practice-part-wrap" id="task-6">
-                        <p class="desc-task">Вводить цифры без пробелов, по возрастанию</p>
-                        <form action="">
-                            <div class="text-block">
-                                1. «Невероятный вид на океан и роскошные номера с собственными балконами»<br>
-                                2. «Аутентичная кухня средиземноморского региона и уютная атмосфера»<br>
-                                3. «Организация незабываемых туров по историческим достопримечательностям со знатоками местной культуры»<br>
-                                4. «Просторные номера с собственными камиными и садами, идеальные для уединенного отдыха»<br>
-                                5. «Инновационные блюда, созданные звездным шеф-поваром, и ресторан с исключительным интерьером»<br>
-                                6. «Активный отдых и приключенческие туры в горной местности или на водных трассах»<br>
-                                7. «Уникальные спа-процедуры и релаксационные массажи в специально оборудованном спа-салоне»<br>
-                                8. «Изысканные номера и первоклассное обслуживание в центре города с богатой историей»<br>
-                                9. «Регулярные экскурсии и мероприятия, чтобы открыть местную культуру и традиции гостям»<br>
-                                10. «Идеальные места для проведения деловых встреч и конференций с просторными комнатами и современными удобствами»<br>
-                            </div>
-                            <div class="answers_wrap">
-                                <div class="answers-titles">
-                                    <p>Гостиница:</p>
-                                    <p>Ресторан:</p>
-                                    <p>Туристическое агентство:</p>
+                        <h4 class="quation-text">Какой этап идет перед упаковкой адыгейского сыра?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-6-1">
+                                    <i class="check"></i>
                                 </div>
-                                <div class="answers">
-                                    <input class="answer1-hostel" type="text">
-                                    <input class="answer2-rest" type="text">
-                                    <input class="answer3-tour-agent" type="text">
+                                <div class="text-otvet">
+                                    <p>Формование</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="not-true-answer-6-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Ферментация</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox"class="not-true-answer-6-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Пастеризация</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-6-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Прессование</p>
                                 </div>
                             </div>
                         </form>
                     </div>
 
                     <div class="practice-part-wrap" id="task-7">
-                        <div class="connect-task__wrapper">
-                            <div class="connet__quation-block">Радушное гостеприимство</div>
-                            <div class="connet__quation-block">Гостеприимство на высшем уровне</div>
-                            <div class="connet__quation-block">Гостеприимство в стиле "комфорт"</div>
-                        </div>
-
-                        <div class="canvas-wrapper">
-                            <div class="canvas-container-3">
-                                <canvas class="canvas-3" width="300px" height="280px">ERROR</canvas>
+                        <h4 class="quation-text">Какое молоко обычно используется для приготовления адыгейского сыра?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-7-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Коровье молоко</p>
+                                </div>
                             </div>
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img1 img13">
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img2 img23">
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img3 img33">
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img4 img43">
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img5 img53">
-                            <img src="/modules/tourism/virtual-simulator/img/circle-not-active.png" alt="" class="circle-img img6 img63">
-                        </div>
-
-                        <div class="connect-task__answer-wrapper">                 
-                            <div class="connect__answer-block">Организация комфортабельных условий для гостей, обеспечение их всем необходимым, включая транспорт, услуги гида и переводчика</div>
-                            <div class="connect__answer-block">Прием гостей в доме, организация праздников и вечеринок, создание приятной атмосферы</div>
-                            <div class="connect__answer-block">Организация роскошных приемов и мероприятий, использование услуг лучших ресторанов и отелей, предоставление эксклюзивных услуг</div>
-                        </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="not-true-answer-7-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Козье молоко</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox"class="not-true-answer-7-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Буйволиное молоко</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-7-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Овечье молоко</p>
+                                </div>
+                            </div>
+                        </form>
                     </div>
 
                     <div class="practice-part-wrap" id="task-8">
-                        <div class="different-menus-task">
-                            <div class="text-block" style="max-width: 700px; margin-top: 0; height: 350px;">
-                                <table style="border: 1px solid grey; margin-bottom: 30px;">
-                                    <caption><b>Меню 1.</b></caption>
-                                    <thead >
-                                        <tr>
-                                            <th>Закуски:</th> <th>Горячее:</th> <th>Десерты:</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Хачапури с сыром</td> <td>Цыпленок табака с соусом ткемали</td> <td>Пахлава с орехами</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Шашлык из баранины</td> <td>Плов с бараниной</td> <td>Компот из сухофруктов</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Рулетики из баклажанов с орехами</td> <td>Рыбный шашлык с овощами на гриле</td> <td>Чурчхела с грецкими орехами</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table style="border: 1px solid grey; margin-bottom: 30px;">
-                                    <caption><b>Меню 2.</b></caption>
-                                    <thead>
-                                        <tr>
-                                            <th>Закуски:</th> <th>Горячее:</th> <th>Десерты:</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Сашими с тунцом и авокадо</td> <td>Утка по-пекински</td> <td>Шоколадный торт с орехами и ягодами</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Креветки в кляре</td> <td>Свинина в кисло-сладком соусе с ананасами</td> <td>Моти с зеленым чаем</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Салат с гребешками и овощами</td> <td>Рис с морепродуктами</td> <td>Зеленый чай с медом и мятой</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table style="border: 1px solid grey;">
-                                    <caption><b>Меню 3.</b></caption>
-                                    <thead>
-                                        <tr>
-                                            <th>Закуски:</th> <th>Горячее:</th> <th>Десерты:</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Суши с лососем</td> <td>Курица в кисло-сладком соусе</td> <td>Мандарины в шоколаде</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Роллы с креветками и огурцом</td> <td>Жареный рис с овощами</td> <td>Фруктовый салат с йогуртом</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Салат из свежих овощей с соевым соусом</td> <td>Говядина </td> <td>Чай с имбирем и медом</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <h4 class="quation-text">Что добавляется в сыворотку при приготовлении адыгейского сыра?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-8-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Соль</p>
+                                </div>
                             </div>
-                            
-                            <form action="" class="different-menus-task__form">
-                                <label for="">Япония
-                                    <input type="text" class="answer-8-1" maxlength="1">
-                                </label>
-                                <label for="">Китай
-                                    <input type="text" class="answer-8-2" maxlength="1">
-                                </label>
-                                <label for="">Кавказ
-                                    <input type="text" class="answer-8-3" maxlength="1">
-                                </label>
-                            </form>
-                        </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="not-true-answer-8-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Сахар</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox"class="true-answer-8-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Закваска</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="not-true-answer-8-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Специи</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-9">
+                        <h4 class="quation-text">Какие травы или специи часто добавляют в адыгейский сыр для придания аромата и вкуса?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-9-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Кинза</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="not-true-answer-9-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Мята</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox"class="not-true-answer-9-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Укроп</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-9-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Паприка</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-10">
+                        <h4 class="quation-text">В каких блюдах и кулинарных изделиях можно использовать адыгейский сыр?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-10-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>В салатах</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="true-answer-10-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>В выпечке</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox"class="true-answer-10-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>В горячих блюдах</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="not-true-answer-10-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>В напитках</p>
+                                </div>
+                            </div>
+                        </form>
                     </div>
 
                     <div class="result-block">
@@ -329,11 +458,6 @@
                     </div>
 
                     <div class="virtual-simulator__footer">
-                        <div class="clear-canvas">
-                            <button class="clear-btn">Очистить ответ</button>
-                            <button class="clear-btn clear-btn-2" style="display: none;">Очистить ответ</button>
-                            <button class="clear-btn clear-btn-3" style="display: none;">Очистить ответ</button>
-                        </div>
                         <div class="right-side">
                             <div class="right-side_btn-wrap">
                                 <button class="back-btn">Назад</button>
@@ -348,6 +472,8 @@
                                 <div class="circle" data-button="task-6"></div>
                                 <div class="circle" data-button="task-7"></div>
                                 <div class="circle" data-button="task-8"></div>
+                                <div class="circle" data-button="task-9"></div>
+                                <div class="circle" data-button="task-10"></div>
                             </div>
                         </div>
                     </div>
@@ -379,10 +505,7 @@
     </footer>
 
     
-    <script src="/modules/tourism/virtual-simulator/script/timer.js"></script>
-    <script src="/modules/tourism/virtual-simulator/script/canvas.js"></script>
-    <script src="/modules/tourism/virtual-simulator/script/canvas-2.js"></script>
-    <script src="/modules/tourism/virtual-simulator/script/canvas-3.js"></script>
+    <script src="/modules/milk/virtual-simulator/script/timer.js"></script>
     <script src="/script/end.js"></script>
     <script src="script/script.js"></script>
-    <script src="/modules/tourism/virtual-simulator/script/task-switcher.js"></script>
+    <script src="/modules/milk/virtual-simulator/script/task-switcher.js"></script>
