@@ -133,6 +133,16 @@ body {
     left: 17%;
 }
 
+.tent-5 {
+    bottom: -48%;
+    left: 20%;
+}
+
+.tent-6 {
+    top: 120%;
+    right: 24%;;
+}
+
 @media (max-width: 1640px) {
     .tent {
         display: none;
@@ -177,4 +187,8 @@ body {
     left: calc(50% - 75px);
     font-size: 14px;
     padding: 10px;
+}
+
+.back-link {
+    cursor: pointer;
 }
