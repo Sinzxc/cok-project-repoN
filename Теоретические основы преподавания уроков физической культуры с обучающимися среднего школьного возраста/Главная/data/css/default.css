@@ -1,0 +1,180 @@
+body {
+    height: 100vh;
+    font-family: 'Montserrat';
+    background-color: var(--background);
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.over-flow-body {
+    overflow: hidden;
+}
+
+:root {
+    --text-color: #1D1D1B;
+    --text-color-2: #484846;
+    --border-color: #1D1D1B;
+    --accent-color: #3CBA94;
+    --background: #fff;
+    --background-video-player:rgb(221, 221, 221);
+}
+
+
+/* Чтобы прятать блоки */
+.hide {
+    display: none !important;
+}
+
+.dark-mode {
+    --text-color: #ffffff !important;
+    --text-color-2: #ffffff !important;
+    --border-color: #ffffff !important;
+    --background: #25282E !important;
+    --background-video-player:#36393d !important;
+}
+
+/* Контейнер */
+.container {
+    max-width: 960px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.list__item {
+    padding: 4px 12px;
+}
+
+.list__item:not(:last-child) {
+    border-right: 1px solid var(--border-color);
+}
+
+/* Разделяющая черта в footer и information */
+.delimiter {
+    width: 3px;
+    height: 32px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+/* Тень при открытие окошек */
+.shadow {
+    display: none;
+}
+
+.shadow-active {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1d1d1b86;
+    position: fixed;
+    z-index: 3;
+}
+
+.home-link {
+    opacity: 0.5;
+    background-color: var(--accent-color);
+    box-sizing: content-box;
+    padding: 8px 15px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 30%;
+    display: block;
+    border: 1px solid var(--border-color);
+    border-radius: 15px 0 0 15px;
+    border-right: none;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.home-link:hover {
+    opacity: 1;
+}
+
+/* Палатки на сайте */
+.tent {
+    height: 227px;
+    width: 228px;
+    background: url('../img/tent.png');
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.tent-1 {
+    top: 40%;
+    left: 15%;
+}
+.tent-2 {
+    bottom: 20%;
+    right: 15%;
+}
+
+.tent-3 {
+    top: 8%;
+    right: 13%;
+}
+
+.tent-4 {
+    bottom: -5%;
+    left: 17%;
+}
+
+@media (max-width: 1640px) {
+    .tent {
+        display: none;
+    }
+}
+
+
+.right-side__circles {
+    margin-top: 9px;    
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+.circle {
+    border: 2px solid var(--border-color);
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+}
+.circle_active {
+    background-color: var(--accent-color);
+}
+
+.question {
+    position: relative;
+}
+
+.question:hover .block-answer {
+    display: block;
+}
+
+.block-answer {
+    font-family: 'Montserrat';
+    display: none;
+    height: auto;
+    width: 150px;
+    background-color: var(--background);
+    position: absolute;
+    top: calc(-160px);
+    border:  2px solid var(--accent-color);
+    border-radius: 20px;
+    left: calc(50% - 75px);
+    font-size: 14px;
+    padding: 10px;
+}

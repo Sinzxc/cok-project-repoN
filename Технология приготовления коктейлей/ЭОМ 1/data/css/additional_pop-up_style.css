@@ -1,0 +1,15 @@
+.pop-up__content {
+    margin-top: 70px;
+    display: flex;
+    margin-left: 20px;
+}
+
+.distance-between-text {
+    margin-bottom: 30px;
+    display: block;
+}
+
+
+.pop-up__title {
+    font-weight: 700;
+}

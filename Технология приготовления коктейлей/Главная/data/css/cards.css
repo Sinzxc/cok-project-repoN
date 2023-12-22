@@ -1,0 +1,170 @@
+.cards {
+    margin-top: 60px;
+    margin-bottom: 65px;
+}
+
+.card-navigation-line {
+    height: 6px;
+    position: absolute;
+    top: -28px;
+    left: calc(50% - 109px);
+    width: 218px;
+    background-color: #D9D9D9;
+    border-radius: 3px;
+}
+
+.cards__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--background);
+    color: var(--text-color);
+    box-sizing: border-box;
+    padding: 25px 7px 10px;
+    max-width: 270px;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px #008164;
+    border-radius: 13px;
+}
+
+.card:hover{
+    transition: 0.2s linear;
+    box-shadow: 0px 2px 10px 1px #008164;
+    transform: scale(1.01);
+}
+
+.card-title {
+    color: var(--text-color-2);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 50px;
+    height: 48px;
+    transition: 0s all; /* При переходе на темную тему почему то срабатывает transition и только на title, сьросил переход */
+}
+
+.card-topic-img__wrap {
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+}
+
+.card__link {
+    transition: 0.75s;
+    cursor: pointer;
+}
+
+.card__link:hover{
+    filter:brightness(120%);
+    transform:scale(1.05);
+}
+
+.theme-text {
+    height: 48px;
+    margin-top: 45px;
+    margin-bottom: 55px;
+    color: var(--accent-color);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.card__nav {
+    margin-bottom: 15px;
+}
+
+.card__nav ul li {
+    padding: 4px 10px;
+}
+
+.card__nav ul li {
+    cursor: pointer;
+}
+
+.card-links-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    padding: 7px 0 0 0;
+    border-top: 4px solid #D9D9D9;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .cards {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .cards__wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .card {
+        color: var(--text-color);
+        box-sizing: border-box;
+        padding: 25px 0 10px;
+        
+        text-align: center;
+        border-radius: 13px;
+    }
+
+    .card {
+        color: var(--text-color);
+        box-sizing: border-box;
+        padding: 20px 0 10px;
+        max-width: 250px;
+    }
+    
+    .card-title {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 35px;
+    }
+
+    .card-topic-img__wrap {
+        height: 55px;
+        width: 55px;
+    }
+    
+    .theme-text {
+        padding: 0 5px;
+        height: 48px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: var(--accent-color);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 425px) {
+    .card {
+        padding: 15px 0 10px;
+    }
+
+    .card-title {
+        font-size: 17px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .theme-text {
+        margin: 30px 0 20px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+}

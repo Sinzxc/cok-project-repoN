@@ -1,0 +1,209 @@
+.videoplayer-section {
+    margin-top: 33px;
+    margin-bottom: 38px;
+}
+
+.videoplayer__wrapper {
+    box-sizing: border-box;
+    padding: 5px 30px 20px;
+    border: 2px solid #3CBA94;
+    border-radius: 30px;
+    position: relative;
+}
+
+.videoplayer__title {
+    font-family: 'Dela Gothic One';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    color: var(--text-color);
+    opacity: 0.5;
+    margin-bottom: 5px;
+}
+
+.videoplayer__wrap {
+    background-color: var(--background-video-player);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+#video-player {
+    border-bottom:1px solid var(--border-color);;
+}
+
+.controls-line {
+    box-sizing: border-box;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#play {
+    cursor: pointer;
+    height: 33px;
+    width: 33px;
+    background: url('../img/video_control_elements/start.svg') no-repeat center;
+    background-size: 32px;
+    border: none;
+    transition: 0.3s;
+}
+
+.pause {
+    background: url('../img/video_control_elements/pause.svg') no-repeat center !important;
+    background-size: 32px !important;
+}
+
+.range-wrap {
+    width: 100%;
+}
+
+#volume {
+    cursor: pointer;
+    width: 30px;
+    height: 26px;
+    background: url('../img/video_control_elements/volume-on.svg') no-repeat center;
+    background-size: 30px;
+    border: none;
+    transition: 0.1s;
+}
+
+.volume-active {
+    background: url('../img/video_control_elements/volume-off.svg') no-repeat center !important;
+    background-size: 30px !important;
+}
+
+.time {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+    text-align: center;
+    width: 90px;
+    font-family: 'Dela Gothic One';
+    color: var(--accent-color);
+    font-size: 10px;
+}
+
+input[type=range]  {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var( --background-video-player);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 8px;
+    border: 1px solid rgba(110, 110, 110, 0.589);
+    background-color: #fff;
+    border-radius: 10px/100%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: rgba(60, 186, 148, 1);
+    border: 1px solid rgba(60, 186, 148, 1);
+    cursor: pointer;
+    width:12px;
+    height: 12px;
+    -webkit-appearance: none;
+    margin-top: -3px;
+    border-radius: 10px/100%;
+}
+
+input[type=range]::-moz-range-track {
+    border-radius: 10px/100%;
+    height: 8px;
+    border: 1px solid rgba(110, 110, 110, 0.589);
+    background-color: #fff;
+}
+input[type=range]::-moz-range-thumb {
+    background: rgba(60, 186, 148, 1);
+    border: 1px solid rgba(60, 186, 148, 1);
+    border-radius: 10px/100%;
+    cursor: pointer;
+}
+
+#full {
+    height:30px;
+    width: 30px;
+    background: url('../img/video_control_elements/fullscreen.svg') no-repeat center;
+    background-size: 28px;
+    border: none;
+    transition: 0.2s;
+}
+
+#full:hover {
+    transform: scale(1.25);
+}
+
+#full:active {
+    transform: scale(1.0);
+}
+
+@media (max-width: 1130px) {
+    .videoplayer-section {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 425px) {
+    .videoplayer__wrapper {
+        padding: 5px 10px 10px;
+    }
+    .videoplayer__title {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .controls-line {
+        padding: 5px 10px;
+        gap: 6px;
+    }
+
+    #play {
+        cursor: pointer;
+        height: 22px;
+        width: 22px;
+        background: url('../img/video_control_elements/start.svg') no-repeat center;
+        background-size: 21px;
+    }
+    
+    .pause {
+        background: url('../img/video_control_elements/pause.svg') no-repeat center !important;
+        background-size: 21px !important;
+    }
+    
+    #volume {
+        cursor: pointer;
+        width: 22px;
+        height: 18px;
+        background: url('../img/video_control_elements/volume-on.svg') no-repeat center;
+        background-size: 22px;
+        border: none;
+        transition: 0.1s;
+    }
+    
+    .time {
+        gap: 2px;
+        font-size: 6px;
+    }
+
+    #full {
+        height:15px;
+        width: 15px;
+        background: url('../img/video_control_elements/fullscreen.svg') no-repeat center;
+        background-size: 14px;
+        border: none;
+        transition: 0.2s;
+    }
+
+    .videoplayer-section {
+        margin-bottom: 42px;
+    }
+}

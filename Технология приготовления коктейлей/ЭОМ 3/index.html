@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Иконки для разных платформ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../Главная/data/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Главная/data/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Главная/data/favicon/favicon-16x16.png">
+    <!--<link rel="manifest" href="site.webmanifest">-->
+    <link rel="mask-icon" href=".../Главная/data/favicon/safari-pinned-tab.svg" color="#35d37d">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Стили -->
+    <link rel="stylesheet" href="../Главная/data/css/index.css">
+    <link rel="stylesheet" href="data/css/index.css">
+    <title>Интерактивный тренажер</title>
+</head>
+<body>
+    <!-- Тень для сайта при открытии блоков -->
+    <div id="shadow" class="shadow"></div>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <div class="professionalism">
+                    <div class="professionalism__title-wrap">
+                        <span class="professionalism__year">2023</span>
+                        <span class="professionalism__title">ПРОФЕССИОНАЛИТЕТ</span>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/bricks.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/tent.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/parallelepiped.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/bus.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/ship.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/circle.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/mountain.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/leaflet.svg" alt="img"></a></li>
+                        </ul>
+                    </nav>
+                    <!-- ПЕРЕНЕСИТЕ ЭТО В ОСНОВНУЮ НАВИГАЦИЮ -->
+                </div>
+                <!-- /professionalism -->
+    
+                <div class="header-title-wrap">
+                    <h2 class="header-title">МГГТК ФГБОУ ВО «АГУ»</h2>
+                    <p class="header__subtitle">Образовательный кластер «Образовательный центр индустрии туризма и сферы услуг Республики Адыгея»</p>
+                </div>
+    
+                <div class="logo-wrap">
+                    <img src="data/img/logo/logo.svg" alt="logo" class="logo">
+                </div>
+                
+                <div class="home" style="height: 29px; width: 31px;">
+                   <a href="../Главная/index.html"><img src="data/img/home.svg" alt="go home"></a>
+                </div>
+                
+                
+                <button class="burger-btn">
+                    <img src="data/img/burger.svg" alt="logo" class="burger-img">
+                    <img src="data/img/burger-dark-mode.svg" alt="logo" class="burger-dark-img hide">
+                </button>
+
+                <div class="right-side-menu">
+                    <button class="burger-btn-close">Закрыть</button>
+                    <div class="right-side-menu__block">
+                        <p class="right-side-menu__text">Включить / Выключить темную тему</p>
+                        <label class="switch-button" for="switch">
+                            <div class="switch-outer">
+                            <input id="switch" type="checkbox" class="dark2">
+                            <div class="button">
+                                <span class="button-toggle"></span>
+                                <span class="button-indicator"></span>
+                            </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </header>
+
+    <main>
+        <section class="topic-section">
+            <div class="container">
+                <div class="topic-section__wrapper">
+                    <span class="topic-text">Тема:</span>
+                    <h1 class="topic-title">Технология приготовления коктейлей</h1>
+                    <p class="topic-subtitle">#Технология приготовления коктейлей</p>
+                </div>
+                <!-- /topic-section__wrapper -->
+            </div>
+            <!-- /container -->
+        </section>
+        <!-- /topic-section -->
+
+        <section class="virtual-simulator-section">
+            <div class="container virtual-simulator__container">
+                <div class="card-navigation-line"></div>
+                <h4 class="virtual-simulator__title">Интерактивный тренажёр</h4>
+
+                <div class="virtual-simulator__wrapper">
+                    <div class="virtual-simulator__header">
+                        <div class="virtual-simulator__active-part">
+                            <div class="task-text-wrap">Задание:<br>
+                                <span class="task-text accent-color-text">Необходимо выбрать два и более верных ответов из предложенных вариантов:</span>
+                            </div>
+                            <div class="virtual-simulator__header-rigth-side">
+                                <div class="delimeter"></div>
+                                <div class="number"><span class="num-now">1</span><span class="all-num">10</span></div>
+                                <div class="timer-wrap"><p class="timer">08:54</p></div>
+                            </div>
+                        </div>
+                        <div class="virtual-simulator__result-part hide">
+                            <p>Результаты</p>
+                        </div>
+                    </div>
+                    <!-- серая разделительная черта, нужна тк там округление и через бордер его не получить, либо я чего то не знаю -->
+                    <div class="horizontal-delimeter"></div>
+
+                    <div class="practice-part-wrap practice-part-wrap--active" id="task-1">
+                        <h4 class="quation-text">Какой ингредиент входит в состав коктейля «Б-52»?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-1-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Cointreau</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox not-true-answer-1-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Blue Curacao</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-1-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Baileys</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-1-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Kahlua</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-2">
+                        <h4 class="quation-text">Определить ингредиенты, которые является составной частью глинтвейна:</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox not-true-answer-2-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Белое вино</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-2-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Красное вино</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-2-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Гвоздика</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-2-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Корица</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-3">
+                        <h4 class="quation-text">В составе коктейля «Кровавая Мэри» обязательным ингредиентом является:</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox not-true-answer-3-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Ангостура</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-3-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Ваучестерский соус</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-3-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Табаско</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox not-true-answer-3-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Сахар</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-4">
+                        <h4 class="quation-text">Выбрать из списка напитки, которые подаются на аперитив:</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-4-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Пиво</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-4-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Сухой вермут</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox not-true-answer-4-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Виски со льдом</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-4-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>«Черный русский»</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-5">
+                        <h4 class="quation-text">Определить наименование бокала для подачи безалкогольных напитков большого объема:</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-5-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Хайболл</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox not-true-answer-5-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Рокс</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-5-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Тумблер</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox not-true-answer-5-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Маргарита</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-6">
+                        <h4 class="quation-text">Выбрать метод, который используется при приготовлении смешанных напитков:</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-6-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Шейк</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-6-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Бленд</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox not-true-answer-6-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Микс</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox true-answer-6-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Стир</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-7">
+                        <p class="desc-task">Вводить цифры без пробелов, по возрастанию</p>
+                        <div class="sopostavit-task">
+                            <div class="sopostavit-task__text" style="font-size: 18px; line-height: 24px;">
+                                1. Трипл Сек<br>
+                                2. Шардоне<br>
+                                3. Джим Бим<br>
+                                4. Куантро<br>
+                                5. Пино Нуар<br>
+                                6. Джемисон<br>
+                                7. Калуа<br>
+                                8. Мадера<br>
+                                9. Бурбон<br>
+                            </div>
+                            <form action="" class="sopostavit-task__form">
+                                <div class="sopostavit-task__block">
+                                    Вино
+                                    <input type="text" class="sopostavit-task__input answer-7-1">
+                                </div>
+                                <div class="sopostavit-task__block">
+                                    Ликеры
+                                    <input type="text" class="sopostavit-task__input answer-7-2">
+                                </div>
+                                <div class="sopostavit-task__block">
+                                    Виски
+                                    <input type="text" class="sopostavit-task__input answer-7-3">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                
+                    <div class="practice-part-wrap" id="task-8">
+                        <p class="desc-task">Вводить цифры без пробелов, по возрастанию</p>
+                        <form class="sopostavit-task">
+                            <div class="sopostavit-task__text" style="font-size: 18px; line-height: 24px;">
+                                1. Хеннесси<br>
+                                2. Джек Дэниэлс<br>
+                                3. Арарат<br>
+                                4. Мартель<br>
+                                5. Камю<br>
+                                6. Джемисон<br>
+                                7. Джим Бим
+                                8. Бакарди <br>                    
+                            </div>
+                            <form action="" class="sopostavit-task__form">
+                                <div class="sopostavit-task__block" style="align-items: end;">
+                                    Ответ
+                                    <input type="text" class="sopostavit-task__input dss answer-8" style="width: 150px; font-size: 16px; font-weight: 500;">
+                                </div>
+                            </form>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-9">
+                        <p class="desc-task">Вводить цифры без пробелов, по возрастанию</p>
+                        <form class="sopostavit-task">
+                            <div class="sopostavit-task__text" style="font-size: 18px; line-height: 24px;">
+                                1. «Маргарита»<br>
+                                2. «Космополитен»<br>
+                                3. «Мохито»<br>
+                                4. «Дайкири»<br>
+                                5. «Голубая лагуна»  <br>                                             
+                            </div>
+                            <form action="" class="sopostavit-task__form">
+                                <div class="sopostavit-task__block" style="align-items: end;">
+                                    Ответ
+                                    <input type="text" class="sopostavit-task__input dss answer-9" style="width: 150px; font-size: 16px; font-weight: 500;">
+                                </div>
+                            </form>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-10">
+                        <div class="sopostavit-task">
+                            <div class="sopostavit-task__text" style="font-size: 18px; line-height: 24px;">
+                                1	Пина Колада<br>
+                                2	Мохито<br>
+                                3	Б-52<br>
+                                4	Негрони<br>
+                                5	Космополитен<br>  <br>
+                                A.	Хайболл<br>
+                                Б.	Харикейн	<br>
+                                В. Рокс	<br>
+                                Г. Шот	<br>
+                                Д. Коктейльная рюмка	 <br>                             
+                            </div>
+                            <form action="" class="sopostavit-task__form">
+                                <div class="sopostavit-task__block">
+                                    A
+                                    <input type="text" maxlength="1" class="sopostavit-task__input answer-10-1">
+                                </div>
+                                <div class="sopostavit-task__block">
+                                    Б
+                                    <input type="text" maxlength="1" class="sopostavit-task__input answer-10-2">
+                                </div>
+                                <div class="sopostavit-task__block">
+                                    В
+                                    <input type="text" maxlength="1" class="sopostavit-task__input answer-10-3">
+                                </div>
+                                <div class="sopostavit-task__block">
+                                    Г
+                                    <input type="text" maxlength="1" class="sopostavit-task__input answer-10-4">
+                                </div>
+                                <div class="sopostavit-task__block">
+                                    Д
+                                    <input type="text"maxlength="1"  class="sopostavit-task__input answer-10-5">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="result-block">
+                        <p class="result-text">
+                            Вы набрали 0 баллов
+                        </p>
+                        <a href="../Главная/index.html" class="back-link">Вернуться на главную страницу</a>
+                    </div>
+
+                    <div class="virtual-simulator__footer">
+                        <div class="right-side">
+                            <div class="right-side_btn-wrap">
+                                <button class="back-btn">Назад</button>
+                                <button class="next-btn">Далее</button>
+                            </div>
+                            <div class="right-side__circles">
+                                <div class="circle circle_active" data-button="task-1"></div>
+                                <div class="circle circle-2" data-button="task-2"></div>
+                                <div class="circle circle-3" data-button="task-3"></div>
+                                <div class="circle circle-4" data-button="task-4"></div>
+                                <div class="circle circle-5" data-button="task-5"></div>
+                                <div class="circle circle-6" data-button="task-6"></div>
+                                <div class="circle circle-7" data-button="task-7"></div>
+                                <div class="circle circle-7" data-button="task-8"></div>
+                                <div class="circle circle-7" data-button="task-9"></div>
+                                <div class="circle circle-7" data-button="task-10"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__left-side">
+                <h4 class="footer-title">
+                    ФГОС СПО 43.02.15
+                </h4>
+                <p class="footer-subtitle">
+                     Поварское и кондитерское дело
+                </p>
+            </div>
+            <div class="footer__right-side">
+                <h4 class="footer-title">
+                    МДК.04.02 
+                </h4>
+                <p class="footer-subtitle">
+                    Процессы приготовления и подготовки к реализации холодных и горячих десертов, напитков сложного ассортимента
+                </p>
+            </div>
+        </div>
+        <!-- /footer__wrapper -->
+    </footer>
+
+    <script src="data/script/timer.js"></script>
+    <script src="data/script/replace.js"></script>
+    <script src="data/script/task-switcher.js"></script>
+
+    <script src="../Главная/data/script/burger_script.js"></script>
+    <script src="../Главная/data/script/dark_theme_script.js"></script>
+
+    <div class="tent tent-1"></div>
+    <div class="tent tent-2"></div>
+    <div class="tent tent-3"></div>
+    <div class="tent tent-4"></div>
+</body>
+</html>

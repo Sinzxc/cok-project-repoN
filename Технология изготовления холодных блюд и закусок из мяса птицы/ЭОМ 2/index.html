@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Иконки для разных платформ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../Главная/data/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Главная/data/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Главная/data/favicon/favicon-16x16.png">
+    <!--<link rel="manifest" href="site.webmanifest">-->
+    <link rel="mask-icon" href=".../Главная/data/favicon/safari-pinned-tab.svg" color="#35d37d">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Стили -->
+    <link rel="stylesheet" href="../Главная/data/css/index.css">
+    <link rel="stylesheet" href="data/css/index.css">
+    <title>Виртуальный тренажер</title>
+</head>
+<body>
+    <!-- Тень для сайта при открытии блоков -->
+    <div id="shadow" class="shadow"></div>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <div class="professionalism">
+                    <div class="professionalism__title-wrap">
+                        <span class="professionalism__year">2023</span>
+                        <span class="professionalism__title">ПРОФЕССИОНАЛИТЕТ</span>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/bricks.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/tent.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/parallelepiped.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/bus.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/ship.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/circle.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/mountain.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/leaflet.svg" alt="img"></a></li>
+                        </ul>
+                    </nav>
+                    <!-- ПЕРЕНЕСИТЕ ЭТО В ОСНОВНУЮ НАВИГАЦИЮ -->
+                </div>
+                <!-- /professionalism -->
+    
+                <div class="header-title-wrap">
+                    <h2 class="header-title">МГГТК ФГБОУ ВО «АГУ»</h2>
+                    <p class="header__subtitle">Образовательный кластер «Образовательный центр индустрии туризма и сферы услуг Республики Адыгея»</p>
+                </div>
+    
+                <div class="logo-wrap">
+                    <img src="data/img/logo/logo.svg" alt="logo" class="logo">
+                </div>
+                
+                <div class="home" style="height: 29px; width: 31px;">
+                   <a href="../Главная/index.html"><img src="data/img/home.svg" alt="go home"></a>
+                </div>
+                
+                
+                <button class="burger-btn">
+                    <img src="data/img/burger.svg" alt="logo" class="burger-img">
+                    <img src="data/img/burger-dark-mode.svg" alt="logo" class="burger-dark-img hide">
+                </button>
+
+                <div class="right-side-menu">
+                    <button class="burger-btn-close">Закрыть</button>
+                    <div class="right-side-menu__block">
+                        <p class="right-side-menu__text">Включить / Выключить темную тему</p>
+                        <label class="switch-button" for="switch">
+                            <div class="switch-outer">
+                            <input id="switch" type="checkbox" class="dark2">
+                            <div class="button">
+                                <span class="button-toggle"></span>
+                                <span class="button-indicator"></span>
+                            </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </header>
+
+    <main>
+        <section class="topic-section">
+            <div class="container">
+                <div class="topic-section__wrapper">
+                    <span class="topic-text">Тема:</span>
+                    <h1 class="topic-title">Технология изготовления холодных блюд и закусок из мяса птицы</h1>
+                    <p class="topic-subtitle">#Технология изготовления холодных блюд и закусок из мяса птицы </p>
+                </div>
+                <!-- /topic-section__wrapper -->
+            </div>
+            <!-- /container -->
+        </section>
+        <!-- /topic-section -->
+
+        <section class="virtual-simulator-section">
+            <div class="container virtual-simulator__container">
+                <div class="card-navigation-line"></div>
+                <h4 class="virtual-simulator__title">Виртуальный тренажер</h4>
+
+                <div class="virtual-simulator__wrapper ">
+                    <div class="virtual-simulator__header">
+                        <div class="virtual-simulator__active-part">
+                            <div class="task-text-wrap">Задание: <br>
+                                <span class="task-text accent-color-text">Выберите один правильный ответ:</span>
+                            </div>
+                            <div class="virtual-simulator__header-rigth-side">
+                                <div class="delimeter"></div>
+                                <div class="number"><span class="num-now">1</span><span class="all-num">10</span></div>
+                                <div class="timer-wrap"><p class="timer">10:00</p></div>
+                            </div>
+                        </div>
+                        <div class="virtual-simulator__result-part hide">
+                            <p>Результаты</p>
+                        </div>
+                    </div>
+                    <!-- серая разделительная черта, нужна тк там округление и через бордер его не получить, либо я чего то не знаю -->
+                    <div class="horizontal-delimeter"></div>
+
+                    <div class="practice-part-wrap practice-part-wrap--active" id="task-1">
+                        <h4 class="quation-text">Какое мясо птицы чаще всего используется для холодных блюд и закусок?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-1" name="task-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>курица</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>утка</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio"class="radio" name="task-1">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>индейка</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-2">
+                        <h4 class="quation-text">Что такое террин?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>рыбное блюдо</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-2" name="task-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>мясная закуска</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-2">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>молочный десерт</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-3">
+                        <h4 class="quation-text">Как называется холодное блюдо, состоящее из слоев мяса, овощей и соуса?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>рататуй</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-3" name="task-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>лазанья</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-3">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>сэндвич</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-4">
+                        <h4 class="quation-text">Для приготовления блюда «Филе птицы или дичи под майонезом» курицу подготавливают в следующем порядке:</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-4" name="task-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>филе куры зачищают, припускают и охлаждают;</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>филе куры припускают, охлаждают и зачищают</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-4">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>филе куры зачищают, нарезают кубиком, припускают и охлаждают</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-5">
+                        <h4 class="quation-text">Чем можно натереть курицу изнутри перед варкой, чтобы мясо получилось белым и сочным?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-5" name="task-5">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>лимон</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-5">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>апельсин</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-5">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>киви</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-6">
+                        <h4 class="quation-text">Что такое паштет из птицы?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-6">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>вид супа</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-6">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>птичье яйцо</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-6" name="task-6">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>мясная закуска</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-7">
+                        <h4 class="quation-text">Какой соус обычно подаётся к холодцу?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-7" name="task-7">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>горчица</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-7">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>кисло-сладкий</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio"  class="radio" name="task-7">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>майонез</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-8">
+                        <h4 class="quation-text">Какова температура подачи холодных блюд и закусок из птицы?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-8">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>14 – 18 ºС</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-8" name="task-8">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>10 – 14 ºС</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-8">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>12 – 16 ºС</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-9">
+                        <h4 class="quation-text">Какой способ тепловой обработки используется при приготовлении блюда «Курица фаршированная (галантин)»?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-9">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>запекание</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-9" name="task-9">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>варка</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-9">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>тушение</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-10">
+                        <h4 class="quation-text">Как правильно называется Сыр из дичи и домашней птицы?</h4>
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio true-answer-10" name="task-10">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>фромаж</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-10">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>муаль</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="radio" class="radio" name="task-10">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>галантин</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="result-block">
+                        <p class="result-text">
+                            Вы набрали 0 баллов
+                        </p>
+                        <a href="../Главная/index.html" class="back-link">Вернуться на главную страницу</a>
+                    </div>
+
+                    <div class="virtual-simulator__footer">
+                        <div class="right-side">
+                            <div class="right-side_btn-wrap">
+                                <button class="back-btn">Назад</button>
+                                <button class="next-btn">Далее</button>
+                            </div>
+                            <div class="right-side__circles">
+                                <div class="circle circle_active" data-button="task-1"></div>
+                                <div class="circle circle-2" data-button="task-2"></div>
+                                <div class="circle circle-3" data-button="task-3"></div>
+                                <div class="circle circle-4" data-button="task-4"></div>
+                                <div class="circle circle-5" data-button="task-5"></div>
+                                <div class="circle circle-6" data-button="task-6"></div>
+                                <div class="circle circle-7" data-button="task-7"></div>
+                                <div class="circle circle-7" data-button="task-8"></div>
+                                <div class="circle circle-7" data-button="task-9"></div>
+                                <div class="circle circle-7" data-button="task-10"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__left-side">
+                <h4 class="footer-title">
+                    ФГОС СПО 43.01.09 
+                </h4>
+                <p class="footer-subtitle">
+                    повар, кондитер
+                </p>
+            </div>
+            <div class="footer__right-side">
+                <h4 class="footer-title">
+                    МДК.03.02 
+                </h4>
+                <p class="footer-subtitle">
+                    Процессы приготовления, подготовки к реализации холодных блюд, кулинарных изделий, закусок сложного ассортимента
+                </p>
+            </div>
+        </div>
+        <!-- /footer__wrapper -->
+    </footer>
+
+    
+    <script src="data/script/timer.js"></script>
+    <script src="data/script/task-switcher.js"></script>
+
+    <script src="../Главная/data/script/burger_script.js"></script>
+    <script src="../Главная/data/script/dark_theme_script.js"></script>
+    
+    <div class="tent tent-1"></div>
+    <div class="tent tent-2"></div>
+    <div class="tent tent-3"></div>
+    <div class="tent tent-4"></div>
+</body>
+</html>
