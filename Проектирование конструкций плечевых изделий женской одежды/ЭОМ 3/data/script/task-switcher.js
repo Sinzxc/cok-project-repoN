@@ -31,7 +31,7 @@ for(i = 0; i < circles.length; i++) {
 
         taskDescSwitch(numtaskNow)
         if(solvTask[numtaskNow - 1] === 0) {
-            nextBtn.innerHTML = "Проверить"
+            nextBtn.innerHTML = "Ответить"
         }
         else {
             nextBtn.innerHTML = "Далее"
@@ -57,7 +57,7 @@ backBtn.addEventListener('click',()=> {
     
         taskDescSwitch(numtaskNow)
         if(solvTask[numtaskNow - 1] === 0) { 
-            nextBtn.innerHTML = "Проверить"
+            nextBtn.innerHTML = "Ответить"
         }
         else {
             nextBtn.innerHTML = "Далее"
@@ -67,7 +67,7 @@ backBtn.addEventListener('click',()=> {
 
 const nextBtn = document.querySelector('.next-btn')
 nextBtn.addEventListener('click',()=> {
-    if(nextBtn.innerHTML == "Проверить") {
+    if(nextBtn.innerHTML == "Ответить") {
         nextBtn.innerHTML = "Далее"
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
@@ -263,7 +263,7 @@ nextBtn.addEventListener('click',()=> {
             taskDescSwitch(numtaskNow)
             if(solvTask[numtaskNow-1] === 0) {
     
-                nextBtn.innerHTML = "Проверить"
+                nextBtn.innerHTML = "Ответить"
             }
             if(solvTask[numtaskNow - 1] === 1 && numtaskNow == circles.length) {
                 nextBtn.innerHTML = "Завершить"

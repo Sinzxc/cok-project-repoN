@@ -35,7 +35,7 @@ for(i = 0; i < circles.length; i++) {
         document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
         tabTarget.classList.add('circle_active');
         if(solvTask[numtaskNow - 1] === 0) {
-            nextBtn.innerHTML = "Проверить"
+            nextBtn.innerHTML = "Ответить"
         }
         else {
             nextBtn.innerHTML = "Далее"
@@ -59,7 +59,7 @@ backBtn.addEventListener('click',()=> {
         numNum.innerHTML = numtaskNow
         circles[numtaskNow - 1].classList.add('circle_active');
         if(solvTask[numtaskNow - 1] === 0) { 
-            nextBtn.innerHTML = "Проверить"
+            nextBtn.innerHTML = "Ответить"
         }
         else {
             nextBtn.innerHTML = "Далее"
@@ -71,7 +71,7 @@ backBtn.addEventListener('click',()=> {
 const nextBtn = document.querySelector('.next-btn')
 
 nextBtn.addEventListener('click',()=> {
-    if(nextBtn.innerHTML == "Проверить") {
+    if(nextBtn.innerHTML == "Ответить") {
         nextBtn.innerHTML = "Далее"
         if(numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
@@ -233,7 +233,7 @@ nextBtn.addEventListener('click',()=> {
             circles[numtaskNow - 1].classList.add('circle_active');
             if(solvTask[numtaskNow-1] === 0) {
     
-                nextBtn.innerHTML = "Проверить"
+                nextBtn.innerHTML = "Ответить"
             }
             if(solvTask[numtaskNow - 1] === 1 && numtaskNow == circles.length) {
                 nextBtn.innerHTML = "Завершить"
