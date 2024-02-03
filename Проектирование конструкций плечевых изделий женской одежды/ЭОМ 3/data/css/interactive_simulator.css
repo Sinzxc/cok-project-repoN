@@ -348,3 +348,12 @@
     margin-bottom: 25px;
     user-select: none;
 }
+
+
+.circle_not-true-answer {
+    background-color: red;
+}
+
+.circle_true-answer {
+    background-color: rgb(30, 255, 0);
+}

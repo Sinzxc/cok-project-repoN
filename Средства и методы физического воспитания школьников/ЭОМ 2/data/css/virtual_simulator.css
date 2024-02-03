@@ -561,3 +561,12 @@ form {
     font-size: 16px;
     width: 250px;
 }
+
+
+.circle_not-true-answer {
+    background-color: red;
+}
+
+.circle_true-answer {
+    background-color: rgb(30, 255, 0);
+}

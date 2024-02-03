@@ -185,7 +185,7 @@ img6.img.addEventListener('click', (e) => {
         ctx.moveTo(15,15);
         ctx.lineTo(285,265);
         ctx.stroke();
-        imgs[5].img.src = "data/circle-active.png";
+        imgs[5].img.src = "data/img/circle-active.png";
         imgs[0].img.classList.add('circle-img_z-ind');
         imgs[5].img.classList.add('circle-img_z-ind');
     }
@@ -198,7 +198,7 @@ img6.img.addEventListener('click', (e) => {
         ctx.moveTo(15,141);
         ctx.lineTo(285,265);
         ctx.stroke();
-        imgs[5].img.src = "data/circle-active.png";
+        imgs[5].img.src = "data/img/circle-active.png";
         imgs[2].img.classList.add('circle-img_z-ind');
         imgs[5].img.classList.add('circle-img_z-ind');
         isCor3 = true;
@@ -212,7 +212,7 @@ img6.img.addEventListener('click', (e) => {
         ctx.moveTo(15,265);
         ctx.lineTo(285,265);
         ctx.stroke();
-        imgs[5].img.src = "data/circle-active.png";
+        imgs[5].img.src = "data/img/circle-active.png";
         isCor3 = true;
         imgs[4].img.classList.add('circle-img_z-ind');
         imgs[5].img.classList.add('circle-img_z-ind');

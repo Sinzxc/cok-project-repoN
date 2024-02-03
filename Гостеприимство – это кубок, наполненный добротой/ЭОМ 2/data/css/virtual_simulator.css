@@ -323,6 +323,14 @@
     justify-content: center !important;
 }
 
+.circle_not-true-answer {
+    background-color: red;
+}
+
+.circle_true-answer {
+    background-color: rgb(30, 255, 0);
+}
+
 @media (max-width: 735px) {
     .virtual-simulator__header {
         display: block;

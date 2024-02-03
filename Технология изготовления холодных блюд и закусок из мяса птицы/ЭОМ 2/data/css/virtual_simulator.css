@@ -507,3 +507,11 @@ form {
 .back-link:hover {
     color: var(--accent-color)
 }
+
+.circle_not-true-answer {
+    background-color: red;
+}
+
+.circle_true-answer {
+    background-color: rgb(30, 255, 0);
+}
