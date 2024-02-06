@@ -36,6 +36,7 @@ for(i = 0; i < circles.length; i++) {
         if(solvTask[numtaskNow - 1] === 1 && numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
+        answer() 
     })
 }
 
@@ -57,6 +58,7 @@ backBtn.addEventListener('click',()=> {
         else {
             nextBtn.innerHTML = "Далее"
         }
+        answer() 
     }
 })
 
@@ -162,10 +164,9 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 8) {
             solvTask[7] = 1
-            document.querySelector('.true-answer-8').setAttribute('disabled', true);
-            document.querySelector('.t-8-2').setAttribute('disabled', true);
-            document.querySelector('.t-8-3').setAttribute('disabled', true);
-            if(document.querySelector('.true-answer-8').checked) { 
+            document.querySelector('.answer-8').setAttribute('disabled', true);
+            if(document.querySelector('.answer-8').value == "Галантин" || document.querySelector('.answer-8').value == "галантин")
+            { 
                 ball++ 
                 document.querySelector('.circle-8').classList.add("circle_true-answer")
             }
@@ -187,11 +188,16 @@ nextBtn.addEventListener('click',()=> {
             }
         }
         if(numtaskNow == 10) {
-            solvTask[9] = 1
-            document.querySelector('.true-answer-10').setAttribute('disabled', true);
-            document.querySelector('.t-10-2').setAttribute('disabled', true);
-            document.querySelector('.t-10-3').setAttribute('disabled', true);
-            if(document.querySelector('.true-answer-10').checked) { 
+            solvTask[0] = 1
+            document.querySelector('.answer-10-1').setAttribute('disabled', true);
+            document.querySelector('.answer-10-2').setAttribute('disabled', true);
+            document.querySelector('.answer-10-3').setAttribute('disabled', true);
+            document.querySelector('.answer-10-4').setAttribute('disabled', true);
+            document.querySelector('.answer-10-5').setAttribute('disabled', true);
+            document.querySelector('.answer-10-6').setAttribute('disabled', true);
+            if(document.querySelector('.answer-10-1').value == 1 && document.querySelector('.answer-10-2').value == 5 &&
+    document.querySelector('.answer-10-3').value == 4 && document.querySelector('.answer-10-4').value == 6 && document.querySelector('.answer-10-5').value == 2 && document.querySelector('.answer-10-6').value == 3)
+            { 
                 ball++ 
                 document.querySelector('.circle-10').classList.add("circle_true-answer")
             }
@@ -227,6 +233,7 @@ nextBtn.addEventListener('click',()=> {
             if(solvTask[numtaskNow - 1] === 1 && numtaskNow == circles.length) {
                 nextBtn.innerHTML = "Завершить"
             } 
+            answer() 
         }   
     }
    
@@ -235,4 +242,16 @@ nextBtn.addEventListener('click',()=> {
 
 function RaschitatiBalli() {
     document.querySelector('.result-text').innerHTML = "Количество баллов: "+ball
+}
+
+function answer() {
+    if(numtaskNow == 10) {
+        document.querySelector('.task-text').innerHTML = "Установите соответствие между правильностью использования разделочных досок при приготовлении кулинарной продукции:"
+    }
+    else if(numtaskNow == 8) {
+        document.querySelector('.task-text').innerHTML = "Ответьте на вопрос:"
+    }
+    else {
+        document.querySelector('.task-text').innerHTML = "Выберите один правильный ответ:"
+    }
 }

@@ -163,11 +163,10 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 7) {
             solvTask[6] = 1
-            document.querySelector('.answer-7-1').setAttribute('disabled', true);
-            document.querySelector('.answer-7-2').setAttribute('disabled', true);
-            document.querySelector('.answer-7-3').setAttribute('disabled', true);
-            if(document.querySelector('.answer-7-1').value == 258 && document.querySelector('.answer-7-2').value == 147 &&
-    document.querySelector('.answer-7-3').value == 369) { 
+            document.querySelector('.true-answer-7').setAttribute('disabled', true);
+            document.querySelector('.t-7-2').setAttribute('disabled', true);
+            document.querySelector('.t-7-3').setAttribute('disabled', true);
+            if(document.querySelector('.true-answer-7').checked) { 
                 ball++ 
                 document.querySelector('.circle-7').classList.add("circle_true-answer")
             }
@@ -188,8 +187,11 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 9) {
             solvTask[8] = 1
-            document.querySelector('.answer-9').setAttribute('disabled', true);
-            if(document.querySelector('.answer-9').value == "34" || document.querySelector('.answer-9').value == "3 4")  { 
+            document.querySelector('.true-answer-9').setAttribute('disabled', true);
+            document.querySelector('.t-9-2').setAttribute('disabled', true);
+            document.querySelector('.t-9-3').setAttribute('disabled', true);
+            document.querySelector('.t-9-4').setAttribute('disabled', true);
+            if(document.querySelector('.true-answer-9').checked) { 
                 ball++ 
                 document.querySelector('.circle-9').classList.add("circle_true-answer")
             }
@@ -254,9 +256,8 @@ function RaschitatiBalli() {
 }
 
 function quationSwitcher() {
-    if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Сопоставить каждое название напитка с соответствующим ему видом:"
+    if(numtaskNow == 7 || numtaskNow ==9) document.querySelector('.task-text').innerHTML = "Выберите один правильный ответ:"
     else if(numtaskNow == 8) document.querySelector('.task-text').innerHTML = "Из предложенного списка выберите марки коньяка:"
-    else if(numtaskNow == 9) document.querySelector('.task-text').innerHTML = "Из представленного  списка  необходимо выбрать коктейли, приготовленные на основе рома:"
     else if(numtaskNow == 10) document.querySelector('.task-text').innerHTML = "Необходимо сопоставить название  бокала, в котором подается  напиток, с соответствующим названием  коктейля:"
     else {
         document.querySelector('.task-text').innerHTML = "Необходимо выбрать два и более верных ответов из предложенных вариантов:"

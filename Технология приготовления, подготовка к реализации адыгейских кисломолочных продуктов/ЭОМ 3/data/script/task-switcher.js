@@ -143,8 +143,11 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 6) {
             solvTask[5] = 1
-            document.querySelector('.answer-6').setAttribute('disabled', true);
-            if(document.querySelector('.answer-6').value == "32146579810" || document.querySelector('.answer-6').value == "3 2 1 4 6 5 7 9 8 10")  { 
+            document.querySelector('.true-answer-6').setAttribute('disabled', true);
+            document.querySelector('.t-6-2').setAttribute('disabled', true);
+            document.querySelector('.t-6-3').setAttribute('disabled', true);
+            document.querySelector('.t-6-4').setAttribute('disabled', true);
+            if(document.querySelector('.true-answer-6').checked) { 
                 ball++ 
                 document.querySelector('.circle-6').classList.add("circle_true-answer")
             }
@@ -176,9 +179,11 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 8) {
             solvTask[7] = 1
-            document.querySelector('.answer-8-1').setAttribute('disabled', true);
-            document.querySelector('.answer-8-2').setAttribute('disabled', true);
-            if((document.querySelector('.answer-8-1').value == "95-98" || document.querySelector('.answer-8-1').value == "95 - 98")  && (document.querySelector('.answer-8-2').value == "10-15" || (document.querySelector('.answer-8-2').value == "10 - 15")))   { 
+            document.querySelector('.true-answer-8').setAttribute('disabled', true);
+            document.querySelector('.t-8-2').setAttribute('disabled', true);
+            document.querySelector('.t-8-3').setAttribute('disabled', true);
+            document.querySelector('.t-8-4').setAttribute('disabled', true);
+            if(document.querySelector('.true-answer-8').checked) { 
                 ball++ 
                 document.querySelector('.circle-8').classList.add("circle_true-answer")
             }
@@ -254,9 +259,8 @@ function RaschitatiBalli() {
 }
 
 function quationSwitcher() {
-    if(numtaskNow == 1 || numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Выберите один правильный ответ:"
+    if(numtaskNow == 1 || numtaskNow == 2 || numtaskNow == 8 || numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Выберите один правильный ответ:"
     else if(numtaskNow == 3 || numtaskNow == 4 || numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Выберите несколько правильных ответов:"
-    else if(numtaskNow == 6) document.querySelector('.task-text').innerHTML = "Определите очередность технологических операций по производству адыгейского сыра:"
     else if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Необходимо сопоставить вид сыра  с соответствующим названием  страны производителя:"
     else {
         document.querySelector('.task-text').innerHTML = "Введите в текстовые поля недостающие слова:"

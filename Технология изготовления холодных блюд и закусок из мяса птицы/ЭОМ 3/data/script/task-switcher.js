@@ -72,15 +72,10 @@ nextBtn.addEventListener('click',()=> {
 
         if(numtaskNow == 1) {
             solvTask[0] = 1
-            document.querySelector('.answer-1-1').setAttribute('disabled', true);
-            document.querySelector('.answer-1-2').setAttribute('disabled', true);
-            document.querySelector('.answer-1-3').setAttribute('disabled', true);
-            document.querySelector('.answer-1-4').setAttribute('disabled', true);
-            document.querySelector('.answer-1-5').setAttribute('disabled', true);
-            document.querySelector('.answer-1-6').setAttribute('disabled', true);
-            if(document.querySelector('.answer-1-1').value == 1 && document.querySelector('.answer-1-2').value == 5 &&
-    document.querySelector('.answer-1-3').value == 4 && document.querySelector('.answer-1-4').value == 6 && document.querySelector('.answer-1-5').value == 2 && document.querySelector('.answer-1-6').value == 3)
-            { 
+            document.querySelector('.true-answer-1').setAttribute('disabled', true);
+            document.querySelector('.t-1-2').setAttribute('disabled', true);
+            document.querySelector('.t-1-3').setAttribute('disabled', true);
+            if(document.querySelector('.true-answer-1').checked) { 
                 ball++ 
                 document.querySelector('.circle-1').classList.add("circle_true-answer")
             }
@@ -90,7 +85,7 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 2) {
             solvTask[1] = 1
-            document.querySelector('.answer-1-1').setAttribute('disabled', true);
+            document.querySelector('.answer-2-1').setAttribute('disabled', true);
             document.querySelector('.answer-2-2').setAttribute('disabled', true);
             document.querySelector('.answer-2-3').setAttribute('disabled', true);
             document.querySelector('.answer-2-4').setAttribute('disabled', true);
@@ -166,9 +161,10 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 8) {
             solvTask[7] = 1
-            document.querySelector('.answer-8').setAttribute('disabled', true);
-            if(document.querySelector('.answer-8').value == "Галантин" || document.querySelector('.answer-8').value == "галантин")
-            { 
+            document.querySelector('.true-answer-8').setAttribute('disabled', true);
+            document.querySelector('.t-8-2').setAttribute('disabled', true);
+            document.querySelector('.t-8-3').setAttribute('disabled', true);
+            if(document.querySelector('.true-answer-8').checked) { 
                 ball++ 
                 document.querySelector('.circle-8').classList.add("circle_true-answer")
             }
@@ -239,13 +235,13 @@ function RaschitatiBalli() {
 }
 
 function answer() {
-    if(numtaskNow == 1) {
-        document.querySelector('.task-text').innerHTML = "Установите соответствие между правильностью использования разделочных досок при приготовлении кулинарной продукции:"
+    if(numtaskNow == 1 || numtaskNow == 8) {
+        document.querySelector('.task-text').innerHTML = "Выберите один правильный ответ:"
     }
     else if(numtaskNow == 2) {
         document.querySelector('.task-text').innerHTML = "Установите соответствие между нормами расхода соли и специй для приготовления холодных блюд и закусок:"
     }
-    else if(numtaskNow == 3 || numtaskNow == 4 || numtaskNow == 5 || numtaskNow == 7 || numtaskNow == 8 || numtaskNow == 6) {
+    else if(numtaskNow == 3 || numtaskNow == 4 || numtaskNow == 5 || numtaskNow == 7 || numtaskNow == 9  || numtaskNow == 6) {
         document.querySelector('.task-text').innerHTML = "Ответьте на вопрос:"
     }
 }

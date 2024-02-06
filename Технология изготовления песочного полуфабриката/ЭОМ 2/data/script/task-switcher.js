@@ -36,6 +36,7 @@ for(i = 0; i < circles.length; i++) {
         if(solvTask[numtaskNow - 1] === 1 && numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
+        answer()
     })
 }
 
@@ -57,6 +58,7 @@ backBtn.addEventListener('click',()=> {
         else {
             nextBtn.innerHTML = "Далее"
         }
+        answer()
     }
 })
 
@@ -149,10 +151,8 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 7) {
             solvTask[6] = 1
-            document.querySelector('.true-answer-7').setAttribute('disabled', true);
-            document.querySelector('.t-7-2').setAttribute('disabled', true);
-            document.querySelector('.t-7-3').setAttribute('disabled', true);
-            if(document.querySelector('.true-answer-7').checked) { 
+            document.querySelector('.input-task-7').setAttribute('disabled', true);
+            if(document.getElementsByClassName('input-task-7')[0].value == 'Клейковина муки' || document.getElementsByClassName('input-task-7')[0].value == 'клейковина муки') { 
                 ball++ 
                 document.querySelector('.circle-7').classList.add("circle_true-answer")
             }
@@ -188,10 +188,9 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 10) {
             solvTask[9] = 1
-            document.querySelector('.true-answer-10').setAttribute('disabled', true);
-            document.querySelector('.t-10-2').setAttribute('disabled', true);
-            document.querySelector('.t-10-3').setAttribute('disabled', true);
-            if(document.querySelector('.true-answer-10').checked) { 
+            document.querySelector('.sopostavit-task__input-10').setAttribute('disabled', true);
+            if(document.querySelector('.sopostavit-task__input-10').value == '315492768' ||
+            document.querySelector('.sopostavit-task__input-10').value == '3, 1, 5, 4, 9, 2, 7, 6, 8' || document.querySelector('.sopostavit-task__input-10').value == '3 1 5 4 9 2 7 6 8') { 
                 ball++ 
                 document.querySelector('.circle-10').classList.add("circle_true-answer")
             }
@@ -227,6 +226,7 @@ nextBtn.addEventListener('click',()=> {
             if(solvTask[numtaskNow - 1] === 1 && numtaskNow == circles.length) {
                 nextBtn.innerHTML = "Завершить"
             } 
+            answer()
         }   
     }
    
@@ -235,4 +235,12 @@ nextBtn.addEventListener('click',()=> {
 
 function RaschitatiBalli() {
     document.querySelector('.result-text').innerHTML = "Количество баллов: "+ball
+}
+
+function answer() {
+    if(numtaskNow==7) document.querySelector('.task-text').innerHTML = "Допишите недостающие слова в определении:" 
+    else if(numtaskNow==10) document.querySelector('.task-text').innerHTML = "Укажите верную последовательность этапов приготовления песочного полуфабриката для пирожного «Корзиночка»:" 
+    else {
+        document.querySelector('.task-text').innerHTML = "Выберите один правильный ответ:" 
+    }
 }

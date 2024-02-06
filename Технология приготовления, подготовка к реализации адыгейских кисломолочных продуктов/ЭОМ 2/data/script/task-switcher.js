@@ -35,6 +35,7 @@ for(i = 0; i < circles.length; i++) {
         if(solvTask[numtaskNow - 1] === 1 && numtaskNow == circles.length) {
             nextBtn.innerHTML = "Завершить"
         }
+        answer()
     })
 }
 
@@ -56,6 +57,7 @@ backBtn.addEventListener('click',()=> {
         else {
             nextBtn.innerHTML = "Далее"
         }
+        answer()
     }
 })
 
@@ -181,11 +183,8 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 9) {
             solvTask[8] = 1
-            document.querySelector('.true-answer-9').setAttribute('disabled', true);
-            document.querySelector('.t-9-2').setAttribute('disabled', true);
-            document.querySelector('.t-9-3').setAttribute('disabled', true);
-            document.querySelector('.t-9-4').setAttribute('disabled', true);
-            if(document.querySelector('.true-answer-9').checked) { 
+            document.querySelector('.answer-9').setAttribute('disabled', true);
+            if(document.querySelector('.answer-9').value == "32146579810" || document.querySelector('.answer-9').value == "3 2 1 4 6 5 7 9 8 10")  { 
                 ball++ 
                 document.querySelector('.circle-9').classList.add("circle_true-answer")
             }
@@ -195,11 +194,9 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 10) {
             solvTask[9] = 1
-            document.querySelector('.true-answer-10').setAttribute('disabled', true);
-            document.querySelector('.t-10-2').setAttribute('disabled', true);
-            document.querySelector('.t-10-3').setAttribute('disabled', true);
-            document.querySelector('.t-10-4').setAttribute('disabled', true);
-            if(document.querySelector('.true-answer-10').checked) { 
+            document.querySelector('.answer-10-1').setAttribute('disabled', true);
+            document.querySelector('.answer-10-2').setAttribute('disabled', true);
+            if((document.querySelector('.answer-10-1').value == "95-98" || document.querySelector('.answer-10-1').value == "95 - 98")  && (document.querySelector('.answer-10-2').value == "10-15" || (document.querySelector('.answer-10-2').value == "10 - 15")))   { 
                 ball++ 
                 document.querySelector('.circle-10').classList.add("circle_true-answer")
             }
@@ -235,6 +232,7 @@ nextBtn.addEventListener('click',()=> {
             if(solvTask[numtaskNow - 1] === 1 && numtaskNow == circles.length) {
                 nextBtn.innerHTML = "Завершить"
             } 
+            answer()
         }   
     }
 })
@@ -243,4 +241,13 @@ nextBtn.addEventListener('click',()=> {
 
 function RaschitatiBalli() {
     document.querySelector('.result-text').innerHTML = "Количество баллов: "+ball
+}
+
+
+function answer() {
+    if(numtaskNow == 9) document.querySelector('.task-text').innerHTML = "Определите очередность технологических операций по производству адыгейского сыра:"
+    else if(numtaskNow==10) document.querySelector('.task-text').innerHTML = "Введите в текстовые поля недостающие слова:" 
+    else {
+        document.querySelector('.task-text').innerHTML = "Выберите один правильный ответ:" 
+    }
 }

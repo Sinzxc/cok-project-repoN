@@ -515,3 +515,62 @@ form {
 .circle_true-answer {
     background-color: rgb(30, 255, 0);
 }
+
+.sopostavit-task {
+    display: flex;
+    justify-content: space-between;
+}
+.sopostavit-task__text {
+    width: 350px;
+    height: 350px;
+    border-radius:20px 0 0 20px ;
+    border: 1px solid var(--border-color);
+    overflow-y: auto;
+    padding: 10px 15px;font-size: 15px;
+    font-weight: 600;
+}
+.sopostavit-task__form {
+    width: 200px;
+    height: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.sopostavit-task__block {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    align-items: center;
+}
+.sopostavit-task__input{
+    flex-grow: 1;
+    padding: 5px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    position: relative;
+}
+
+.input-word-task {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+}
+.input-word-task__input {
+    width: 120px;
+    padding: 0 10px;
+    font-weight: 500;
+    font-size: 18px;
+   
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+.desc-task {
+    font-weight: 700;
+    background-color: #eeeeee;
+    max-width: 450px;
+    text-align: center;
+    margin: 0 auto 20px;
+}

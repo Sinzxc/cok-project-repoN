@@ -103,8 +103,10 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 3) {
             solvTask[2] = 1
-            document.querySelector('.input-task-3').setAttribute('disabled', true);
-            if(document.getElementsByClassName('input-task-3')[0].value == 'Клейковина муки' || document.getElementsByClassName('input-task-3')[0].value == 'клейковина муки') { 
+            document.querySelector('.true-answer-3').setAttribute('disabled', true);
+            document.querySelector('.t-3-2').setAttribute('disabled', true);
+            document.querySelector('.t-3-3').setAttribute('disabled', true);
+            if(document.querySelector('.true-answer-3').checked) { 
                 ball++ 
                 document.querySelector('.circle-3').classList.add("circle_true-answer")
             }
@@ -135,10 +137,11 @@ nextBtn.addEventListener('click',()=> {
             }
         }
         if(numtaskNow == 6) {
-            solvTask[5] = 1
-            document.querySelector('.sopostavit-task__input-6').setAttribute('disabled', true);
-            if(document.querySelector('.sopostavit-task__input-6').value == '315492768' ||
-            document.querySelector('.sopostavit-task__input-6').value == '3, 1, 5, 4, 9, 2, 7, 6, 8' || document.querySelector('.sopostavit-task__input-6').value == '3 1 5 4 9 2 7 6 8') { 
+            solvTask[9] = 1
+            document.querySelector('.true-answer-6').setAttribute('disabled', true);
+            document.querySelector('.t-6-2').setAttribute('disabled', true);
+            document.querySelector('.t-6-3').setAttribute('disabled', true);
+            if(document.querySelector('.true-answer-6').checked) { 
                 ball++ 
                 document.querySelector('.circle-6').classList.add("circle_true-answer")
             }
@@ -241,10 +244,10 @@ function RaschitatiBalli() {
 function answer() {
     if(numtaskNow==1) document.querySelector('.task-text').innerHTML = "Расположите технологические этапы приготовления песочного теста в верной последовательности:" 
     else if(numtaskNow==2) document.querySelector('.task-text').innerHTML = "Соотнесите вид брака и его причины:" 
-    else if(numtaskNow==3) document.querySelector('.task-text').innerHTML = "Допишите недостающие слова в определении:" 
+    else if(numtaskNow==3 || numtaskNow==6) document.querySelector('.task-text').innerHTML = "Выберите один правильный ответ:" 
     else if(numtaskNow==4) document.querySelector('.task-text').innerHTML = "Что изображено на рисунке?" 
     else if(numtaskNow==5) document.querySelector('.task-text').innerHTML = "Как называется инвентарь на картинке?" 
-    else if(numtaskNow==6) document.querySelector('.task-text').innerHTML = "Укажите верную последовательность этапов приготовления песочного полуфабриката для пирожного «Корзиночка»:" 
+    
     else if(numtaskNow==7) document.querySelector('.task-text').innerHTML = "Соотнесите вид теста и используемый способ разрыхления:" 
     else if(numtaskNow==8) document.querySelector('.task-text').innerHTML = "Какую насадку на миксер необходимо использовать при работе с песочным тестом?" 
     else if(numtaskNow==9) document.querySelector('.task-text').innerHTML = "Ответьте на вопрос:" 
