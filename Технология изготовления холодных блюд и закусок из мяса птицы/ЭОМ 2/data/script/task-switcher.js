@@ -99,10 +99,7 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 3) {
             solvTask[2] = 1
-            document.querySelector('.true-answer-3').setAttribute('disabled', true);
-            document.querySelector('.t-3-2').setAttribute('disabled', true);
-            document.querySelector('.t-3-3').setAttribute('disabled', true);
-            if(document.querySelector('.true-answer-3').checked) { 
+            if(document.querySelector('.answer-3').value == "лазанья" || document.querySelector('.answer-3').value == "Лазанья") { 
                 ball++ 
                 document.querySelector('.circle-3').classList.add("circle_true-answer")
             }
@@ -151,10 +148,7 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 7) {
             solvTask[6] = 1
-            document.querySelector('.true-answer-7').setAttribute('disabled', true);
-            document.querySelector('.t-7-2').setAttribute('disabled', true);
-            document.querySelector('.t-7-3').setAttribute('disabled', true);
-            if(document.querySelector('.true-answer-7').checked) { 
+            if(document.querySelector('.answer-7').value == "горчица" || document.querySelector('.answer-7').value == "Горчица") { 
                 ball++ 
                 document.querySelector('.circle-7').classList.add("circle_true-answer")
             }
@@ -248,7 +242,7 @@ function answer() {
     if(numtaskNow == 10) {
         document.querySelector('.task-text').innerHTML = "Установите соответствие между правильностью использования разделочных досок при приготовлении кулинарной продукции:"
     }
-    else if(numtaskNow == 8) {
+    else if(numtaskNow == 8 || numtaskNow == 7 ||numtaskNow == 3) {
         document.querySelector('.task-text').innerHTML = "Ответьте на вопрос:"
     }
     else {

@@ -86,10 +86,8 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 2) {
             solvTask[1] = 1
-            document.querySelector('.true-answer-2').setAttribute('disabled', true);
-            document.querySelector('.t-2-2').setAttribute('disabled', true);
-            document.querySelector('.t-2-3').setAttribute('disabled', true);
-            if(document.querySelector('.true-answer-2').checked) { 
+            document.querySelector('.answer-2').setAttribute('disabled', true);
+            if(document.querySelector('.answer-2').value == "аммоний" || document.querySelector('.answer-2').value == "Аммоний") { 
                 ball++ 
                 document.querySelector('.circle-2').classList.add("circle_true-answer")
             }
@@ -239,6 +237,7 @@ function RaschitatiBalli() {
 
 function answer() {
     if(numtaskNow==7) document.querySelector('.task-text').innerHTML = "Допишите недостающие слова в определении:" 
+    else if(numtaskNow == 2) document.querySelector('.task-text').innerHTML = "Ответьте на вопрос:"
     else if(numtaskNow==10) document.querySelector('.task-text').innerHTML = "Укажите верную последовательность этапов приготовления песочного полуфабриката для пирожного «Корзиночка»:" 
     else {
         document.querySelector('.task-text').innerHTML = "Выберите один правильный ответ:" 

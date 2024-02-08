@@ -100,11 +100,8 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 3) {
             solvTask[2] = 1
-            document.querySelector('.true-answer-3').setAttribute('disabled', true);
-            document.querySelector('.t-3-2').setAttribute('disabled', true);
-            document.querySelector('.t-3-3').setAttribute('disabled', true);
-            document.querySelector('.t-3-4').setAttribute('disabled', true);
-            if(document.querySelector('.true-answer-3').checked) { 
+            document.querySelector('.answer-3').setAttribute('disabled', true);
+            if(document.querySelector('.answer-3').value == "Подкисление" || document.querySelector('.answer-3').value == "подкисление") { 
                 ball++ 
                 document.querySelector('.circle-3').classList.add("circle_true-answer")
             }
@@ -128,10 +125,8 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 5) {
             solvTask[4] = 1
-            document.querySelector('.true-answer-5').setAttribute('disabled', true);
-            document.querySelector('.t-5-2').setAttribute('disabled', true);
-            document.querySelector('.t-5-3').setAttribute('disabled', true);
-            if(document.querySelector('.true-answer-5').checked) { 
+            document.querySelector('.answer-5').setAttribute('disabled', true);
+            if(document.querySelector('.answer-5').value == "Прессование" || document.querySelector('.answer-5').value == "прессование") { 
                 ball++ 
                 document.querySelector('.circle-5').classList.add("circle_true-answer")
             }
@@ -246,6 +241,7 @@ function RaschitatiBalli() {
 
 function answer() {
     if(numtaskNow == 9) document.querySelector('.task-text').innerHTML = "Определите очередность технологических операций по производству адыгейского сыра:"
+    else if(numtaskNow == 5) document.querySelector('.task-text').innerHTML = "Ответьте на вопрос:"
     else if(numtaskNow==10) document.querySelector('.task-text').innerHTML = "Введите в текстовые поля недостающие слова:" 
     else {
         document.querySelector('.task-text').innerHTML = "Выберите один правильный ответ:" 

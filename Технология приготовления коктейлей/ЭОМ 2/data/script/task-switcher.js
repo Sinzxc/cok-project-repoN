@@ -98,11 +98,8 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 3) {
             solvTask[2] = 1
-            document.querySelector('.true-answer-3').setAttribute('disabled', true);
-            document.querySelector('.t-3-2').setAttribute('disabled', true);
-            document.querySelector('.t-3-3').setAttribute('disabled', true);
-            document.querySelector('.t-3-4').setAttribute('disabled', true);
-            if(document.querySelector('.true-answer-3').checked) { 
+            document.querySelector('.answer-3').setAttribute('disabled', true);
+            if(document.querySelector('.answer-3').value == "Микс" || document.querySelector('.answer-3').value == "микс") { 
                 ball++ 
                 document.querySelector('.circle-3').classList.add("circle_true-answer")
             }
@@ -112,10 +109,8 @@ nextBtn.addEventListener('click',()=> {
         }
         if(numtaskNow == 4) {
             solvTask[3] = 1
-            document.querySelector('.true-answer-4').setAttribute('disabled', true);
-            document.querySelector('.t-4-2').setAttribute('disabled', true);
-            document.querySelector('.t-4-3').setAttribute('disabled', true);
-            if(document.querySelector('.true-answer-4').checked) { 
+            document.querySelector('.answer-4').setAttribute('disabled', true);
+            if(document.querySelector('.answer-4').value == "билд" || document.querySelector('.answer-4').value == "Билд") { 
                 ball++ 
                 document.querySelector('.circle-4').classList.add("circle_true-answer")
             }
@@ -243,6 +238,7 @@ function RaschitatiBalli() {
 function quationSwitcher() {
     if(numtaskNow == 7) document.querySelector('.task-text').innerHTML = "Сопоставить каждое название напитка с соответствующим ему видом:"
     else if(numtaskNow == 9) document.querySelector('.task-text').innerHTML = "Из представленного  списка  необходимо выбрать коктейли, приготовленные на основе рома:"
+    else if(numtaskNow == 4 || numtaskNow ==3) document.querySelector('.task-text').innerHTML = "Ответьте на вопрос:"
     else {
         document.querySelector('.task-text').innerHTML = "Выберите один правильный ответ:"
     }
