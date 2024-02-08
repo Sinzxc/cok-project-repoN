@@ -123,6 +123,7 @@
     line-height: 23px;
     color: var(--text-color);
     margin-left: 30px;
+    margin-bottom: 5px;
 }
 
 .pop-up-window li {
@@ -142,6 +143,9 @@
     position: relative;
     left: 50px;
     margin: 2px 0 4px;
+    margin-bottom: 6px;
+    margin-top: -5px;
+    padding-right: 50px;
 }
 .pop-up-window ol {
     font-family: 'Montserrat';
