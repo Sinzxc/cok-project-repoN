@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Иконки для разных платформ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./data/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./data/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./data/favicon/favicon-16x16.png">
+    <!--<link rel="manifest" href="site.webmanifest">-->
+    <link rel="mask-icon" href="./data/favicon/safari-pinned-tab.svg" color="#35d37d">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Стили -->
+    <link rel="stylesheet" href="./data/css/index.css">
+    <title>Профессионалитет</title>
+</head>
+<body>
+    <!-- Тень для сайта при открытии блоков -->
+    <div id="shadow" class="shadow"></div>
+
+    <header class="header">
+         <div class="header__container">
+             <div class="header__wrapper">
+                 <div class="professionalism">
+                     <div class="professionalism__title-wrap">
+                         <span class="professionalism__year">2023</span>
+                         <span class="professionalism__title">ПРОФЕССИОНАЛИТЕТ</span>
+                     </div>
+                     <nav class="nav">
+                         <ul class="nav__list">
+                             <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/bricks.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/tent.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/parallelepiped.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/bus.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/ship.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/circle.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/mountain.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/leaflet.svg" alt="img"></a></li>
+                         </ul>
+                     </nav>
+                     <!-- ПЕРЕНЕСИТЕ ЭТО В ОСНОВНУЮ НАВИГАЦИЮ -->
+                 </div>
+                 <!-- /professionalism -->
+     
+                 <div class="header-title-wrap">
+                     <h2 class="header-title">МГГТК ФГБОУ ВО «АГУ»</h2>
+                     <p class="header__subtitle">Образовательный кластер «Образовательный центр индустрии туризма и сферы услуг Республики Адыгея»</p>
+                 </div>
+     
+                 <div class="logo-wrap">
+                     <img src="./data/img/logo/logo.svg" alt="logo" class="logo">
+                 </div>
+                 
+                 <div class="home" style="height: 29px; width: 31px;">
+                    <a href="../../index.html"><img src="./data/img/home.svg" alt="go home"></a>
+                 </div>
+                 
+                 
+                 <button class="burger-btn">
+                     <img src="./data/img/burger.svg" alt="logo" class="burger-img">
+                     <img src="./data/img/burger-dark-mode.svg" alt="logo" class="burger-dark-img hide">
+                 </button>
+ 
+                 <div class="right-side-menu">
+                     <button class="burger-btn-close">Закрыть</button>
+                     <div class="right-side-menu__block">
+                         <p class="right-side-menu__text">Включить / Выключить темную тему</p>
+                         <label class="switch-button" for="switch">
+                             <div class="switch-outer">
+                             <input id="switch" type="checkbox" class="dark2">
+                             <div class="button">
+                                 <span class="button-toggle"></span>
+                                 <span class="button-indicator"></span>
+                             </div>
+                             </div>
+                         </label>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </header>
+
+    <main class="">
+        <section class="topic-section">
+            <div class="container">
+                <div class="topic-section__wrapper">
+                    <span class="topic-text">Тема:</span>
+                    <h1 class="topic-title">Средства и методы физического воспитания школьников </h1>
+                    <p class="topic-subtitle">#Средства и методы физического воспитания школьников</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="information">
+            <div class="container">
+                <div class="information__wrapper">
+                    <div class="pop-up-window-wrap">
+                        <button type="submit" class="pop-up-window__btn pop-up-window__btn1">Информация о контенете</button>
+                        <div class="pop-up-container pop-up-container-info-content">
+                            <div class="close-btn-block">
+                                <button class="close-btn close-btn1"></button>
+                            </div>
+                            <div class="pop-up-window" id="aboutContent"><h5>Номер и название ФГОС СПО:</h5>
+                                <p>Федеральный государственный образовательный стандарт среднего профессионального образования по специальности 49.02.01 Физическая культура, утвержден Приказом Минпросвещения России от 11 ноября 2022 г. № 968.</p>
+                                
+                                <h5>ПОП Профессионалитета:</h5>
+                                <p>49.02.01 Физическая культура</p>
+                                <h5>Профессиональный модуль:</h5>
+                                <p>ПМ.03 Преподавание физической культуры по основным общеобразовательным программам.</p>
+                                
+                                <h5>Название МДК:</h5>
+                                <p>МДК. 03.01 Теоретические и методические основы организации и проведения учебных занятий по физической культуре.</p>
+                                
+                                <h5>Раздел:</h5>
+                                <p>Раздел 1 Методика обучения предмету «Физическая культура».</p>
+                                
+                                <h5>Наименование темы:</h5>
+                                <p>Тема 1.2. Средства и методы физического воспитания школьников.</p>
+                               </div>
+                        </div>
+                        <div class="delimiter"></div>
+                        <button type="submit" class="pop-up-window__btn pop-up-window__btn2">Ключевые слова</button>
+                        <div class="pop-up-container pop-up-container-key-words">
+                            <div class="close-btn-block">
+                                <button class="close-btn close-btn2"></button>
+                            </div>
+                            <div class="pop-up-window" id="keyWords"><h5>Форма</h5>
+                                <p>Это определённая упорядоченность и согласованность, как процессов, так и элементов содержания данного упражнения.</p>
+                                
+                                <h5>Содержание физического упражнения</h5>
+                                <p>Это совокупность физиологических, психологических и биомеханических процессов, происходящих в организме человека при выполнении данного упражнения.</p>
+                                
+                                <h5>Классификация физических упражнений</h5>
+                                <p>Значит логически представлять их как некоторую упорядоченную совокупность с подразделением на группы и подгруппы согласно определенным признакам.</p>
+                                
+                                <h5>Метод</h5>
+                                <p>Это способ реализации физического упражнения.</p>
+                                
+                                <h5>Методический прием</h5>
+                                <p>Это конкретный способ реализации физического упражнения.</p>
+                                
+                                <h5>Метод строго</h5>
+                                <p>Это регламентированного упражнения.</p>
+                                
+                            </div>
+                        </div>
+                        <!-- Поместил здесь тк стили и другие мелочи ну вы поняли я хз -->
+                    <!-- Окошко для первой карточки -->
+                    <div v="" class="pop-up-container pop-up-container-card-1">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn3"></button>
+                        </div>
+                        <div class="pop-up-window" id="pop1"><h5>Рекомендации для обучающегося (самостоятельная работа)</h5>
+                            <p> Повторите ранее пройденный материал по теме МДК. 03.01 Теоретические и методические основы организации и проведения учебных занятий по физической культуре.</p>
+                            <p> Ознакомьтесь с теоретическим материалом по новой теме. Просмотрите видеолекцию по теме Средства физического воспитания школьников.</p>
+                            <p> Если в процессе изучения материала возникнут вопросы, запишите их для дальнейшего обсуждения с преподавателем и/или с группой обучающихся.</p>
+                            <p> Обратите внимание на основные вопросы, подтверждающие взаимосвязь знаний и умений при изучении модуля:</p>
+                            <p> Классификация основных и вспомогательных средств физического воспитания.</p>
+                            <p> При необходимости просмотрите материал еще раз.</p>
+                            <p> Возвращайтесь к наиболее сложным аспектам темы.</p>
+                            <p> Соблюдайте здоровьесберегающий режим: чередуйте работу с электронными носителями с отдыхом и гимнастикой для глаз.</p>
+                            
+                            <h5>Рекомендации для преподавателя</h5>
+                            <p>Организовать просмотр видеолекции и последующую беседу по уточнению и конкретизации первичных знаний.</p>
+                            <p>Создать условия для освоения обучающимися знаний в форме интерактивной деятельности.</p>
+                            <p>Визуализировать подачу учебного материала с помощью иллюстраций, фотографий.</p>
+                            <p>Формировать у обучающихся мотивацию к усвоению нового материала, образованию как основному инструменту достижения личного и профессионального успеха.</p>
+                            <p>Осуществить постановку учебной проблемы: разобраться и уметь применять средства физического воспитания.</p>
+                            <p>Содействовать установлению в сознании обучающихся устойчивых связей между накопленным и новым опытом познавательной деятельности.</p>
+                            <p>Фиксировать предложенные обучающимися гипотезы, курировать их обсуждение.</p>
+                        </div>
+                    </div>
+                    <!-- /pop-up-container-card1 -->
+                        <!-- Окошко для второй карточки -->
+                        <div class="pop-up-container pop-up-container-card-2">
+                            <div class="close-btn-block">
+                                <button class="close-btn close-btn4"></button>
+                            </div>
+                            <div class="pop-up-window" id="pop2"><h5>Рекомендации для обучающегося (самостоятельная работа)</h5>
+                                <p> Повторите ранее пройденный материал "ПМ.03 Преподавание физической культуры по основным общеобразовательным программам".</p>
+                                <p> Запустите виртуальный тренажер по выполнению заданий, по теме «Средства и методы физического воспитания школьников».</p>
+                                <p> В ходе практической работы выполните тренировочные задания, которые помогут освоить новый материал.</p>
+                                <p> В процессе интерактивного взаимодействия с тренажером познакомьтесь с названиями, назначением, внешним видом инструментов, оборудования, а также с правилами безопасной работы с ними.</p>
+                                <p> Уделите особое внимание правильной организации рабочего места.</p>
+                                <p> Детально изучите конкретный технологический процесс, последовательно выполняя трудовые действия и используя для этого соответствующие инструменты и материалы.</p>
+                                <p> Проведите лабораторную с виртуальным оборудованием и фиксацией ее результатов в ЭОМ.</p>
+                                <p> Сопоставьте список предложений, укажите верное утверждене (утверждения), создайте и разработайте свой комплекс ОРУ.</p>
+                                <p> Выполните тренировочные задания на проверку первичного освоения материала.</p>
+                                <p> При выполнении заданий обратите внимание на рекомендации преподавателя.</p>
+                                <p> При возникновении ошибок возвращайтесь к повторному изучению теоретического материала.</p>
+                                
+                                <h5>Рекомендации для преподавателя</h5>
+                                <p>Организовать практическую, в том числе самостоятельную, деятельность обучающихся для отработки навыков решения определенных учебных заданий.</p>
+                                <p>Обеспечить усвоение обучающимися знаний и способов действий на уровне применения их в разнообразных ситуациях.</p>
+                                <p>Объяснить обучающимся порядок выполнения заданий.</p>
+                                <p>Консультировать обучающихся по мере необходимости.</p>
+                                <p>Обеспечить в ходе выполнения тренировочных заданий повышение уровня осмысления изученного материала, глубины его понимания.</p>
+                                <p>Анализировать работу обучающихся в новых учебных ситуациях.</p>
+                                <p>Выявить недостатки в знаниях и способах действий обучающихся, установить причины выявленных недостатков.</p>
+                                <p>Использовать вопросы, требующие интеллектуальной активности, самостоятельной мыслительной деятельности.</p>
+                                <p>Привлекать обучающихся к дополнению и корректировке ответов, создавать условия для фронтальной и групповой работы.</p>
+                                <p>Способствовать развитию умения правильно составлять план и пользоваться им, сопоставлять факты и события, сравнивать, анализировать, систематизировать материал и формулировать выводы, находить нужную информацию и использовать ее на практике.</p>
+                            </div>
+                        </div>
+                        <!-- /pop-up-container-card-2 -->
+                        <!-- Окошко для третей карточки -->
+                        <div class="pop-up-container pop-up-container-card-3">
+                            <div class="close-btn-block">
+                                <button class="close-btn close-btn5"></button>
+                            </div>
+                            <div class="pop-up-window" id="pop3"><h5>Рекомендации для обучающегося (самостоятельная работа)</h5>
+                                <p> Запустите интерактивный тренажер по теме «Средства и методы физического воспитания школьников».</p>
+                                <p> Последовательно ознакомьтесь с условиями учебной задачи.</p>
+                                <p> При выполнении заданий обратите внимание на рекомендации преподавателя.</p>
+                                <p> Выполните тренировочные задания на проверку знаний, умений и навыков:</p>
+                                <ul>
+                                    <li>выбор одного правильного ответа;</li>
+                                    <li>выбор нескольких правильных ответов;</li>
+                                    <li>вставить слово или выражение;</li>
+                                    <li>сопоставление.</li>
+                                </ul>
+                                <p> Осуществите самопроверку и предварительную оценку.</p>
+                                <p> Сформулируйте конечный результат своей работы.</p>
+                                <p> При возникновении ошибок возвращайтесь к повторному изучению теоретического материала.</p>
+                                
+                                <h5>Рекомендации для преподавателя</h5>
+                                <p>Обеспечьте формирование у обучающихся умений самостоятельно применять знания в разнообразных ситуациях, в том числе при выполнении заданий разного уровня сложности.</p>
+                                <p>Контролируйте выполнение заданий.</p>
+                                <p>Проверьте степень усвоения знаний, умений при выполнении заданий разного уровня сложности.</p>
+                                <p>Мотивируйте обучающихся для получения максимального количества баллов и подтверждения профессиональной компетентности.</p>
+                                <p>Отмечайте степень вовлеченности обучающихся в работу.</p>
+                                <p>Акцентируйте внимание на итоговых результатах прохождения всей мини-игры.</p>
+                                <p>Подготовьте обучающихся к самооценке и рефлексии.</p>
+                            </div>
+                        </div>
+                        <!-- /pop-up-container-card-3 -->
+                    </div>
+
+                    <div class="information__text-wrap">
+                        <p class="information__text">
+                            ЦИФРОВОЙ ОБРАЗОВАТЕЛЬНЫЙ КОНТЕНТ 
+                        </p>
+                    </div>
+                </div>
+                <!-- /information__wrapper -->
+            </div>
+            <!-- /container -->
+        </section>
+        <!-- /information -->
+
+        <section class="cards">
+            <div class="container">
+                <div class="cards__wrapper">
+                    <div class="card-navigation-line center-card"></div>
+
+                    <div class="card">
+                        <h3 class="card-title">Освоение <br> нового материала</h3>
+                        <div class="card-topic-img__wrap">
+                            <img src="./data/img/cards_icon/new-material.svg" alt="img" class="card-topic-img">
+                            <img src="./data/img/cards_icon/dark_theme/new-material_dark.svg" alt="img" class="card-topic-img-dark hide">
+                        </div>
+                        <div class="theme-text">Формирование новых знаний и способов деятельности</div>
+                        <nav class="nav card__nav">
+                            <ul class="nav__list">
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/bricks.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/tent.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/parallelepiped.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/bus.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/ship.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/circle.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/mountain.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/leaflet.svg" alt="img"></a></li>
+                            </ul>
+                        </nav>
+                        <div class="card-links-wrap">
+                            <a href="../ЭОМ 1/index.html" class="card__link">
+                                <img src="./data/img/cards_icon/icon_play_circle_outline.svg" alt="img">
+                            </a>
+                            <a class="card__link pop-up-window__btn3">
+                                <img src="./data/img/cards_icon/icon_file_outline.svg" alt="img">
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <!-- /card -->
+                    <div class="card">
+                        <h3 class="card-title">Применение <br>
+                            изученного материала</h3>
+                        <div class="card-topic-img__wrap">
+                            <img src="./data/img/cards_icon/practive.svg" alt="img" class="card-topic-img">
+                            <img src="./data/img/cards_icon/dark_theme/practice_dark.svg" alt="img" class="card-topic-img-dark hide">
+                        </div>
+                        <div class="theme-text">Воспроизведение формируемых знаний и их применение в стандартных условиях</div>
+                        <nav class="nav card__nav">
+                            <ul class="nav__list">
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/bricks.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/tent.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/parallelepiped.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/bus.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/ship.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/circle.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/mountain.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/leaflet.svg" alt="img"></a></li>
+                            </ul>
+                        </nav>
+                        <div class="card-links-wrap">
+                            <a href="../ЭОМ 2/index.html" class="card__link">
+                                <img src="./data/img/cards_icon/icon_play_circle_outline.svg" alt="img">
+                            </a>
+                            <a class="card__link pop-up-window__btn4">
+                                <img src="./data/img/cards_icon/icon_file_outline.svg" alt="img">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /card -->
+                    <div class="card">
+                        <h3 class="card-title">Диагностика 
+                            приобретенных знаний, 
+                            умений и навыков</h3>
+                        <div class="card-topic-img__wrap">
+                            <img src="./data/img/cards_icon/diagnostics.svg" alt="img" class="card-topic-img">
+                            <img src="./data/img/cards_icon/dark_theme/diagnostics_dark.svg" alt="img" class="card-topic-img-dark hide">
+                        </div>
+                        <div class="theme-text">Подведение итогов работы; фиксация достижения целей</div>
+                        <nav class="nav card__nav">
+                            <ul class="nav__list">
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/bricks.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/tent.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/parallelepiped.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/bus.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/ship.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/circle.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/mountain.svg" alt="img"></a></li>
+                                <li class="list__item"><a href="#" class="list__link"><img src="./data/img/header_nav_icons/leaflet.svg" alt="img"></a></li>
+                            </ul>
+                        </nav>
+                        <div class="card-links-wrap">
+                            <a href="../ЭОМ 3/index.html" class="card__link">
+                                <img src="./data/img/cards_icon/icon_play_circle_outline.svg" alt="img">
+                            </a>
+                            <a class="card__link pop-up-window__btn5">
+                                <img src="./data/img/cards_icon/icon_file_outline.svg" alt="img">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /card -->
+                </div>
+                <!-- /cards__wrapper -->
+            </div>
+            <!-- /container -->        
+        </section>
+        <!-- /cards -->
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__left-side">
+                <h4 class="footer-title">
+                    ФГОС СПО 49.02.01 
+                </h4>
+                <p class="footer-subtitle">
+                    Физическая культура
+                </p>
+            </div>
+            <div class="footer__right-side">
+                <h4 class="footer-title">
+                    МДК.03.01 
+                </h4>
+                <p class="footer-subtitle">
+                    Теоретические и методические основы организации и проведения учебных занятий по физической культуре; 
+                </p>
+            </div>
+        </div>
+        <!-- /footer__wrapper -->
+    </footer>
+
+    <!-- Скрипты (писал неуч) -->
+    <script src="./data/script/script.js"></script>
+    <script src="./data/script/pop-up-window_script.js"></script>
+    <script src="./data/script/pop-up-content.js"></script>
+    <script src="./data/script/burger_script.js"></script>
+    <script src="./data/script/dark_theme_script.js"></script>
+
+    <div class="tent tent-1"></div>
+    <div class="tent tent-2"></div>
+    <div class="tent tent-3"></div>
+    <div class="tent tent-4"></div>
+</body>
+</html>

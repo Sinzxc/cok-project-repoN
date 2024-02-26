@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Иконки для разных платформ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../Главная/data/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Главная/data/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Главная/data/favicon/favicon-16x16.png">
+    <!--<link rel="manifest" href="site.webmanifest">-->
+    <link rel="mask-icon" href=".../Главная/data/favicon/safari-pinned-tab.svg" color="#35d37d">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Стили -->
+    <link rel="stylesheet" href="../Главная/data/css/index.css">
+    <link rel="stylesheet" href="data/css/index.css">
+    <title>Динамическая инфографика</title>
+</head>
+<body>
+    <!-- Тень для сайта при открытии блоков -->
+    <div id="shadow" class="shadow"></div>
+
+    <header class="header">
+         <div class="header__container">
+             <div class="header__wrapper">
+                 <div class="professionalism">
+                     <div class="professionalism__title-wrap">
+                         <span class="professionalism__year">2023</span>
+                         <span class="professionalism__title">ПРОФЕССИОНАЛИТЕТ</span>
+                     </div>
+                     <nav class="nav">
+                         <ul class="nav__list">
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/bricks.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/tent.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/parallelepiped.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/bus.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/ship.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/circle.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/mountain.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/leaflet.svg" alt="img"></a></li>
+                         </ul>
+                     </nav>
+                     <!-- ПЕРЕНЕСИТЕ ЭТО В ОСНОВНУЮ НАВИГАЦИЮ -->
+                 </div>
+                 <!-- /professionalism -->
+     
+                 <div class="header-title-wrap">
+                     <h2 class="header-title">МГГТК ФГБОУ ВО «АГУ»</h2>
+                     <p class="header__subtitle">Образовательный кластер «Образовательный центр индустрии туризма и сферы услуг Республики Адыгея»</p>
+                 </div>
+     
+                 <div class="logo-wrap">
+                     <img src="data/img/logo/logo.svg" alt="logo" class="logo">
+                 </div>
+                 
+                 <div class="home" style="height: 29px; width: 31px;">
+                    <a href="../Главная/index.html"><img src="data/img/home.svg" alt="go home"></a>
+                 </div>
+                 
+                 
+                 <button class="burger-btn">
+                     <img src="data/img/burger.svg" alt="logo" class="burger-img">
+                     <img src="data/img/burger-dark-mode.svg" alt="logo" class="burger-dark-img hide">
+                 </button>
+ 
+                 <div class="right-side-menu">
+                     <button class="burger-btn-close">Закрыть</button>
+                     <div class="right-side-menu__block">
+                         <p class="right-side-menu__text">Включить / Выключить темную тему</p>
+                         <label class="switch-button" for="switch">
+                             <div class="switch-outer">
+                             <input id="switch" type="checkbox" class="dark2">
+                             <div class="button">
+                                 <span class="button-toggle"></span>
+                                 <span class="button-indicator"></span>
+                             </div>
+                             </div>
+                         </label>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </header>
+
+    <main>
+        <section class="topic-section">
+            <div class="container">
+                <div class="topic-section__wrapper">
+                    <span class="topic-text">Тема:</span>
+                    <h1 class="topic-title">Проектирование конструкций поясных изделий женской одежды</h1>
+                    <p class="topic-subtitle">#Конструирование, моделирование и технология изготовления изделий легкой промышленности</p>
+                </div>
+                <!-- /topic-section__wrapper -->
+            </div>
+            <!-- /container -->
+        </section>
+        <!-- /topic-section -->
+
+        <section class="infographic">
+            <div class="container">
+                <div class="card-navigation-line"></div>
+                <h4 class="infographilc__title">Динамическая инфографика</h4>
+                <div class="infographic__wrapper">
+                    <div class="pop-up-container pop-up-container-card-1">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn1"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title">Конструктивное моделирование поясной одежды. Основные понятия. </h5>
+                            <div class="pop-up__content" id="inf1"><div class="pop-up_img">
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card1/1.jpg" alt="1"></p>
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card1/arrow.jpg" alt="1"></p>
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card1/2.jpg" alt="1"></p>
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card1/arrow.jpg" alt="1"></p>
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card1/3.jpg" alt="1"></p>
+                            </div>
+
+                            <h2>Основные понятия.</h2>
+                            <p><span class="term">Базовая конструкция одежды</span> – изображение основных деталей определенного вида и силуэта одежды с учетом прибавок на свободу, толщину пакета материалов и технологических припусков на влажно-тепловуюобработку и термодублирование, служит для разработки модельных конструкций. </p>
+                            <p><span class="term">Поясная одежда</span> – одежда покрывающая нижнюю часть туловища и ноги частично или полностью, опирающаяся на тазобедренный пояс.</p>
+                            <p><span class="term">Вытачка</span> – стачной участок ткани в изделии, служащий для создания объемной формы детали.</p>
+                            <p><span class="term">Кокетка</span> – верхняя, отрезная часть деталей изделия, полочки, спинки, юбки, брюк.</p>
+                            <p><span class="term">Рельефы</span> – это резные линии, которые делят основное лекало на части и с помощью которых создается форма изделия, облегающая фигуру.</p>
+                            <p><span class="term">Драпировка</span> – это создание нужной формы участка изделия группой мягких складок.</p>
+                            <p><span class="term">Конструктивные линии</span> – линии, создающие основную форму деталей, и линии соединяющие составные детали одежды: боковые, передние, талиевые, плечевые швы, швы соединяющие стыки, рукава, вытачки.</p>
+                            <p><span class="term">Декоративные линии</span> – это линии, существующие исключительно для декоративных целей. К декоративным относятся линии различных отделок: защипы, складки, сборки, вышивки, отделочные швы.</p>
+                            <p><span class="term">Моделирование</span> – это изменение линий основной конструкции в соответствии с выбранной моделью.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-2">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn2"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title">Этапы конструктивного моделирования</h5>
+                            <div class="pop-up__content" id="inf2"><p><span class="term">Этапы конструктивного моделирования:</span></p>
+                            <ol>
+                            <li>анализ фотографии или эскиза проектируемой модели,</li>
+                            <li>выбор подходящей базовой конструкции ,</li>
+                            <li>изменение базовой конструкции, путем переноса вытачек, членения деталей, нанесение на чертеж конструктивных линий,</li>
+                            <li>проверка разработанной модельной конструкции.</li>
+                            </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-3">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn3"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title">Анализ проектируемой модели (по ее эскизу или фотографии).</h5>
+                            <div class="pop-up__content" id="inf3"><p>Проектируемая модель может быть представлена фотографией, эскизом или готовым изделием. При изучении модели необходимо выявить ее особенности и отклонения от базовой конструкции. Анализ модели начинают с разметки на эскизе центральной линии и линий основных конструктивных уровней (талии, бедер, колена, низа изделия).
+                            При работе с графическим изображением модели определяют его масштаб: продольный и поперечный. Для установления продольного масштаба можно использовать размер высоты головы. Поперечный масштаб определяют через стандартные размеры деталей. Расчеты производятся по формулам:</p>
+                            <p><span class="term">М=Р н /Рр;
+                            Рн=Рр М,</span></p>
+                            <p>где М –масштаб; Р н – размер детали в натуральную величину; Р р – размер детали на рисунке модели.</p>
+                            <p>При анализе эскиза модели объектами изучения являются: уровень линии талии и низа изделия, расположение вытачек и рельефов, петель и пуговиц, карманов, кокеток, хлястиков и т.д. Размеры и расположение конструктивных элементов на рисунке моделей определяют, ориентируясь на положение вспомогательных линий, используя вычисленный масштаб эскиза. Определение прибавок на свободное облегание и их распределение по ширине изделия выполняют ориентировочно с учетом принятого модного направления и средних значений прибавок для изделий данного силуэта.
+                            <img src="data/img/infographic_imgs/pop-up_imgs/card3/1.jpg" alt="1"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-4">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn4"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title">Выбор базовой конструкции для проектируемого изделия</h5>
+                            <div class="pop-up__content" id="inf4"><p>При выборе подходящей базовой конструкции для преобразования ее в конструкцию заданной модели необходимо определить: вид одежды и ткани, силуэт, размер, рост и полнотную группу, декоративно- конструктивные прибавки проектируемого изделия.</p>
+</div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-5">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn5"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title">Формообразование одежды и принцип преобразования базовой конструкции в модельную.</h5>
+                            <div class="pop-up__content" id="inf5"><p>Формообразование кроеной одежды- это процесс создания объемных форм одежды за счет способности ее материалов под действием деформаций изгиба, растяжения и смятия создавать пространственную форму. Основными факторами формообразования в конструкции одежды являются швы, вытачки, влажно-тепловая обработка, формовочные свойства материалов и различные их комбинации. </p>
+<p>Выделяют следующие 3 вида разработки модельных конструкций: без изменения силуэтной формы базовой конструкции, с изменением силуэтной формы базовой конструкции, с изменением объёмной формы базовой конструкции. </p>
+</div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-6">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn6"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title">Конструктивное моделирование без изменения силуэта базовой конструкции.</h5>
+                            <div class="pop-up__content" id="inf6"><p>Самый простой вид конструктивного моделирования- когда новая модель разрабатывается без изменения силуэтной формы базовой конструкции. Преобразованию подвергаются форма карманов и других мелких деталей, проектируются складки и кокетки, вводятся дополнительные членения, меняется длина изделия, используется простой перевод вытачек. </p>
+<p>Моделирование поясной одежды осуществляют на основе апробированной базовой конструкции прямой юбки или брюк классической формы. Преобразования проводят путем нанесения на детали базовой основы новых конструктивных линий. Кокетки в поясной одежде может иметь различную форму и размер. При ее проектировании вытачку по линии талии желательно перевести в линию среза кокетки. Поэтому ее лучше проводить через вершины вытачек. Если линия кокетки расположена выше концов вытачек, то их верхнюю часть закрывают, а оставшуюся совмещают с рельефами, складками, и другими конструктивными линиями. Если кокетка расположена ниже вытачек, то их либо сохраняют, либо удлиняют до линии отреза. </p>
+ <div class="pop-up_img">
+
+<p><img src="data/img/infographic_imgs/pop-up_imgs/card6/1.jpg" alt="1"></p>
+<p><img src="data/img/infographic_imgs/pop-up_imgs/card6/2.jpg" alt="1"></p>
+</div></div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-7">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn7"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title">Конструктивное моделирование с изменением силуэта базовой конструкции.</h5>
+                            <div class="pop-up__content" id="inf7"><p>При разработке новой модели изменяется силуэт базовой конструкции. При изменении силуэта используются приемы конического и параллельного расширения деталей, видоизменяются контуры деталей.  </p>
+ <div class="pop-up_img">
+
+<p><img src="data/img/infographic_imgs/pop-up_imgs/card7/1.jpg" alt="1"></p>
+<p><img src="data/img/infographic_imgs/pop-up_imgs/card7/2.jpg" alt="1"></p>
+</div>
+
+<p>Параллельное и коническое расширение деталей поясной одежды может осуществляться на различных уровнях талии, бедер, коленей и ниже. </p>
+<p>Параллельное расширение при проектировании юбок и брюк используется в основном для получения сборок и мягких складок (рис.1). </p>
+<p>Коническое расширение деталей заднего и переднего полотнищ юбки позволяет получить конструкцию малый клеш, «полусолнце», «солнце» (рис.2). Расширение деталей юбки и брюк может быть параллельно-коническим (рис.3). В детали с вытачками условное ее рассечение для расширения выполняют через концы вытачек; при этом после разведения полос вытачки частично или полностью закрываются (рис.4). </p>
+<p>Существует два способа перевода вытачек – графический и способ шаблона. Графический способ выполняют методом дуг и засечек, но он достаточно трудоемкий, поэтому при моделировании в основном используют перевод вытачек способом шаблона. </p>
+<p>Чаще всего в поясной одежде вытачки переводят в фасонные линии (кокетка, драпировка). Если силуэт планируется облегающий, то совсем избавиться от вытачек не представляется возможным.  </p>
+<p>Для конического заужения деталей полосы рассеченных деталей заводят друг на друга, контролируя ширину изделия на уровне линии бедер. При заужении деталей книзу и сохранении их ширины на заданном уровне увеличиваются растворы прежних вытачек и образуются новые, для образования мягких складок и драпировок (рис.5). </p>
+<p><img src="data/img/infographic_imgs/pop-up_imgs/card7/2/1.jpg" alt="1">
+Рис.1</p>
+<p><img src="data/img/infographic_imgs/pop-up_imgs/card7/2/2.jpg" alt="1">
+Рис.2</p>
+<p><img src="data/img/infographic_imgs/pop-up_imgs/card7/2/3.jpg" alt="1">
+Рис.3</p>
+<p><img src="data/img/infographic_imgs/pop-up_imgs/card7/2/4.jpg" alt="1">
+Рис.4</p>
+<p><img src="data/img/infographic_imgs/pop-up_imgs/card7/2/5.jpg" alt="1">
+Рис.5</p>
+<p>При проектировании поясной одежды с рельефами, кокетками необходимо ставить контрольные знаки (надсечки) на совмещение с деталью. Для изделий со складками контрольные знаки ставят для обозначения глубины складки.           </p>
+</div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-8">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn8"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title">Конструктивное моделирование с изменением объемной формы базовой конструкции.</h5>
+                            <div class="pop-up__content" id="inf8"><p>При конструктивном моделировании конструкции поясной одежды с подрезами и драпировкой изменяется объемная форма конструкции. </p>
+<p>При проектировании драпировок сначала выполняются все предварительные преобразования. Вытачки деталей базовой конструкции переводят максимально в модельные линии членения. После этого намечают расположение линий драпировки на чертеже базовой конструкции, а далее переводят вытачки в драпировку или подрез. Количество фалд зависит от того, на какое расстояние были разведены линии членения. При необходимости можно выполнить дополнительное расширение деталей. </p>
+<p>При проектировании изделий с драпировкой, необходимо на лекала наносить контрольные надсечки, которые определяют глубину складок.  </p>
+<p><img src="data/img/infographic_imgs/pop-up_imgs/card8/1.jpg" alt="1"></p>
+</div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-9">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn9"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title">Практическое занятие.</h5>
+                            <div class="pop-up__content" id="inf9"><p>1 Для выполнения практического задания вам понадобятся: базовая конструкция женской юбки (брюк), ножницы, малярный скотч (обычный скотч или клей), линейка, ножницы. </p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/1.jpg" alt="1"></p>
+                                <p>2 Общий алгоритм выполнения конструктивного моделирования при коническом или параллельном расширении деталей: </p>
+                                <p>-проанализируйте эскиз модели; </p>
+                                <p>-наметьте на шаблоне детали место рассечения для дальнейшего разведения ее частей; </p>
+                                <p>-в детали с вытачками условное ее рассечение для расширения выполняют через концы вытачек, при этом после разведения полос вытачки частично или полностью закрываются; </p>
+                                <p>-рассеките деталь по намеченной линии; </p>
+                                <p>-разведите получившиеся части деталей параллельно или конически (по модели); </p>
+                                <p>-закрепите детали скотчем. </p>
+                                <p>3 Пример выполнения параллельного расширения деталей юбки. </p>
+                                <p>Описание модели: Юбка на кокетке, длиной до уровня колена. На нижней части юбки заложены односторонние складки. </p>
+                                <p>Моделирование выполняется на базовой конструкции прямой юбки.  </p>
+                                <p>-Определяем длину изделия.</p>
+                                <p>-Намечаем ширину и форму кокетки. </p>
+                                <p>-Разрезаем деталь по намеченной линии. </p>
+                                <p>-Талиевую вытачку на кокетке закрываем, скрепляя скотчем. </p>
+                                <p>-Шаблон нижней части юбки делим на количество складок и параллельно разводим на желаемую глубину складки. </p>
+                                <p>-Закрепляем шаблоны скотчем. </p>
+                                <div class="pop-up_img">
+
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/2.jpg" alt="1"></p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/arrow.jpg" alt="1"></p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/3.jpg" alt="1"></p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/arrow.jpg" alt="1"></p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/4.jpg" alt="1"></p>
+                                </div>
+
+                                <p>4 Пример выполнения конического расширения и заужения на примере юбки «тюльпан». </p>
+                                <p>Описание модели: Юбка длиной до уровня колена, зауженная к низу, со сборкой по талии и с дополнительным объемом в области бедер. </p>
+                                <p>Моделирование выполняется на базовой конструкции прямой юбки.  </p>
+                                <p>-Определяем длину изделия.<br>-Намечаем вертикальные линии, по которым деталь передней (задней) половинки юбки будет разрезаться. 
+                                -Разрезаем детали юбки по намеченным линиям. </p>
+                                <p>-Нижние края шаблона юбки слегка заводим друг на друга, создавая заужение юбки внизу (коническое заужение). </p>
+                                <p>-Верхние срезы разводим (коническое расширение) на ширину желаемой сборки, создавая тем самым дополнительный объем в области талии и бедер. </p>
+                                <p>-Закрепляем шаблоны скотчем. </p>
+                                <div class="pop-up_img">
+
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/5.jpg" alt="1"></p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/arrow.jpg" alt="1"></p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/6.jpg" alt="1"></p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/arrow.jpg" alt="1"></p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/7.jpg" alt="1"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infographilc__card" >
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card1.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn1">Конструктивное моделирование поясной одежды. Основные понятия</a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card2.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn2">Этапы конструктивного моделирования</a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card3.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn3">Анализ проектируемой модели (по ее эскизу или фотографии).</a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card4.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn4">Выбор базовой конструкции для проектируемого изделия. </a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card5.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn5">Формообразование одежды.  </a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card6.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn6">Конструктивное моделирование без изменения силуэта базовой конструкции.  </a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card7.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn7">Конструктивное моделирование с изменением силуэта базовой конструкции  </a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card8.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn8">Конструктивное моделирование с изменением объемной формы базовой конструкции.   </a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card9.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn9">Практическое занятие   </a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__left-side">
+                <h4 class="footer-title">
+                    ФГОС СПО 29.02.10 
+                </h4>
+                <p class="footer-subtitle">
+                    Конструирование, моделирование и технология изготовления изделий легкой промышленности 
+                </p>
+            </div>
+            <div class="footer__right-side">
+                <h4 class="footer-title">
+                    МДК.02.01 
+                </h4>
+                <p class="footer-subtitle">
+                    Основы конструирования и моделирования швейных изделий
+                </p>
+            </div>
+        </div>
+        <!-- /footer__wrapper -->
+    </footer>
+
+    <script src="data/script/pop-up-window_script.js"></script>
+    
+    <script src="../Главная/data/script/burger_script.js"></script>
+    <script src="../Главная/data/script/dark_theme_script.js"></script>
+
+    <div class="tent tent-1"></div>
+    <div class="tent tent-2"></div>
+    <div class="tent tent-3"></div>
+    <div class="tent tent-4"></div>
+</html>

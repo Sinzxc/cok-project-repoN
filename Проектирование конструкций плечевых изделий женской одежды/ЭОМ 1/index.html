@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Иконки для разных платформ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../Главная/data/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Главная/data/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Главная/data/favicon/favicon-16x16.png">
+    <!--<link rel="manifest" href="site.webmanifest">-->
+    <link rel="mask-icon" href=".../Главная/data/favicon/safari-pinned-tab.svg" color="#35d37d">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Стили -->
+    <link rel="stylesheet" href="../Главная/data/css/index.css">
+    <link rel="stylesheet" href="data/css/index.css">
+    <title>Динамическая инфографика</title>
+</head>
+<body>
+    <!-- Тень для сайта при открытии блоков -->
+    <div id="shadow" class="shadow"></div>
+
+    <header class="header">
+         <div class="header__container">
+             <div class="header__wrapper">
+                 <div class="professionalism">
+                     <div class="professionalism__title-wrap">
+                         <span class="professionalism__year">2023</span>
+                         <span class="professionalism__title">ПРОФЕССИОНАЛИТЕТ</span>
+                     </div>
+                     <nav class="nav">
+                         <ul class="nav__list">
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/bricks.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/tent.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/parallelepiped.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/bus.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/ship.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/circle.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/mountain.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/leaflet.svg" alt="img"></a></li>
+                         </ul>
+                     </nav>
+                     <!-- ПЕРЕНЕСИТЕ ЭТО В ОСНОВНУЮ НАВИГАЦИЮ -->
+                 </div>
+                 <!-- /professionalism -->
+     
+                 <div class="header-title-wrap">
+                     <h2 class="header-title">МГГТК ФГБОУ ВО «АГУ»</h2>
+                     <p class="header__subtitle">Образовательный кластер «Образовательный центр индустрии туризма и сферы услуг Республики Адыгея»</p>
+                 </div>
+     
+                 <div class="logo-wrap">
+                     <img src="data/img/logo/logo.svg" alt="logo" class="logo">
+                 </div>
+                 
+                 <div class="home" style="height: 29px; width: 31px;">
+                    <a href="../Главная/index.html"><img src="data/img/home.svg" alt="go home"></a>
+                 </div>
+                 
+                 
+                 <button class="burger-btn">
+                     <img src="data/img/burger.svg" alt="logo" class="burger-img">
+                     <img src="data/img/burger-dark-mode.svg" alt="logo" class="burger-dark-img hide">
+                 </button>
+ 
+                 <div class="right-side-menu">
+                     <button class="burger-btn-close">Закрыть</button>
+                     <div class="right-side-menu__block">
+                         <p class="right-side-menu__text">Включить / Выключить темную тему</p>
+                         <label class="switch-button" for="switch">
+                             <div class="switch-outer">
+                             <input id="switch" type="checkbox" class="dark2">
+                             <div class="button">
+                                 <span class="button-toggle"></span>
+                                 <span class="button-indicator"></span>
+                             </div>
+                             </div>
+                         </label>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </header>
+
+    <main>
+        <section class="topic-section">
+            <div class="container">
+                <div class="topic-section__wrapper">
+                    <span class="topic-text">Тема:</span>
+                    <h1 class="topic-title">Проектирование конструкций плечевых изделий женской одежды</h1>
+                    <p class="topic-subtitle">#Конструирование, моделирование и технология изготовления изделий легкой промышленности</p>
+                </div>
+                <!-- /topic-section__wrapper -->
+            </div>
+            <!-- /container -->
+        </section>
+        <!-- /topic-section -->
+
+        <section class="infographic">
+            <div class="container">
+                <div class="card-navigation-line"></div>
+                <h4 class="infographilc__title">Динамическая инфографика</h4>
+                <div class="infographic__wrapper">
+                    <div class="pop-up-container pop-up-container-card-1">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn1"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title">Создание объёмной формы в женской одежде </h5>
+                            <div class="pop-up__content" id="inf1"><p>Формы современной женской одежды сложны и многообразны.</p>
+                            <p><span class="term">Формообразование кроеной одежды </span> — это процесс создания объемных форм, основанный на способности ее материалов под действием деформаций изгиба, растяжения и смятия создавать пространственную форму.</p>
+                            <p><span class="term">Существует несколько способов создания объёмной формы в женской одежде:</span> </p>
+                            <ol>
+                            <li>Образование новой вытачки в различном направлении.</li>
+                            <li>Образование несколько вытачек вместо одной.</li>
+                            <li>Образование новых вытачек по ломанной или кривой линии.</li>
+                            <li>Замена вытачек складками или драпировками.</li>
+                            <li>Перенос вытачек в подрезы, кокетки, рельефы, драпировки или швы.</li>
+                            <li>Формообразование с использованием пластических свойств волокон при проведении ВТО.</li>
+                            </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-2">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn2"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title">Варианты перевода и оформления вытачки на выпуклость груди и лопаток  </h5>
+                            <div class="pop-up__content" id="inf2"><p>Вытачки являются наиболее распространенной разновидностью конструктивных средств создания объемной формы изделия. В женских изделиях они могут выходить из различных срезов деталей (пройма, боковой, средний, плечевой, горловины и т.д.). Вытачки могут иметь простую или сложную конфигурацию.</p>
+                            <p>Преобразование вытачек может выполнятся на различных деталях одежды (спинке, переде, рукавах). Вытачки являются наиболее распространенной разновидностью конструктивных средств создания объемной формы изделия. В женских изделиях они могут выходить из различных срезов деталей (пройма, боковой, средний, плечевой, горловины и т.д.). Вытачки могут иметь простую или сложную конфигурацию.
+                            Наиболее простой способ перевода вытачек- шаблонный. </p>
+                            <p><span class="term">Этапы перевода вытачки:</span></p>
+                            <ul>
+                            <li>На рабочем шаблоне детали намечают линию новой вытачки, ориентируясь на технический эскиз модели (фотографию или образец модели), учитывая, что максимальная пластичность формы достигается, когда вытачка располагается под углом 45 градусов к нитям основы.</li>
+                            <li>За центр раствора вытачки принимают экстремальную точку, соответствующую центру выпуклости (груди, лопаток).</li>
+                            <li>Шаблон разрезают по намеченной линии.</li>
+                            <li>Исходную вытачку закрывают и скрепляют с помощью скотча, четко совмещая ее стороны (при этом вытачка открывается в намеченном месте).</li>
+                            <li>При оформлении сторон вытачки её внутренний конец располагают на 1,5-3,0 см от центра выпуклости.</li>
+                            <li>Раствор нагрудной вытачки должен быть сохранен.
+                            Варианты перевода вытачек вытачки на переде показаны на рисунке 1.</li>
+                            </ul>
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card2/1.jpg" alt="1"></p>
+                            <p>Рис.1</p>
+                            <p><span class="term">Существует несколько вариантов оформления вытачек:</span></p>
+                            <p>1 вариант - с несимметричным оформлением вытачки. Такая вытачка делается разрезной (рис.2); </p>
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card2/2.jpg" alt="1"></p>
+                            <p>Рис.2</p>
+                            <p>2 вариант – симметричное оформление вытачки прямыми линиями (рис.3);</p>
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card2/3.jpg" alt="1"></p>
+                            <p>Рис.3</p>
+                            <p>3 вариант - симметричное оформление вытачки с обрисовкой контура выпуклости. В изделиях полуприлегающего и приталенного силуэта нагрудную вытачку часто подключают к вытачке на талии переходящей в подрез кармана (рис.4).</p>
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card2/4.jpg" alt="1"></p>
+                            <p>Рис.4</p>
+                            <p>Плечевая вытачка по спинке обычно сохраняется, если изделие имеет прилегание в области лопаток. Если модель имеет кокетку или рельефы, то вытачка переводится в срез кокетки (рельефа). При необходимости можно заложить раствор вытачки в посадку по линии плеча, горловины, проймы (рис.5). </p>
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card2/5.jpg" alt="1"></p>
+                            <p>Рис.5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-3">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn3"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title">Построение рельефных линий на деталях плечевых изделий  </h5>
+                            <div class="pop-up__content" id="inf3"><p>Рельефы в женской плечевой одежде могут начинаться от линий горловины, плеча, проймы и проходить через наиболее выступающие точки груди и лопаток или смещаться в ту или иную сторону (рис 6). </p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card3/2.jpg" alt="1"></p>
+                                <p>Рис.6</p>
+                                <p><span class="term">Этапы построения рельефов:</span></p>
+                                <ul>
+                                <li>Определяют положение и конфигурацию линий рельефа в соответствии с эскизом модели (фото или образцом).</li>
+                                <li>Для получения наиболее выпуклой формы в области груди и лопаток членение должно проходить через экстремальные точки. Если членение проходит в непосредственной близости от выпуклости, то проектируется дополнительная вытачка, выходящая из рельефа (рис.7).</li>
+                                <li>Шаблон детали разрезают по намеченной линии.</li>
+                                <li>Исходную вытачку закрывают и скрепляют с помощью скотча, четко совмещая ее стороны.</li>
+                                </ul>
+                                <p>Плечевую вытачку спинки, перемещаемую в рельеф, удлиняют, сохраняя при оформлении линии рельефа ширину спинки в области лопаток (рис.8). </p>
+                                <div class="pop-up_img">
+
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card3/4.jpg" alt="1"></p>
+                                <p>Рис.7</p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card3/5.jpg" alt="1"></p>
+                                <p>Рис.8</p>
+                                </div></div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-4">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn4"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title">Построение кокеток на деталях плечевых изделий  </h5>
+                            <div class="pop-up__content" id="inf4"><p><span class="term">Этапы построения кокеток:</span></p>
+                            <ul>
+                            <li>На шаблоне детали намечают расположение кокетки по модели проектируемого изделия.</li>
+                            <li>Шаблон разрезают по намеченной линии.</li>
+                            <li>Исходную вытачку закрывают и скрепляют с помощью скотча, четко совмещая ее стороны (рис.9).</li>
+                            <li>Если линия кокетки расположена выше конца вытачки, тогда закрывают только верхнюю часть вытачки, используя оставшуюся часть для сборок, мягких складок, рельефов (рис.10).</li>
+                            </ul>
+                            <div class="pop-up_img">
+
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card4/1.jpg" alt="1"></p>
+                            <p>Рис.9</p>
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card4/2.jpg" alt="1"></p>
+                            <p>Рис.10</p>
+                            </div>
+
+                            <p>При проектировании изделий с рельефами, необходимо на лекала наносить контрольные надсечки в области экстремальной точки на обеих деталях (например, бочок и средняя часть спинки) для совмещения.</p>
+                            <p>При проектировании изделий с кокеткой, необходимо на лекала наносить контрольные надсечки на обеих деталях (например, кокетка и нижняя часть переда) для совмещения на одинаковом расстоянии от края (проймы, горловины).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-5">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn5"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title">Моделирование формы деталей плечевого изделия при создании драпировок </h5>
+                            <div class="pop-up__content" id="inf5"><p><span class="term">Драпировка</span> — процесс формирования складок, сборок для создания дополнительного объема в определенных местах одежды (рис.11). </p>
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card5/1.jpg" alt="1"></p>
+                            <p>Рис.11</p>
+                            <p>При проектировании драпировок сначала выполняются все предварительные преобразования. Вытачки деталей базовой конструкции переводят максимально в модельные линии членения. Оформление срезов деталей при проектировании драпировок показано на рис.12.</p>
+                            <p>Количество фалд зависит от того, на какое расстояние были разведены линии членения. Еще они увеличивается при расположении нити основы под углом 45 градусов (косой крой). </p>
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card5/2.jpg" alt="1"></p>
+                            <p>Рис.12</p>
+                            <p>При проектировании изделий с драпировкой, необходимо на лекала наносить контрольные надсечки, которые определяют глубину складок. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-6">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn6"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title"> Параллельное расширение деталей </h5>
+                            <div class="pop-up__content" id="inf6"><p>Существуют два основных способа изменения силуэтной формы базовой конструкции:</p>
+                                <ul>
+                                <li>параллельное, коническое и параллельно-коническое расширение деталей изделия;</li>
+                                <li>изменение степени прилегания изделия по линиям талии, бёдер и ширины по линии низа.
+                                Параллельное и коническое расширение или заужение деталей изделия может выполняться на различных конструктивных уровнях. Расширение деталей может быть равномерным по всему периметру изделия и неравномерным в зависимости от проектируемой формы модели.</li>
+                                </ul>
+                                <p>Параллельное расширение используют в основном для образования сборок и складок на различных деталях (рис. 13). Для этого на преобразуемую деталь наносят необходимые вертикальные (или горизонтальные) линии; рассекают деталь по нанесенным линиям на полосы; раздвигают полосы на необходимую величину с образованием припуска на сборку или складку (рис.13, 14). В результате длина противоположных срезов увеличивается равномерно. </p>
+                                <p>Если в модели предусмотрено образование напуска на каком-либо уровне, то необходимо изменить размеры детали не только в поперечном, но и продольном направлении на величину напуска (рис.13).</p>
+                                <p>При проектировании складок и сборок необходимо ставить контрольные надсечки для обозначения глубины складок (или равномерного распределения сборки). </p>
+                                <div class="pop-up_img">
+
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card6/1.jpg" alt="1"></p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card6/2.jpg" alt="1"></p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card6/3.jpg" alt="1"></p>
+                                </div>
+
+                                <p>Рис.13</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-7">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn7"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title">Коническое расширение деталей</h5>
+                            <div class="pop-up__content" id="inf7"><p>Коническое расширение деталей может начинаться на любом уровне: линии плеча, груди, талии и т.д.. Приемы преобразования аналогичны применяемым при параллельном расширении, однако раздвижение деталей производится не вдоль горизонтали, а по дуге. Коническое расширение— это разведение полос на определенный угол без изменения длины среза (рис. 15), а параллельно-коническое — с увеличением длины (рис.16). </p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card7/1.jpg" alt="1"></p>
+                                <p>Рис.15</p>
+                                <div class="pop-up_img">
+
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card6/1.jpg" alt="1"></p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card6/2.jpg" alt="1"></p>
+                                </div>
+
+                                <p>Рис.16</p>
+                                <p>При коническом или параллельном расширении деталей, имеющих вытачку, деталь рассекают для расширения через концы вытачек. После разведения полос вытачки частично или полностью закрываются. Для того чтобы швы соединения полученных деталей в изделии не перекашивались, линии швов должны иметь одинаковый наклон (рис.17). </p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card7/4.jpg" alt="1"></p>
+                                <p>Рис.17</p>
+                                <p>Такие же приемы используются для конического заужения деталей. При этом полосы рассеченных деталей поворачиваются, накладываясь друг на друга.</p>
+                                <p>При заужении деталей книзу и сохранении их ширины на заданном уровне увеличиваются растворы исходных вытачек и образуются новые. Обычно они используются для образования мягких складок и драпировок (рис.18). </p>
+                                <div class="pop-up_img">
+
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card7/5.jpg" alt="1"></p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card7/6.jpg" alt="1"></p>
+                                <p><img src="data/img/infographic_imgs/pop-up_imgs/card7/7.jpg" alt="1"></p>
+                                </div>
+
+                                <p>Рис.18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-8">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn8"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title"> Проектирование складок и подрезов </h5>
+                            <div class="pop-up__content" id="inf8"><p>Для проектирования мягких сборок или складок на деталях изделия используется параллельное расширение.</p>
+                            <p>Иногда мягкие складки или защипы образуются из нестаченных вытачек. При проектировании складок по всей длине на детали намечается место расположения складки, деталь разрезается и раздвигается на требуемое расстояние (рис. 19). </p>
+                            <div class="pop-up_img">
+
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card8/1.jpg" alt="1"></p>
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card8/2.jpg" alt="1"></p>
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card8/3.jpg" alt="1"></p>
+                            </div>
+
+                            <p>Рис.19</p>
+                            <p>Линии подреза в изделиях проходят под или над выпуклыми контурами фигуры, не доходя до концов вытачек. После нанесения линии подреза на лекало, эту деталь рассекают по линии подреза. На одной части детали вытачку закрывают, а вторую оформляют в виде сборок или защипов, направленных на выпуклость. Если раствор открывшейся вытачки оказывается недостаточным, его дополнительно увеличивают коническим расширением. Окончательные контуры оформляются плавными кривыми линиями (рис.20). </p>
+                            <div class="pop-up_img">
+
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card8/4.jpg" alt="1"></p>
+                            <p><img src="data/img/infographic_imgs/pop-up_imgs/card8/5.jpg" alt="1"></p>
+                            </div>
+
+                            <p>Рис.20</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pop-up-container pop-up-container-card-9">
+                        <div class="close-btn-block">
+                            <button class="close-btn close-btn9"></button>
+                        </div>
+                        <div class="pop-up-window">
+                            <h5 class="pop-up__title"> Практическое занятие</h5>
+                            <div class="pop-up__content" id="inf9"><p>1 Для выполнения практического задания вам понадобятся: базовая конструкция женской плечевой одежды, ножницы, малярный скотч (обычный скотч или клей), линейка, ножницы.
+                            <img src="data/img/infographic_imgs/pop-up_imgs/card9/1.jpg" alt="1"></p>
+                            <p>2 Общий алгоритм выполнения конструктивного моделирования:</p>
+                            <ul>
+                            <li>намечаем на рабочем шаблоне детали новое расположение нагрудной вытачки (подреза, рельефа, сборки, кокетки или драпировки);</li>
+                            <li>рассекаем деталь по намеченной линии;</li>
+                            <li>закрываем первоначальную вытачку;</li>
+                            <li>если проектируется сборка или драпировка, то для большего объема можно развести детали дополнительно.</li>
+                            </ul>
+                            <p>3 Пример переноса нагрудной вытачки в подрез.</p>
+                            <div class="pop-up_img">
+
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/2.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/arrow.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/3.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/arrow.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/4.jpg" alt="1"></p>
+                        </div>
+
+                        <p>4 Пример переноса нагрудной вытачки в рельеф, формируя драпировку.</p>
+                        <div class="pop-up_img">
+
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/5.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/arrow.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/6.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/arrow.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/7.jpg" alt="1"></p>
+                        </div>
+
+                        <p>5 Пример переноса нагрудной вытачки в боковой шов.</p>
+                        <div class="pop-up_img">
+
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/8.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/arrow.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/9.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/arrow.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/10.jpg" alt="1"></p>
+                        </div>
+
+                        <p>6 Пример переноса нагрудной вытачки в рельеф.</p>
+                        <div class="pop-up_img">
+
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/11.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/arrow.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/12.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/arrow.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/13.jpg" alt="1"></p>
+                        </div>
+
+                        <p>7 Пример переноса нагрудной вытачки в кокетку и сборку.</p>
+                        <div class="pop-up_img">
+
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/14.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/arrow.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/15.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/arrow.jpg" alt="1"></p>
+                        <p><img src="data/img/infographic_imgs/pop-up_imgs/card9/16.jpg" alt="1"></p>
+                        </div>
+
+                        <p>Выполните дополнительные задания с помощью виртуального тренажера для закрепления изученного материала по теме «Перевод вытачек, построение конструктивных линий в изделиях плечевой одежды».</p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="infographilc__card" >
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card1.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn1">Создание объёмной формы в женской одежде</a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card2.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn2">Варианты перевода и оформления вытачки на выпуклость груди и лопаток</a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card3.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn3">Построение рельефных линий на деталях плечевых изделий</a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card4.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn4">Построение кокеток на деталях плечевых изделий</a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card5.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn5">Моделирование формы деталей плечевого изделия при создании драпировок</a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card6.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn6">Параллельное расширение деталей </a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card7.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn7">Коническое расширение деталей</a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card8.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn8">Проектирование складок и подрезов</a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                    <div class="infographilc__card">
+                        <div class="card__img-wrap"><img src="data/img/infographic_imgs/card9.jpg" alt="img"></div>
+                        <h2 class="card__title"><a class="pop-up-window__btn9">Практическое занятие</a></h2>
+                        <div class="check-mark-block">
+                            <img src="data/img/check_mark.svg" alt="check">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__left-side">
+                <h4 class="footer-title">
+                    ФГОС СПО 29.02.10 
+                </h4>
+                <p class="footer-subtitle">
+                    Конструирование, моделирование и технология изготовления изделий легкой промышленности (по видам)
+                </p>
+            </div>
+            <div class="footer__right-side">
+                <h4 class="footer-title">
+                    МДК 02.01
+                </h4>
+                <p class="footer-subtitle">
+                    Основы конструирования и моделирования швейных изделий
+                </p>
+            </div>
+        </div>
+        <!-- /footer__wrapper -->
+    </footer>
+
+    <script src="data/script/pop-up-window_script.js"></script>
+    
+    <script src="../Главная/data/script/burger_script.js"></script>
+    <script src="../Главная/data/script/dark_theme_script.js"></script>
+
+    <div class="tent tent-1"></div>
+    <div class="tent tent-2"></div>
+    <div class="tent tent-3"></div>
+    <div class="tent tent-4"></div>
+</body>
+</html>

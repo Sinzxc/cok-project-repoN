@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Иконки для разных платформ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../Главная/data/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Главная/data/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Главная/data/favicon/favicon-16x16.png">
+    <!--<link rel="manifest" href="site.webmanifest">-->
+    <link rel="mask-icon" href=".../Главная/data/favicon/safari-pinned-tab.svg" color="#35d37d">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Стили -->
+    <link rel="stylesheet" href="../Главная/data/css/index.css">
+    <link rel="stylesheet" href="data/css/index.css">
+    <title>Динамическая инфографика</title>
+</head>
+<body>
+    <!-- Тень для сайта при открытии блоков -->
+    <div id="shadow" class="shadow"></div>
+
+    <header class="header">
+         <div class="header__container">
+             <div class="header__wrapper">
+                 <div class="professionalism">
+                     <div class="professionalism__title-wrap">
+                         <span class="professionalism__year">2023</span>
+                         <span class="professionalism__title">ПРОФЕССИОНАЛИТЕТ</span>
+                     </div>
+                     <nav class="nav">
+                         <ul class="nav__list">
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/bricks.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/tent.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/parallelepiped.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/bus.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/ship.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/circle.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/mountain.svg" alt="img"></a></li>
+                             <li class="list__item"><a href="#" class="list__link"><img src="data/img/header_nav_icons/leaflet.svg" alt="img"></a></li>
+                         </ul>
+                     </nav>
+                     <!-- ПЕРЕНЕСИТЕ ЭТО В ОСНОВНУЮ НАВИГАЦИЮ -->
+                 </div>
+                 <!-- /professionalism -->
+     
+                 <div class="header-title-wrap">
+                     <h2 class="header-title">МГГТК ФГБОУ ВО «АГУ»</h2>
+                     <p class="header__subtitle">Образовательный кластер «Образовательный центр индустрии туризма и сферы услуг Республики Адыгея»</p>
+                 </div>
+     
+                 <div class="logo-wrap">
+                     <img src="data/img/logo/logo.svg" alt="logo" class="logo">
+                 </div>
+                 
+                 <div class="home" style="height: 29px; width: 31px;">
+                    <a href="../Главная/index.html"><img src="data/img/home.svg" alt="go home"></a>
+                 </div>
+                 
+                 
+                 <button class="burger-btn">
+                     <img src="data/img/burger.svg" alt="logo" class="burger-img">
+                     <img src="data/img/burger-dark-mode.svg" alt="logo" class="burger-dark-img hide">
+                 </button>
+ 
+                 <div class="right-side-menu">
+                     <button class="burger-btn-close">Закрыть</button>
+                     <div class="right-side-menu__block">
+                         <p class="right-side-menu__text">Включить / Выключить темную тему</p>
+                         <label class="switch-button" for="switch">
+                             <div class="switch-outer">
+                             <input id="switch" type="checkbox" class="dark2">
+                             <div class="button">
+                                 <span class="button-toggle"></span>
+                                 <span class="button-indicator"></span>
+                             </div>
+                             </div>
+                         </label>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </header>
+
+    <main>
+        <section class="topic-section">
+            <div class="container">
+                <div class="topic-section__wrapper">
+                    <span class="topic-text">Тема:</span>
+                    <h1 class="topic-title">Технология приготовления коктейлей</h1>
+                    <p class="topic-subtitle">#Технология приготовления коктейлей</p>
+                </div>
+                <!-- /topic-section__wrapper -->
+            </div>
+            <!-- /container -->
+        </section>
+        <!-- /topic-section -->
+
+        <section class="videoplayer-section">
+            <div class="container">
+                <div class="videoplayer__wrapper">
+                    <h4 class="videoplayer__title">Видеолекция</h4>
+                    <iframe class="videoplayer__wrap" width="100%" height="488px" src="https://www.youtube.com/embed/sl3ORlm0wZY?si=enuluAEx-Ga3ZnzZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>   
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__left-side">
+                <h4 class="footer-title">
+                    ФГОС СПО 43.02.15
+                </h4>
+                <p class="footer-subtitle">
+                     Поварское и кондитерское дело
+                </p>
+            </div>
+            <div class="footer__right-side">
+                <h4 class="footer-title">
+                    МДК.04.02 
+                </h4>
+                <p class="footer-subtitle">
+                    Процессы приготовления и подготовки к реализации холодных и горячих десертов, напитков сложного ассортимента
+                </p>
+            </div>
+        </div>
+        <!-- /footer__wrapper -->
+    </footer>
+
+    <script src="../Главная/data/script/burger_script.js"></script>
+    <script src="../Главная/data/script/dark_theme_script.js"></script>
+    <script src="data/script/videoplayer.js"></script>
+
+    <div class="tent tent-1"></div>
+    <div class="tent tent-2"></div>
+    <div class="tent tent-3"></div>
+    <div class="tent tent-4"></div>
+</body>
+</html>
